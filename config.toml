@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://zh.ethanhan.cc/'
 languageCode = 'zh-CN'
 title = 'Ethan Han'
 theme = "m10c"
