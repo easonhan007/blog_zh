@@ -1,0 +1,13 @@
+baseURL = 'http://example.org/'
+languageCode = 'zh-CN'
+title = 'Ethan Han'
+theme = "m10c"
+paginate = 20
+
+[frontmatter]
+  date = ['created', ':default']
+  lastmod = ['lastmod', ':fileModTime', ':default']
+
+[params]
+	dateFormat = "02 Jan 2006"
+  description = "竹杖芒鞋轻胜马，谁怕？ 一蓑烟雨任平生。"
