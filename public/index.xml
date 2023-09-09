@@ -1,0 +1,1649 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ethan Han</title>
+    <link>https://zh.ethanhan.cc/</link>
+    <description>Recent content on Ethan Han</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 25 Apr 2023 11:54:30 +0800</lastBuildDate><atom:link href="https://zh.ethanhan.cc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Selenium Manager使用指南</title>
+      <link>https://zh.ethanhan.cc/posts/selenium_manager%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Tue, 25 Apr 2023 11:54:30 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/selenium_manager%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</guid>
+      <description>Selenium社区最近发布了Selenium Manager工具，主要是解决每隔一段时间就要重新去下载driver的痛点。当然了，这也是我痛点。因为chrome浏览器会自动更新的关系，之前我都是关掉自动更新从而回避去下载新driver的问题，不过因为用户的版本大多都是较新的，所以测试浏览器每隔一段时间还是要更新一下才比较好。我自己试用了一下，感觉还是很不错的，非常有意思的一个点是sm竟然是rust开发的，在我的印象里这种对性能和稳定性要求不是特别高的命令行用go开发和维护的话效率可能会更高一点。下面是官方blog的翻译以及我自己的一点点体验。
+大多数人使用 Selenium 的第一次经验都会出现这样的错误消息：
+java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads 然后他们不得不在网上搜索有关如何处理他们下载的驱动程序的说明。
+Selenium：现在已经内置了驱动程序！ Selenium 项目希望改善用户体验，其中一项首要任务是帮助所有用户简化他们设置环境的方式。多年来，配置浏览器驱动程序一直是用户需要执行的任务，以便运行 Selenium。
+设置一次浏览器驱动程序并不那么复杂，但随着浏览器发布周期缩短，现在每4-6周就有一个新的 Chrome/Firefox/Edge 版本，使得保持浏览器驱动程序与浏览器版本同步的任务变得不那么容易了。
+Selenium Manager 是一个新的工具，可帮助轻松获得运行 Selenium 所需的工作环境。如果 Chrome、Firefox 或 Edge 不在 PATH 中，Selenium Manager Beta 1 将配置它们的浏览器驱动程序。
+要使用 Selenium 4.6 进行 Selenium 测试，只需安装 Chrome、Firefox 或 Edge 即可。如果您已经安装了浏览器驱动程序，则会忽略此功能。如果您想帮助我们测试它，请删除您的驱动程序或删除第三方驱动程序管理器，然后事情应该仍然“正常工作”。如果不行，请提交错误报告。
+Selenium Manager 的未来版本甚至会下载浏览器（如果有必要）。
+受开源和 Selenium 社区启发 Selenium Manager 不是完全新的解决方案。多年来， Selenium 生态系统中出现了几个第三方项目，例如：Java 的 WebDriverManager、Python 的 webdriver-manager、Ruby 的 webdrivers 和 C# 的 WebDriverManager.</description>
+    </item>
+    
+    <item>
+      <title>Selenium 4.9.0 发布</title>
+      <link>https://zh.ethanhan.cc/posts/selenium_4.9.0_%E5%8F%91%E5%B8%83/</link>
+      <pubDate>Tue, 25 Apr 2023 11:48:29 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/selenium_4.9.0_%E5%8F%91%E5%B8%83/</guid>
+      <description>我们非常高兴地宣布支持Java、.NET、Ruby、Python 和 Javascript 及 Grid 和 Internet Explorer Driver的 Selenium 4.9.0版本发布。所有内容的链接可以在我们的下载页面找到。
+重点如下: Chrome DevTools 支持现在是:v110、v111 和 v112(Firefox 仍然对所有版本使用 v85) Java 绑定的 Maven BOM。 通过 Selenium Grid 现在可以远程下载文件。 首先， Firefox 开始逐步废除 CDP，并用双向实现 (BiDi implementation) 替代它。 InvalidSelectorException 现在继承自 WebDriverException 而不是 NoSuchElementException。 发布了Selenium Manager, 这个工具可以使用浏览器选项中设置的信息来获取正确的浏览器driver。 在 Selenium Grid 中可以设置子路径,以获得自定义的 Grid URL。 在 Java版本和 Grid 中完全移除 Json Wire Protocol 支持。 </description>
+    </item>
+    
+    <item>
+      <title>如何从code review中获得最大的收益</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E4%BB%8Ecode_review%E4%B8%AD%E8%8E%B7%E5%BE%97%E6%9C%80%E5%A4%A7%E7%9A%84%E6%94%B6%E7%9B%8A/</link>
+      <pubDate>Mon, 24 Apr 2023 10:39:04 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E4%BB%8Ecode_review%E4%B8%AD%E8%8E%B7%E5%BE%97%E6%9C%80%E5%A4%A7%E7%9A%84%E6%94%B6%E7%9B%8A/</guid>
+      <description>翻译一篇关于code review的不错文章。
+原文地址: https://shecodesthecosmos.co.uk/2023/04/11/how-do-you-get-maximum-benefit-from-code-reviews
+Code Review是软件开发中常用的质量关和最佳实践之一，也可以看作是一种软件测试形式。
+当Code Review被设计和使用得当时，可以为软件产品质量带来巨大的好处：允许发现和修复缺陷、改善文档和对代码进行检查。但当Code Review被设计不当时，它们往往会成为开发人员和测试人员的负担和瓶颈。
+那么如何确保Code Review为团队和产品质量带来最大的好处呢？我有三个建议。
+自动化！自动化！自动化！ 利用自动化工具来简化审查过程，减轻审查者的工作量。许多Code Review中更标准和重复的元素都可以自动化：
+使用自动化测试套件检查功能，并确保在审查之前通过此套件。测试自动化工具通常会生成报告，如果需要，审查者可以快速分析这些报告。 使用 Linting 软件验证格式，以帮助确保代码按标准化和可读性的方式编写。 通过使用静态分析工具在编译之前分析代码，识别潜在的运行时缺陷。 通过自动化创建Code Review和需求之间的链接，确保代码的可追溯性。 这些检查可以集成到 CI/CD pipeline中，并在代码提交或创建拉取请求等事件触发执行。在审查人员甚至看到代码之前自动执行这些检查可以极大地减少执行审查所需的时间，也使Code Review更少重复和行政性工作。
+有许多 DevOps 和 CI/CD 软件可以支持这一点，可参考的示例包括 Azure DevOps、GitLab、Jenkins 和 Atlassian 工具套件。
+定义一个过程 当然，有些代码质量方面是无法自动检查的：检查文档是否完整并且合理，查看代码架构等。这是审查发挥最大价值的地方。为确保从Code Review中获得最大的质量，定义一个流程、指南、标准或清单供审查者在审查时使用，可以很有帮助。制定一个标准的检查清单可以帮助防止在审查过程中漏掉任何东西。
+这些流程或指导方针应该始终具备灵活性。Code Review的范围、规模和风险可能会大不相同，因此并非每个审查都需要进行所有检查。可能包括以下一些内容的Code Review清单：
+文档的合理性检查：文档是否有意义？是否存在任何漏洞？ 代码是否结构合理？ 代码中是否存在任何错误或潜在的安全风险？ 所有自动检查是否都通过？ 代码是否遵循您组织的最佳实践政策？（如果此检查无法自动化） 审查的代码大小是否过大？这非常重要！如果Code Review太大或太复杂，审查时间将大大增加。保持Code Review的简单性和小规模，可能使用单一职责原则来定义应被视为Code Review大小的项目。 利用审查作为学习机会 最后，不要忘记利用Code Review作为团队之间共享知识的机会。团队经常会陷入这样的习惯，即让同一组人员审查代码库的相似区域。这可能会导致两个问题：
+让同一人员一直审查相似的代码区域可能会导致疏忽，增加审查期间漏检缺陷和其他问题的风险。 这可能会加强信息和知识的孤立，增加关键人员风险。如果只有团队的少部分人员了解一段代码，如果这些团队成员不可用，这可能会导致连续性问题。 为了避免出现这些问题，将Code Review重新构想为知识共享练习。确保Code Review与团队的其他成员共享，可以帮助他们学习代码库的新区域。对代码的新视角也可能会引发对假设的质疑，找到更多缺陷，创新新的工作方式。这也是同行导师的好机会，为团队成员提供机会发展他们的沟通技巧，提高他们的编程能力。</description>
+    </item>
+    
+    <item>
+      <title>索引构造与信息检索 让ChatGPT成为Selenium问答助手</title>
+      <link>https://zh.ethanhan.cc/posts/%E7%B4%A2%E5%BC%95%E6%9E%84%E9%80%A0%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2-%E8%AE%A9chatgpt%E6%88%90%E4%B8%BAselenium%E9%97%AE%E7%AD%94%E5%8A%A9%E6%89%8B/</link>
+      <pubDate>Fri, 21 Apr 2023 11:16:06 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E7%B4%A2%E5%BC%95%E6%9E%84%E9%80%A0%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2-%E8%AE%A9chatgpt%E6%88%90%E4%B8%BAselenium%E9%97%AE%E7%AD%94%E5%8A%A9%E6%89%8B/</guid>
+      <description>这是chatgpt为我生成的3个标题，我选了第3个。
+利用 Langchain 和 GPT 实现 Selenium 机器人自动问答 向量化存储和检索：如何用相似度搜索匹配 Selenium 知识？ 索引构造与信息检索：让 ChatGPT 成为 Selenium 问答助手 之前有很多同学会问我一些有关selenium的问题，因为精力有限，不能一一回答。最近正好chatgpt为代表的生成式ai非常火爆，那么我们能不能训练一个有selenium知识的 机器人帮我回答问题呢？人的时间有限，但是机器人可以一直在线工作，妥妥的劳模了。
+经过一番调研，我发现langchain这个库也许可以祝我一臂之力。
+整体思路 整理思路很简单，就是gpt是预先训练好的模型，有自己的先见知识，这也是为什么我们问它问题它会给出答案的原因，因为它的模型里就固化了这些知识。然而gpt3模型用的数据应该是截止到2021年的，也就是2年多之前的数据了。尽管selenium总体得带速度不快，但这两年也多多少少发生了一些变化，直接用gpt模型的先见知识可能会造成一些回答不准确的情况。
+所以我们可以用gpt的两大能力，而不是先见知识。
+推断的能力。给出一些上下文，让gpt总结和推断问题的答案 生成内容的能力 所以现在问题就变成了如何给gpt”灌“入最近的selenium知识？
+其实我们可以在gpt的prompt里面加上一些实时的准确的上下文，然后让gpt去根据上下文内容实时的生成问题的答案，比如下面这个prompt
+你是selenium问答机器人，你的任务是根据我提供的selenium相关信息来回答用户提出的问题。忘掉你之前的学到的知识，只用我提供的信息去回答。如果问题超出了我提供的信息范围，你就回答不知道。 ============== selenium的一些最新的介绍 ... ... ... ============== 问题：selenium是什么？ 这样一来任务就变成了如何根据用户的问题搜索相关的selenium知识？ 这里就要用到向量化存储和检索了。
+向量化存储和检索 先看看chatgpt的解释吧。
+Q: 我是一个5岁的小孩，请给我解释一下什么是向量化存储和检索，要让我能看懂 A: 嘿，你好呀！向量化存储和检索是指将文本、图像或其他数据转换成一组数字，并使用这些数字来存储和查找信息。可以把这些数字看成是一个有很多数字的表格，每一个数字代表着这个信息的一个特征。比如说，对于一张图片，可以用数字来表示它的长宽、色彩等等特征。当我们需要查找信息时，可以用相似度来比较数字之间的差距，来找到和我们要查找的信息最相似的那一组数字，从而找到相关的信息。这个技术可以用在很多场合，比如说搜索引擎、推荐系统、图像识别和自然语言处理等等。 其实我们可以简单理解为相似度搜索。
+我们要处理的问题是：用户输入问题，然后根据相似度，找到最匹配的一些相关材料，然后返回这些内容。这种工作向量化索引和检索是可以帮我们很好的完成的。
+实现流程 这样我们可以把流程梳理清楚了，这里有两个流程，分别是爬一些selenium的数据，向量化之后存到向量化数据库里，可以理解成为是构造索引的过程；以及搜索用户提出的问题，给出相关答案，然后要求gpt生成内容，可以理解为信息检索和生成的过程。
+索引构造过程
+我随便在selenium的主页拿了3个页面的内容，分别是
+https://www.selenium.dev/documentation/overview/ https://www.selenium.dev/documentation/overview/components/ https://www.selenium.dev/documentation/overview/details/ 使用下面的js脚本可以直接拿到页面内容
+document.querySelector(&amp;#39;.td-content&amp;#39;).textContent 我把内容保存在了se.txt文件里。下面是流程的简单分析
+从se.txt中读取内容 -&amp;gt; 切分内容里的文本 -&amp;gt; 调用openai的向量化接口进行向量化 -&amp;gt; 将向量化过的内容保存在向量数据库中 检索及内容生成的过程
+调用openapi接口向量化用户问题 -&amp;gt; 在向量数据库中搜索相关答案 -&amp;gt; 将问题和答案合成为prompt发送给gpt3.5 -&amp;gt; 展示gpt返回的内容 代码实现 from langchain.</description>
+    </item>
+    
+    <item>
+      <title>web自动化测试的智能革命:AI如何推动软件质量保证的未来</title>
+      <link>https://zh.ethanhan.cc/posts/%E7%BD%91%E7%BB%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%9A%84%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A6%82%E4%BD%95%E6%8E%A8%E5%8A%A8%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F%E4%BF%9D%E8%AF%81%E7%9A%84%E6%9C%AA%E6%9D%A5/</link>
+      <pubDate>Thu, 13 Apr 2023 15:53:34 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E7%BD%91%E7%BB%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%9A%84%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A6%82%E4%BD%95%E6%8E%A8%E5%8A%A8%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F%E4%BF%9D%E8%AF%81%E7%9A%84%E6%9C%AA%E6%9D%A5/</guid>
+      <description>首先这个标题不是我取的，是我喂了关键字让AI给取的，果然非常的标题党，让人印象深刻。
+先简单回顾一下web自动化测试的一些发展阶段
+QTP时代 很多年前QTP横空出世的时候，没有人会怀疑这种工具将是自动化测试的未来形态。使用者理论上不需要掌握任何编程语言就可以通过录制回放的方式实现web端的自动化测试。后来事实证明QTP向人们证明了自动化测试的可行性，然而其自身的一些限制让其渐渐被主流市场所抛弃。看看bing是怎么说的
+您好，这是Bing。QTP是QuickTest Professional的简称，是一种自动化软件测试工具，主要用于功能测试和回归测试 。QTP的优点有：
+支持多种编程语言和平台 基于关键字驱动的测试方法，易于编写和维护测试脚本 提供丰富的测试对象库和检查点，方便识别和验证被测系统的元素 可以与其他HP测试工具集成，实现全面的测试管理 QTP的缺点有：
+商业软件，价格昂贵 对于一些复杂的界面或控件，可能无法正确识别或操作 对于一些新技术或框架，可能需要安装额外的插件或补丁 对计算机资源的消耗较大，可能影响被测系统的性能 请注意，QTP在官网已被改名为UFT（Unified Functional Testing）统一功能测试 。
+selenium RC和waitir时代 后来的一段时间selenium和watir渐渐流行起来，这一次一切似乎是发生了倒退，相较于qtp提供的足够简单的录制回放模式，selenium rc和watir只能自己写代码去实现自动化里的每一步操作和断言，炫酷的未来似乎渐行渐远。看看chatgpt对selenium rc的评价，先声明这些评价内容不够准确，大家仅作为参考。
+Selenium RC（Remote Control）是一个自动化测试工具，以下是 Selenium RC 的优缺点：
+优点：
+跨浏览器和跨平台：Selenium RC 支持在多种浏览器和操作系统上执行测试脚本，包括 Windows、Linux、Mac OS 等。 支持多种编程语言：Selenium RC 支持多种编程语言，如 Java、C#、Python 等，使得测试人员可以使用他们最熟悉的编程语言编写测试脚本。 可以与其他工具集成：Selenium RC 可以与其他测试工具和开发工具集成，如 JUnit、TestNG、Eclipse 等，以增强测试的效率和准确性。 适合大型项目：Selenium RC 可以测试大型项目，包括 Web 应用程序和企业应用程序。 可以模拟真实用户行为：Selenium RC 可以模拟真实用户的行为，如单击、输入文本、选择下拉列表等，以确保应用程序的稳定性和可靠性。 缺点：
+速度较慢：Selenium RC 使用 JavaScript 与浏览器进行通信，速度比较慢，影响测试的执行效率。 对浏览器的支持有限：Selenium RC 支持的浏览器版本有限，对于最新的浏览器版本可能无法进行测试。 安装和配置较为繁琐：Selenium RC 的安装和配置相对比较繁琐，需要一定的技术知识和经验。 不支持并发测试：Selenium RC 不支持多线程和并发测试，可能需要在多台机器上进行测试。 不支持移动端应用测试：Selenium RC 不支持移动端应用程序测试，需要使用其他工具或者框架进行测试。 webdriver时代 后来就是webdriver一统江湖了，看看claude(chatgpt的竞品)对webdriver的评价。内容基本准确，不过没有提及webdriver的核心能力，就是统一了web自动化测试的标准，也就是所谓的webdriver协议。</description>
+    </item>
+    
+    <item>
+      <title>10分钟玩转playwright</title>
+      <link>https://zh.ethanhan.cc/posts/10%E5%88%86%E9%92%9F%E7%8E%A9%E8%BD%ACplaywright-10e47fb70fad48639b94e6a7faf04015/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/10%E5%88%86%E9%92%9F%E7%8E%A9%E8%BD%ACplaywright-10e47fb70fad48639b94e6a7faf04015/</guid>
+      <description>playwright是微软推出的一款自动化测试工具，据说开发小组的核心人员来自google的puppeteer团队，真是一出生就有了个好爹而且好爹的亲爹也是爹中的战斗机，这就让人非常期待了。
+下载与安装 playwright应该是使用JavaScript进行开发的，不过考虑到大部分的测试同学可能对python更为熟悉，这里的安装就以python版本为例。
+在命令行中输入pip install pytest-playwright，等playwright安装成功之后再输入命令playwright install，这条命令的作用是安装测试所需要的各种浏览器支持，相比较selenium需要先安装浏览器再安装相应版本的driver，playwright的初始化工作就显得轻松了很多。
+第一个用例 接下来按照官方文档里的例子我们来跑第一个playwright用例。
+新建一个名为test_my_app.py的文件，然后把文档中的例子一字不差的进行拷贝粘贴。
+import re from playwright.sync_api import Page, expect def test_homepage_has_Playwright_in_title_and_get_started_link_linking_to_the_intro_page(page: Page): page.goto(&amp;#34;https://playwright.dev/&amp;#34;) # Expect a title &amp;#34;to contain&amp;#34; a substring. expect(page).to_have_title(re.compile(&amp;#34;Playwright&amp;#34;)) # create a locator get_started = page.locator(&amp;#34;text=Get Started&amp;#34;) # Expect an attribute &amp;#34;to be strictly equal&amp;#34; to the value. expect(get_started).to_have_attribute(&amp;#34;href&amp;#34;, &amp;#34;/docs/intro&amp;#34;) # Click the get started link. get_started.click() # Expects the URL to contain intro. expect(page).to_have_url(re.compile(&amp;#34;.*intro&amp;#34;)) 然后在命令行里输入pytest，视网速而定，等待个10秒钟左右，就可以看运行结果了。
+collected 1 item test_my_application.</description>
+    </item>
+    
+    <item>
+      <title>10大流行的关于软件测试误解</title>
+      <link>https://zh.ethanhan.cc/posts/10%E5%A4%A7%E6%B5%81%E8%A1%8C%E7%9A%84%E5%85%B3%E4%BA%8E%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E8%AF%AF%E8%A7%A3-5845cdc7123947f1a8714ae52151193f/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/10%E5%A4%A7%E6%B5%81%E8%A1%8C%E7%9A%84%E5%85%B3%E4%BA%8E%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E8%AF%AF%E8%A7%A3-5845cdc7123947f1a8714ae52151193f/</guid>
+      <description>软件测试实际上不像看上去那么容易。为了了解web产品测试可能包含的隐藏和意外，我们将分析与此类活动相关的十大最流行的误解。
+误解1：测试很容易 很多IT界人士（但不是测试人员）认为，软件测试并不难。它只是在一个图形界面中点击按钮而已。但实际上，一切并不那么简单。首先，QA工程师必须全面研究一个产品，收集有关它的信息，提出并反驳假设，等等。 仅仅发现缺陷并不能使你成为一名测试人员。要成为一流的QA工程师，你必须能够理解软件和测试理论，提出正确的问题，并有效地找到相关信息。
+误区2：软件测试很无聊 有人可能认为测试人员的日常工作很枯燥&amp;ndash;点击按钮，将设计与布局相比较。但如果这么简单，就不会有QA工程师了&amp;ndash;所有这些工作都会由机器完成。 测试人员每天都在与业务和客户的实际需求互动。他们看的是软件内部的工作方式。而且，测试的类型相当多样&amp;ndash;从可用性测试到性能测试和网络安全一应俱全，而且值得深入。
+误区3：QA工程师想黑掉一切 事实上，测试人员不是黑掉程序，而是黑掉开发人员的幻觉。他们不想破坏任何东西；他们只是试图看看一切是如何工作的。有时测试结果与大家的期望完全不一致。
+误区4：完美主义是测试员工作成功的关键 事实上，情况恰恰相反。过度的完美主义只会阻碍正确的测试（就像在任何其他活动领域一样）。一个典型的完美主义者不能准确地意识到何时停止测试。而且，他也很难接受这样一个事实：永远不会有一个没有缺陷的完美的web产品。
+误区5：测试人员不需要了解软件的内部实现 实际上，一流的测试人员应该能够理解现代技术和分析软件结构。编程语言的基础知识有助于此。你不必创建你自己的程序代码，只要至少了解一切是如何设置和工作的基础知识。
+误区6：一切都有自动化，人工测试将消失 在任何情况下，你都不应该把QA的工作分为自动化和手动测试。自动化和手动测试人员都用他们的头脑工作，他们的工具并不那么重要。当然，你可以（也应该）使用先进的技术，但不要忘记，你不可能完全实现测试自动化，就像你不可能实现研究过程自动化。
+误区7：测试拖慢了开发过程 一些产品公司的员工相当认真地认为测试过程是一个简单的活动。而且他们确信，程序代码中要么没有缺陷，要么其数量微不足道。因此，当开发人员完成他们的前端工作时，他们认为实现web产品的大任务已经基本完成。但有时，在这个 &amp;ldquo;差不多 &amp;ldquo;的背后隐藏着大量的额外工作。软件测试和其他许多工作一样，是一个创造的过程。这完全取决于要完成的任务和要克服的风险。
+误区8：QA工程师和开发人员总是缠斗在一起 互联网上有很多关于开发和测试在对方车轮上装上辐条的有趣故事。但在实践中，这并不那么相同。只有当开发部门认为测试人员在控制他们时才会出现问题，或者，当我们用发现的缺陷列表来影响开发部门的绩效时。
+误区9：测试人员对他们发现的每个bug都很兴奋 发现错误的兴奋感可能只发生在初级测试人员身上。 但随着时间的推移，它就会过去。熟练的员工会更加沮丧，因为这意味着他们将不得不做额外的工作。而且，这也推迟了任务的开始（部署网站，上架移动应用程序，等等）。质量保证的有效性并不取决于发现的错误的数量。他们工作的结果是一个经过质量测试的产品，一般来说，它能满足感兴趣的用户的需求。
+误区10：如果你写了好的代码，你就不需要测试人员了 这种观点在产品公司中非常普遍，那里盛行写自动测试的理念。但是，软件发展得越快，周围环境的变化越快，测试过程就越有意义。
+而这个名单还可以继续下去。但最主要的是，除了测试人员本身，没有人可以成为这个领域的专家。相应地，只有QA工程师可以自信地说出什么是事实，什么又不是。</description>
+    </item>
+    
+    <item>
+      <title>2022 年值得测试同学关注的技术趋势</title>
+      <link>https://zh.ethanhan.cc/posts/2022-%E5%B9%B4%E5%80%BC%E5%BE%97%E6%B5%8B%E8%AF%95%E5%90%8C%E5%AD%A6%E5%85%B3%E6%B3%A8%E7%9A%84%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF-9c9522ac00a646e284b8eaf013585743/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/2022-%E5%B9%B4%E5%80%BC%E5%BE%97%E6%B5%8B%E8%AF%95%E5%90%8C%E5%AD%A6%E5%85%B3%E6%B3%A8%E7%9A%84%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF-9c9522ac00a646e284b8eaf013585743/</guid>
+      <description>国外有机构展望了2022年值得测试和开发同学关注的技术趋势，我在这里简单的给大家介绍一下，路漫漫其修远兮，大家一起求索吧。
+混合组织成为常态 2022年很明显，有些人不会返回办公室，至少不会一直返回办公室。病毒大流行开始时最大的挑战之一就是远程工作的弱点和新机遇。 人们远程工作面临的最大困难是深陷工作无法自拔。另一方面，人们承认他们在在线交流和协作方面遇到的困难较少。全球 CIO 调查显示，截至 2021 年 3 月，31% 的受访者预计将继续永久远程工作。据另一项调查显示，73％的雇员要求更灵活的工作选择。
+对测试人员意味着什么 由于远程管理的困难降低使得原本对外包保持警惕的公司放弃了一些担忧。外包 QA 团队是内部团队的延伸。如果正确的设置流程，管理外包并不具有挑战性。更多的公司可能会开始使用外包的 QA 资源。
+对通讯工具的需求不断增长 2020年3月，在线会议软件的使用量猛增。Zoom 打破下载记录，股价上涨超过100%，Google Hangouts提供半年免费使用高级计划，Microsoft Teams一个月赢得了1200万用户。这样的故事在2021年听起来并不令人震惊。我们已经加入了用户行列，成为统计数据的一部分。 组织仍在不断寻找可靠的通信和合作软件工具。远程办公不应限制工作活动。
+反过来，科技公司的目标是增强他们的通信工具，加入更多功能，以提供更大的灵活性。 例如，Slack 推出了 Huddles——一种轻量级的音频优先通信功能，允许用户在不安排面对面或视频会议的情况下接听电话。此外，现在用户可以发送音频和视频消息，这对许多人来说也是一个很大的好处。
+对测试人员意味着什么 各种规模和各行各业的公司都在使用通信工具，市场广阔，现有工具还有改进空间。随着新功能的添加，QA 部门将忙于进行功能、集成和回归测试。 喜欢使用定制解决方案的公司可能会决定升级其内部平台。例如，添加与 Zoom、Skype、Meet 或其他一些工具的集成将能够更快地访问视频通话功能。这些改进总是伴随着 API 和回归测试。
+企业可能对更复杂的产品感兴趣，例如具有多客户端功能的内网视频平台、媒体资产管理等。在这种情况下，提供商应该准备好提供具有高级定制功能的产品。从头开始创建这样的平台需要仔细的市场分析，然后进行广泛而细致的测试。
+吸引眼球，拉拢更多的用户 人们越来越意识到社交网络和品牌可以如何操控他们的思想。此外，2021年的数据表明，用户对新奇产品保持兴奋的程度是有限的，比如clubhouse。新媒体专家用多篇文章总结了这些事件，一些人在新社交网络的早期就预测到了clubhouse这样的结果，以及总结了该产品的失败原因。
+显然，创作者没有看到长期的潜力，逐渐停止为平台增值。 实时性的功能（例如只能进行直播而无法进行广播录制）营造了一种怀旧/复古的氛围，然而大房间的访问受限和人数限制导致了激怒和两极分化。 算法和用户体验都远非完美。Clubhouse 围绕最初的炒作发展，而不是专注于平台改进 。 令人惊讶的是，TikTok 仍然是派对之王，逐渐吸引了更多不同的受众。当然，Instagram 也不容忽视，其通过推出 Reels 做出了回应。无论是良好的实现还是熟悉的平台，用户似乎都对它感到满意。
+对测试人员意味着什么 把用户牢牢的绑在平台上，对用户忠诚度甚至注意力的竞争变得更加激烈。 这意味着软件开发团队现在应该更加关注最终用户体验。当然，很大程度上决定开发新应用或功能的人并非技术专家。然而，软件开发人员是实现这些想法的人，而软件测试人员是接触结果的人。功能、UI 和兼容性测试将非常重要。 最后，在流程中涉及业务分析师的团队将更好地了解市场契合度、商业机会和规模。仔细的分析和精心编写的文档有助于避免逻辑空白和不适合市场/需求。
+内容变现的新机遇 点播内容已经存在一段时间了。甚至令人惊讶的是，我们没有在2021年软件工程趋势中发现跟它的相关的解决方案。 如今愿意免费分享独家内容的创作者越来越少,社交网络也在不断探索内容变现的机会。 例如，Instagram 的 CEO 一直对订阅创意持开放态度。该平台开始为拥有超过 1 万粉丝的用户体验了付费徽章，以便在直播期间使用。此外，Instagram 似乎正在开发独家故事功能，其实就是视频版的clubhouse，并暗示某种订阅行为。
+除了社交媒体，还有一些服务本身就鼓励内容变现并致力于提供这样的机会。例如，Overwolf——一个使创作者能够构建游戏内物品并将其货币化的平台——在 D 轮中融资了 7500 万美元，并计划使用这些资金来支持用户生成的内容创作 。 与此同时，由于持续的封城，全球的现场表演被取消，音乐家也开始寻找现场直播的机会。它始于社交媒体，但最终演变为更加深思熟虑的策略。</description>
+    </item>
+    
+    <item>
+      <title>2023年你还能看到希望么</title>
+      <link>https://zh.ethanhan.cc/posts/2023%E5%B9%B4%E4%BD%A0%E8%BF%98%E8%83%BD%E7%9C%8B%E5%88%B0%E5%B8%8C%E6%9C%9B%E4%B9%88-90a4807a4c914eedb1197aeff9e37514/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/2023%E5%B9%B4%E4%BD%A0%E8%BF%98%E8%83%BD%E7%9C%8B%E5%88%B0%E5%B8%8C%E6%9C%9B%E4%B9%88-90a4807a4c914eedb1197aeff9e37514/</guid>
+      <description>对很多人来说2022年可能是非常糟心的一年，我们有理由去期待2023年会触底反弹，经济环境变好，收入提高，内卷的情况得以缓解。不过从目前得到的消息来看，一切可能没有那么乐观。
+关于裁员 最近跟字节的朋友聊天，消息可能不是特别准确，不过字节大概已经在开始裁员了，飞书的目标是10%，其他业务不清楚。根据字节的体量估计的话，有可能会涉及到万人级别。
+跟腾讯的朋友聊天，他们表示已经收到消息，明年裁员会继续，不过手段会多样化，基本上会通过不续约和低绩效的方式进行淘汰。
+我们公司是二线厂，今年下半年一直在裁员，年底的时候消停了一些，不过估计明年还是会继续的。
+国外的话亚马逊开始裁员，估计会回到疫情之前的人员规模。
+可以看到2023年互联网的企业的主旋律还是裁员，保住饭碗苟下去应该是大多数人的明智之举。
+关于换工作 跟猎头聊了一下，字节国内的hc应该基本上冻结了，我们公司只裁人不招人，腾讯那边不清楚，少量的hc进行血液流通还是会有的。其他厂没有了解过，不过根据之前被裁的同事反馈2022下半年还是能找到工作的，机会不多，但不是完全没有。很多人去了字节，算是一个稳定的退路，但2023年估计字节也不好进去，除非降低预期往二三线厂看看，不然退路方面的可选择面还是比较少的。
+2023也不是不能换工作，比如换个行业之类的也是比较不错的思路，不过还是不建议裸辞，找到了再换可能更好一点。
+另外这几年创业的热潮似乎已经冷却，新的工作机会很难创造出来，去初创企业搏一搏的机会可能都会很少了。
+关于年终奖 最近腾讯的朋友们表示已经在吹风了，说今年的年终奖会比之前少很多，其他厂不知道怎么样，不过整个互联网行业的年终收益估计都会有所折扣吧。我们公司也是年终奖大幅减少，并且取消了年度涨薪。
+如果是合同规定的年终奖，比如合同规定了15薪，那么年底就是3薪，这是毋庸置疑的；不过如果合同规定的是浮动年终奖，那么可以讨论的空间可能就不大了。
+关于希望 经济滞胀，收入锐减，消费降级，预期降低可能会是2023年的主旋律，按道理说在这种大环境下，大家退一步躺平，心平气和，看破红尘反而最有可能海阔天空。但现实的情况是，大家都不想失业，于是越来越卷，越来越焦虑。
+希望还是有的，不过是从长期来看。对于2023，也许不能期待太多，只能把目光放长远，看看3年5年之后，活在当下但心在远方，坚持下去吧。</description>
+    </item>
+    
+    <item>
+      <title>7个提升工作效率的在线工具2023版</title>
+      <link>https://zh.ethanhan.cc/posts/7%E4%B8%AA%E6%8F%90%E5%8D%87%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87%E7%9A%84%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B72023%E7%89%88-0f4883209ce64c3283101df4dd0bc96b/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/7%E4%B8%AA%E6%8F%90%E5%8D%87%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87%E7%9A%84%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B72023%E7%89%88-0f4883209ce64c3283101df4dd0bc96b/</guid>
+      <description>现在的工具站点已经非常智能了，看到一篇推荐2023年的一些杀手级的工具推荐，有些会极大的提升工作效率，深以为然，稍微翻译分享一下。
+TinyWOW 这是一个各种文件处理的工具大杂烩，提供免费pdf转换等功能，最好的地方是所有处理后的文件和源文件都会在1小时后被删除。
+下面这些功能都是免费的
+去除图片背景 合并pdf pdf转jpg jpg转pdf 压缩pdf 分割pdf word转pdf pdf转word 解锁pdf pdf转excel 地址：tinywow.com
+jenni.ai 你只要随便写点东西，然后使用jenni.ai进行润色，有了人工智能的帮助，你可以以10倍的速度写博客、论文或其他东西。
+在写论文方面，Jenni可以自动找到相关的引文，并自动链接它们。它可以在几秒钟内轻松地转述句子和段落，这意味着它输出99%的无抄袭内容，查重福音。
+地址：jenni.ai
+Temp-mail 这个站点是生成一次性的临时邮箱的，10分钟后自动销毁，懂得都懂。
+temp-mail.org
+Loom Loom是一个免费的录屏软件，可以在Mac、Windows、Chrome、iOS和Android设备上使用。无论你的收件人在哪里，你都可以粘贴你的视频链接，他们无需登录或创建账户即可观看。你还可以使用表情符号反应、带时间戳的评论和互动功能来回应视频，并保持你与团队的联系。
+地址：loom.com
+Otter Otter记录会议，实时做会议纪要，并自动生成会议总结与大家分享，帮助你记住会议中的一切。它鼓励员工跳过不必要的会议，同时分享会议记录，让他们了解情况。Otter将笔记存储在一个中央的、安全的、可搜索的地方，这样你和你的团队就能更多的进行协作，提高工作效率。
+otter.ai
+Remove.bg 免费的在线去除图片背景的服务。
+这个强大的人工智能工具可以快速、免费、无需注册地处理你的图像。号称世上最强，为你节省时间，提高生产力，提升你的工作效率。
+www.remove.bg
+Convertio.co 可以转换超过309种不同的文件类型，包括图像、电子表格、电子书、档案、演示文稿、音频、视频格式等等。
+总结 这里面有些工具还是很有意思的，大家有兴趣可以尝试一下。</description>
+    </item>
+    
+    <item>
+      <title>Chatgpt能写测试用例了，这会淘汰测试人员吗?</title>
+      <link>https://zh.ethanhan.cc/posts/chatgpt_write_testcase/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/chatgpt_write_testcase/</guid>
+      <description>ChatGPT4已经发布了并引起了巨大的反响，有一些基于ChatGPT的应用还是令人印象深刻的，比如
+画个草图，让ChatGPT根据草图去生成一个有完备功能的网页； 让ChatGPT实现一个可以在网页上运行的贪吃蛇游戏； 看图说话 调教ChatGPT让其在几小时内写一个chrome扩展 在GPT4的论文中有一句话是这么说的：
+GPT-4和类似的模型可能会从此引起失业，甚至那些需要多年经验和教育的职位也可能逐渐消失，比如法律服务。
+简单理解就是GPT-4模型专治老专家，作为功能测试人员，领域经验往往是非常核心的竞争力，从业年限越久，老专家属性越明显。那么ChatGPT可以替代软件测试从业者么？
+我们不妨直接试一试先，验证一下这个想法。
+最简单的登录用例 ChatGPT4需要尊贵的会员才能使用，bing的聊天功能就成了比较理想的平替了，据说其背后也是gpt4模型。下面所有的内容均是使用bing生成的。
+问：我有一个web系统的登录页面，其中有1个用户名的文本框，密码文本框以及登录按钮，请帮我写一些测试用例来验证登录功能？
+你好，这是Bing。我可以帮你写一些测试用例来验证登录功能。根据网上的资料1234，你可以从以下几个方面来设计测试用例：
+功能测试：检查用户名、密码、验证码的输入和校验，以及登录按钮的点击和跳转 性能测试：检查登录界面的加载速度，以及不同情况下的响应时间 界面测试：检查登录界面的布局、样式、字体、颜色等是否符合设计要求 安全性测试：检查是否有防止SQL注入、暴力破解、跨站脚本等攻击的措施 兼容性测试：检查在不同的浏览器、操作系统、分辨率下是否能正常显示和使用 可用性测试：检查是否支持Tab和Enter键，以及提示语是否友好 你想要我给你具体的例子吗？
+问：是的，请给我一些功能测试的例子。
+好的，我可以给你一些功能测试的例子。根据网上的资料²³⁴，你可以按照以下的表格来编写测试用例：
+测试点 用例编码 测试用例描述 预期结果 正常登录 001 输入正确的用户名和密码，点击登录按钮 成功登录 用户名为空 002 输入空的用户名和正确的密码，点击登录按钮 提示用户名不能为空 密码为空 003 输入正确的用户名和空的密码，点击登录按钮 提示密码不能为空 用户名错误 004 输入不存在或错误的用户名和任意密码，点击登录按钮 提示用户名或密码错误 密码错误 005 输入正确的用户名和错误的密码，点击登录按钮 提示用户名或密码错误 验证码为空或错误（如果有） 006-007 输入正确或错误的验证码，以及正确或错误的用户名和密码，点击登录按钮 根据验证码是否正确提示相应信息 连续多次输入错误（如果有） 008-009 连续输入3次或更多次错误的用户名或密码，观察系统行为（是否锁定账号、显示倒计时、要求重置等） 根据系统设计给出相应提示 使用Tab和Enter键（如果有） 010-011 使用Tab键在各个输入框之间切换，使用Enter键代替点击登录按钮，观察系统行为（是否能正常切换、提交等） 根据系统设计给出相应响应 这些是一些基本的功能测试用例。你还想要我给你其他方面的测试用例吗？
+源: 与必应的对话， 2023/3/16(1) 登录测试用例_theone19的博客-CSDN博客. https://blog.csdn.net/romon19/article/details/80832809 访问时间 2023/3/16. (2) 登录功能常用测试用例 - 肖兔—随遇而安 - 博客园.</description>
+    </item>
+    
+    <item>
+      <title>chrome上更好的录制回放工具？Jesteer介绍及试用</title>
+      <link>https://zh.ethanhan.cc/posts/chrome%E4%B8%8A%E6%9B%B4%E5%A5%BD%E7%9A%84%E5%BD%95%E5%88%B6%E5%9B%9E%E6%94%BE%E5%B7%A5%E5%85%B7jesteer%E4%BB%8B%E7%BB%8D%E5%8F%8A%E8%AF%95%E7%94%A8-673d8b0476fe4f0da2acc7c871ba6ae7/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/chrome%E4%B8%8A%E6%9B%B4%E5%A5%BD%E7%9A%84%E5%BD%95%E5%88%B6%E5%9B%9E%E6%94%BE%E5%B7%A5%E5%85%B7jesteer%E4%BB%8B%E7%BB%8D%E5%8F%8A%E8%AF%95%E7%94%A8-673d8b0476fe4f0da2acc7c871ba6ae7/</guid>
+      <description>之前跟大家分享后chrome上原生的录制回放功能，今天看到了一款最新的的录制回放工具jesteer，于是第一时间来了解和试用一下。
+主要功能 不用写代码，直接可以录制和回放 可以录制基本的页面交互 自动创建基于Puppeteer的脚本 回放时的快照检查功能 简单舒适的web ui 安装 jesteer是一款chrome插件，直接去chrome商店里所有jesteer点击安装既可。
+界面 jesterr的界面很简单，就3个按钮
+Record：开始录制 Take a snapshot：dom高亮 Copy to clipboard 简单上手使用 点击Record开始录制 录制过程中点击Take a snapshot进行断言 点击Stop Recording停止录制 点击Copy to clipboard拷贝生成的代码到剪切板 这几步还是非常简单的，后来我遇到了一个问题，怎么进行用例的回放呢？之前chrome自带的Recorder是可以录制完成后直接回放的，而jesteer则找不到回放按钮。折腾一小会后我终于找到了答案。
+把生成的代码粘贴到测试项目中 为了可以运行生成的代码，我决定新建一个nodejs项目来进行尝试。
+mkdir jesteer_example cd jesteer_example npm init npm install --save-dev jest npm install --save-dev puppteer touch example.test.js 修改package.json
+{ &amp;#34;scripts&amp;#34;: { &amp;#34;test&amp;#34;: &amp;#34;jest&amp;#34; } } 我打开一个空白页，然后输入www.itest.info，跳转到搜索页面后，添加一个snapshot断言，最后结束录制。下面是录制出来的脚本。
+/* This test suite was created using JESTEER, a project developed by Tim Ruszala, Katie Janzen, Clare Cerullo, and Charissa Ramirez.</description>
+    </item>
+    
+    <item>
+      <title>grpc简介</title>
+      <link>https://zh.ethanhan.cc/posts/grpc%E7%AE%80%E4%BB%8B-82e57cd2e8434314addbe47d6725a434/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/grpc%E7%AE%80%E4%BB%8B-82e57cd2e8434314addbe47d6725a434/</guid>
+      <description>RPC 试想这样一种场景，一个复杂系统中的两个模块之前需要互相调用，一般的做法是什么？
+可能这两个模块是跑在同一个进程上，那么通信起来其实是非常方便的，也有可能这两个模块分别是跑在不同的进程之上，那么就涉及到复杂一点的跨进程通信的技术了。但这些都是模块部署在同一机器下的情景，大家想象起来也会比较容易。
+更加深入一些，如果两个模块跑在不同的机器之间，那么模块之前的调用如何实现呢？这就需要使用RPC技术了。
+RPC（Remote Procedure Call）— 远程过程调用，它是一种通过网络从远程计算机程序上请求服务，而不需要了解底层网络技术的协议。RPC协议假定某些传输协议的存在，如TCP或UDP，为通信程序之间携带信息数据。在OSI网络通信模型中，RPC跨越了传输层和应用层。RPC使得开发包括网络分布式多程序在内的应用程序更加容易。
+RPC采用客户端/服务器模式。请求程序就是一个客户端，而服务提供程序就是一个服务器。首先，客户端调用进程发送一个有进程参数的调用信息到服务进程，然后等待应答信息。在服务器端，进程保持睡眠状态直到调用信息到达为止。当一个调用信息到达，服务器获得进程参数，计算结果，发送答复信息，然后等待下一个调用信息，最后，客户端调用进程接收答复信息，获得进程结果，然后调用执行继续进行。
+简单来说RPC需要server端和client端，server端定义一些函数，client端通过网络请求去调用这些函数拿到返回值。server端和client端跑在不同的机器上，结合微服务的概念就是server端就是一个独立的微服务，其他微服务需要通过启动client端来调用该微服务提供的服务。
+gRPC gRPC 一开始由 Google 开发，是一款语言中立、平台中立、开源的远程过程调用(RPC)系统。
+在 gRPC 里客户端应用可以像调用本地对象一样直接调用另一台不同的机器上服务端应用的方法，使得您能够更容易地创建分布式应用和服务。与许多 RPC 系统类似，gRPC 也是基于以下理念：定义一个服务，指定其能够被远程调用的方法（包含参数和返回类型）。在服务端实现这个接口，并运行一个 gRPC 服务器来处理客户端调用。在客户端拥有一个存根能够像服务端一样的方法。
+组成 典型的grpc实现有两端组成，分别是
+server client gRPC的特性 由于client和server需要通过网络进行消息的传递，那么网络协议成了grpc里重要的一环。grpc协议是HTTP/2，这是一种优化过的http协议，实现了连接多路复用、双向流、服务器推送、请求优先级、首部压缩等机制。可以节省带宽、降低TCP链接次数、节省CPU，帮助移动设备延长电池寿命等。 服务端向外提供了一些可供调用的函数，这些函数的原型通过ProtoBuf协议来进行定义。ProtoBuf是由Google开发的一种数据序列化协议（类似于XML、JSON、hessian）。ProtoBuf能够将数据进行序列化，并广泛应用在数据存储、通信协议等方面。压缩和传输效率高，语法简单，表达力强。 支持多种编程语言。比如支持golang/java/c++/ruby/python/nodejs等。 gRPC的优点 使用protobuf进行消息的序列化，压缩率高，性能好，毕竟压缩的越小在网络上传播的速度就相对会更快一点 序列化反序列化直接对应程序中的数据类，不需要解析后在进行映射，其实除了可读性差之外，pb的使用方式跟json基本都差不多了 支持向前兼容和向后兼容，升级比较简单 支持多语言 典型的gRPC实现 典型的gRPC实现有3个部分，分别是
+服务定义，使用protobuf的语法 server端实现，可以使用任意支持的语言 client端实现，可以使用任意支持的语言 这里我们简单演示一下如何使用python实现简单的grpc server和client
+服务定义
+// The greeting service definition. service Greeter { // Sends a greeting rpc SayHello (HelloRequest) returns (HelloReply) {} // Sends another greeting rpc SayHelloAgain (HelloRequest) returns (HelloReply) {} } // The request message containing the user&amp;#39;s name.</description>
+    </item>
+    
+    <item>
+      <title>leetcode最有名的简单算法题：two sum</title>
+      <link>https://zh.ethanhan.cc/posts/leetcode%E6%9C%80%E6%9C%89%E5%90%8D%E7%9A%84%E7%AE%80%E5%8D%95%E7%AE%97%E6%B3%95%E9%A2%98two-sum-d9c51dffdd8d48c4a5adf47196b9757e/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/leetcode%E6%9C%80%E6%9C%89%E5%90%8D%E7%9A%84%E7%AE%80%E5%8D%95%E7%AE%97%E6%B3%95%E9%A2%98two-sum-d9c51dffdd8d48c4a5adf47196b9757e/</guid>
+      <description>应该还是有很多同学在刷题找工作吧，如果大家刷leetcode的话，推荐的做法是从简单到难，这样一来two sum是大家绕不过去的最著名的简单算法题了，废话不多说，先看题目的描述。
+给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的那 两个 整数，并返回它们的数组下标。
+你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。
+你可以按任意顺序返回答案。
+示例 1：
+输入：nums = [2,7,11,15], target = 9 输出：[0,1] 解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1] 。 示例 2：
+输入：nums = [3,2,4], target = 6 输出：[1,2] 示例 3：
+输入：nums = [3,3], target = 6 输出：[0,1] 提示：
+2 &amp;lt;= nums.length &amp;lt;= 104 109 &amp;lt;= nums[i] &amp;lt;= 109 109 &amp;lt;= target &amp;lt;= 109 只会存在一个有效答案 **进阶：**你可以想出一个时间复杂度小于 O(n2) 的算法吗？</description>
+    </item>
+    
+    <item>
+      <title>playwright 大战cypress</title>
+      <link>https://zh.ethanhan.cc/posts/playwright-%E5%A4%A7%E6%88%98cypress-11b717732e2e4ceebd0b58c3fd83cc16/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/playwright-%E5%A4%A7%E6%88%98cypress-11b717732e2e4ceebd0b58c3fd83cc16/</guid>
+      <description>之前看到一篇文章比较系统的比较了playwright和cypress，这里简单翻译了一下，希望可以给大家在技术选型时提供一些参考。原文地址在这里：https://applitools.com/blog/cypress-vs-playwright/。文本中的演示代码可以在github仓库找到：https://github.com/applitools/webinar-cypress-vs-playwright
+第一轮：元素操作 首先从最常见的场景进行比较，看看最简单的流程。
+这是一个简单的登录场景，初相见感觉是差别不大，不过cypress显得更加简洁一些。在用户投票中，cypress以61%的得票胜出。
+第二轮：如何对iframe进行测试 尽管iframe的测试在日常的工作中并不是特别常见，不过iframe的处理对qa来说确实是一件非常有挑战的事情。实际上cypress需要引入插件才能进行处理，所以可能在这一轮playwright会稍微占据一些优势。playwright原生支持对iframe进行操作，省去了额外安装插件的工序。
+第三轮：等待与重试 因为现代web页面的特性，等待与重试成为了自动化测试工具非常重要的一种能力。参赛双方都有自动等待和重试的机制，直接看代码吧，在用户投票中这一轮cypress以53%的选票获胜。
+第四轮：处理浏览器的原生alert 鉴于每个工具的不同设计，看看它们各自如何处理本地浏览器事件是很有趣的事情。Playwright使用websocket服务器与浏览器进行通信，而Cypress则被注入到浏览器中，并从那里实现应用程序的自动化。处理本地浏览器的事件可能会更复杂，在这一轮比赛中也证明了这一点。虽然Playwright对警报和提示显示了一致的解决方案，不过Cypress对所有三种情况都有自己的解决方案，最后Playwright在本轮比赛中取得了91%的横扫胜利。
+第五轮：打开新窗口 在下一个例子中，我们试图将一个打开新窗口的页面实现自动化。每个工具的设计再次被证明是一个决定性因素。Playwright有一个API来处理一个新打开的标签，而Cypress则采用了一个hack的解决方案，从一个链接中移除目标属性，并完全防止打开一个新窗口。虽然我认为这实际上是一个足够好的解决方案，但观众中的测试同学们并不买账，并以80:20的票数支持Playwright。
+第六轮:处理API请求 能够处理API请求是一种自动化的超能力。你可以用它们来配置你的应用程序，创建测试数据，甚至是登录，甚至可以直接用这两种工具来进行纯的API测试! Cypress和Playwright都能很好地处理API请求。在Playwright中，你创建一个新的上下文，并从该上下文发射API请求。Cypress使用其现有的命令链语法来发送请求并测试返回值。三分之二的听众更喜欢Cypress的解决方案，并为其投票。
+第七轮：page object模式 尽管页面对象通常不被认为是Cypress的最佳选择，但它仍然是一种流行的模式。它们提供了必要的抽象性，并有助于使代码更加可读。这里的观众投票真的很接近。在现场活动中，实际上似乎是Playwright赢得了这一场，在节目结束后的交流中，我们发现这一轮应该以平局告终。
+第八轮：支持的语言 如今，测试人员使用的编程语言种类相当多。这就是为什么Playwright对语言的更广泛支持在这一轮中似乎是一个明显的赢家。然而，Cypress试图迎合开发人员的工作流程，对JavaScript和TypeScript的支持已经足够好。然而，对于来自不同语言背景、不习惯用这些语言编写代码的测试人员来说，这可能是一个痛点。似乎观众们同意更广泛的语言支持是更好的，并投票支持Playwright，投票率为77%。
+第九轮: 支持的浏览器 尽管Chrome是最流行的浏览器，并在大多数国家成为主导，但在测试web应用时，浏览器支持仍然很重要。两种工具都对各种浏览器有良好的支持，不过Cypress目前缺乏对Safari或WebKit的支持。这一轮playwright自然更胜一筹。
+第十轮：运行速度与性能 最后一轮的比拼是关于速度的。每个人都希望他们的测试能够快速运行，这样他们就能尽快得到关于他们应用程序状态的反馈。Playwright是这次的明显赢家，因为它的执行时间比Cypress快4倍。Cypress方面的一些最新改进肯定有帮助，但就速度而言，Playwright仍然是王者。
+所以最后的胜利者是？ 整个代码之争最终Playwright以70%的支持率获胜。活动结束后，我们举行了一个小型的余兴节目，更深入地讨论了这些例子并回答了一些问题。这是一个很好的方式，可以为例子提供更多的背景，并讨论一些没有说过的东西。
+我非常喜欢Twitter上有人说的一句话，他说真正的赢家是测试人员和QA工程师，他们可以在这些很棒的工具中挑选。我个人希望有更多的Cypress用户在活动后试用Playwright，反之亦然。
+这个活动绝对是有趣的，虽然比较代码片段和工具的不同能力很有趣，但我们很清楚，这些并不能说明问题的全部。测试人员的日常生活充满了调试、维护、复杂的测试设计决策、考虑风险和自动化的有效性&amp;hellip;&amp;hellip;仅仅看一小段代码并不能告诉我们这些工具在现实工作中的表现如何。
+所以你觉得谁应该是最后的赢家呢？</description>
+    </item>
+    
+    <item>
+      <title>playwright会成为下一个selenium吗？</title>
+      <link>https://zh.ethanhan.cc/posts/playwright%E4%BC%9A%E6%88%90%E4%B8%BA%E4%B8%8B%E4%B8%80%E4%B8%AAselenium%E5%90%97-b17dbf0f72044cd9bbdc0ea07cc75e31/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/playwright%E4%BC%9A%E6%88%90%E4%B8%BA%E4%B8%8B%E4%B8%80%E4%B8%AAselenium%E5%90%97-b17dbf0f72044cd9bbdc0ea07cc75e31/</guid>
+      <description>playwright是微软推出的一款e2e（端到端）测试工具，支持多种语言及浏览器，那么它会成为下一个selenium吗？前几天看到外国的一篇文章发表了其观点，这里翻译了一下并夹杂了一点点的私货，希望可以对大家所有帮助。
+selenium作为浏览器自动化项目来说是非常成功的存在。Selenium现在已经被下载了几百万次，并继续在全球范围内被广泛接受和使用。
+Selenium的成功的原因 Selenium是开源的，支持多种（如Java、C#、Js、Python、Ruby、Perl等），支持所有的浏览器（chrome、firefox、edge、ie、safari、opera等），可以在多种操作系统（Windows、MAC、Linux）上运行。 Selenium功能强大&amp;ndash;它可以做web测试，也能做跨浏览器兼容性测试。另外selenium设计的初衷是浏览器的自动化，所以除了用作测试之外，selenium还在web自动化操作领域有所建树。 Selenium有一个庞大的用户社区，可以帮助你快速入门。 与其他开源工具相比，Selenium非常稳定，它的实现甚至成了标准的w3c协议。 最后，Selenium社区是充满活力的，定期举行许多活动和研讨会，你可以与志同道合的人讨论最新的工具和技术。 playwright会成为下一个selenium吗？ 考虑到现代Web应用自动化，Selenium WebDriver似乎是最受欢迎的工具之一，然而，像Playwright、Puppeteer、Cypress这样的替代工具正在出现，并争取在一段长时间之后能对其进行超越。
+Playwright是一个JavaScript框架，支持在前端实现Web应用程序的自动化。它在后端使用Node.js，就像Puppeteer那样。它扩展了该框架，为用户提供了编写端到端测试或隔离测试应用程序特定部分所需的所有工具。
+支持使用包括Java、Js、C#、Python在内的语言编写测试用例，并像Selenium WebDriver一样在任何浏览器和任何操作系统上运行。它是开源的，很容易使用，支持单兵作战和团队协同。
+在UI自动化领域，Playwright能够成为下一个Selenium的主要原因有以下七个方面。
+Playwright得到了微软的支持，其作者来自Puppeteer（谷歌）团队，因此playwright可以吸收Puppeteer积极的方面。另外，它已经了一些版本来支持多种编程语言，社区的反馈也非常积极。简而言之微软的钞能力和干爹属性使其相对其他开源项目来说可能会有更多的持续性。
+Playwright的架构更简化，它摆脱了selenium复杂的设置和维护本地driver的繁琐过程，基本上开箱即用，工程化方面的实践也更加深入。初学selenium的同学应该记得selenium安装之后没有下载driver的话就是不能用的，特定版本的浏览器需要特定版本的driver配合，对于一些长期项目的维护来说确实有时候会带来额外的工作量。
+Playwright的测试执行速度非常高（平均比selenium快40%），因为它使用JavaScript引擎如Node.js来运行测试，而不是Selenium的driver程序。因此，与Selenium WebDriver相比，使用Playright可以大大降低测试执行时间。
+与Selenium WebDriver不同，Playwright除了支持测试页面的全屏截图外，还支持边测试边录屏，感觉现代化了不少。
+与Selenium WebDriver相比，Playright的维护成本更低，因为它使用内部等待，而不像Selenium WebDriver需要管理显式等待。这大大降低了总的代码编写和维护成本。
+Playwright除了支持web自动化测试外，还支持RESTFul API测试。这使测试人员可以灵活地使用Playwright测试他们的后端服务。
+最后，Playwright可以跟浏览器的开发者工具进行集成，这使得用Playwright编写开发测试非常容易和简单。
+原文地址：https://medium.com/testleaftechblog/will-playwright-become-next-selenium-b41eebfa5d25</description>
+    </item>
+    
+    <item>
+      <title>python requests的替代者？httpx初体验</title>
+      <link>https://zh.ethanhan.cc/posts/python-requests%E7%9A%84%E6%9B%BF%E4%BB%A3%E8%80%85httpx%E5%88%9D%E4%BD%93%E9%AA%8C-7a3a0bd407c34823b3443ad870dbef5c/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/python-requests%E7%9A%84%E6%9B%BF%E4%BB%A3%E8%80%85httpx%E5%88%9D%E4%BD%93%E9%AA%8C-7a3a0bd407c34823b3443ad870dbef5c/</guid>
+      <description>python的requests库由于其使用简单，文档丰富成为了很多人在发送http请求时候的优选选择。前几天看到了一个类似的实现httpx，在这里简单使用体验一下，顺便简单分享一下体验心得。
+相比较requests，httpx支持sync和async的API，支持http1.1和http2。httpx尽最大努力兼容requests的API，这样一来用户从requests转换到httpx的成本就相对较为低廉了。
+基本API &amp;gt;&amp;gt;&amp;gt; import httpx &amp;gt;&amp;gt;&amp;gt; r = httpx.get(&amp;#39;https://www.example.org/&amp;#39;) &amp;gt;&amp;gt;&amp;gt; r &amp;lt;Response [200 OK]&amp;gt; &amp;gt;&amp;gt;&amp;gt; r.status_code 200 &amp;gt;&amp;gt;&amp;gt; r.headers[&amp;#39;content-type&amp;#39;] &amp;#39;text/html; charset=UTF-8&amp;#39; &amp;gt;&amp;gt;&amp;gt; r.text &amp;#39;&amp;lt;!doctype html&amp;gt;\n&amp;lt;html&amp;gt;\n&amp;lt;head&amp;gt;\n&amp;lt;title&amp;gt;Example Domain&amp;lt;/title&amp;gt;...&amp;#39; 简单扫一圈，满眼都是requests当年的样子。下面是requests的API，大家来找茬，看看哪里不一样。
+&amp;gt;&amp;gt;&amp;gt; import requests &amp;gt;&amp;gt;&amp;gt; r = requests.get(&amp;#39;https://api.github.com/user&amp;#39;, auth=(&amp;#39;user&amp;#39;, &amp;#39;pass&amp;#39;)) &amp;gt;&amp;gt; r.status_code 200 &amp;gt;&amp;gt; r.headers[&amp;#39;content-type&amp;#39;] &amp;#39;application/json; charset=utf8&amp;#39; &amp;gt;&amp;gt; r.encoding &amp;#39;utf-8&amp;#39; &amp;gt;&amp;gt; r.text &amp;#39;{&amp;#34;type&amp;#34;:&amp;#34;User&amp;#34;...&amp;#39; &amp;gt;&amp;gt; r.json() {&amp;#39;private_gists&amp;#39;: 419, &amp;#39;total_private_repos&amp;#39;: 77, ...} 不能说非常相似，只能说是一模一样。
+httpx client requests为一组http请求提供了session对象来进行统一设置和管理，httpx则相应的提供了client对象。我们来对比一下使用方式先。
+首先使用starlette来创建一个简单的python api服务。starlette项目可以想象成是async版本的flask，跟httpx系出同门。
+# example.py from starlette.applications import Starlette from starlette.</description>
+    </item>
+    
+    <item>
+      <title>python web框架bottle 初体验</title>
+      <link>https://zh.ethanhan.cc/posts/python-web%E6%A1%86%E6%9E%B6bottle-%E5%88%9D%E4%BD%93%E9%AA%8C-deaa68ef1d1b4aecafcf31f21393a2f7/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/python-web%E6%A1%86%E6%9E%B6bottle-%E5%88%9D%E4%BD%93%E9%AA%8C-deaa68ef1d1b4aecafcf31f21393a2f7/</guid>
+      <description>功能 拉取金山词霸每日一句的内容存到redis里，用bottle实现简单的路由去回显内容
+安装 pip install bottle Installing collected packages: bottle Successfully installed bottle-0.12.21 获取内容 api接口的响应如下，通过日期就可以拿到每日一句的具体内容了
+{ errno: 0, errmsg: &amp;#34;success&amp;#34;, sid: 4543, title: &amp;#34;2022-07-04&amp;#34;, content: &amp;#34;The darker the sky, the brighter the stars. &amp;#34;, note: &amp;#34;天空越黑，星星越亮。&amp;#34;, translation: &amp;#34;新版每日一句&amp;#34;, picture: &amp;#34;https://staticedu-wps.cache.iciba.com/image/cae3e193caf289efe5d33bf63a37ad4b.jpg&amp;#34;, picture2: &amp;#34;https://staticedu-wps.cache.iciba.com/image/6286d34c787320416bc8d7083e6f6553.jpg&amp;#34;, picture3: &amp;#34;https://staticedu-wps.cache.iciba.com/image/8d56d2093875904a2483203784d600b6.jpg&amp;#34;, caption: &amp;#34;词霸每日一句&amp;#34;, tts: &amp;#34;https://staticedu-wps.cache.iciba.com/audio/ba16eadbfc36a3640409665c50ae996c.mp3&amp;#34;, tts_size: &amp;#34;&amp;#34;, s_pv: 5564, sp_pv: 0, love: 7, s_content: &amp;#34;&amp;#34;, s_link: &amp;#34;&amp;#34;, period: 0, loveFlag: 0, tags: &amp;#34;&amp;#34;, keep: 0, comment_count: 640, last_title: &amp;#34;2022-07-03&amp;#34;, next_title: 0, } 具体代码如下</description>
+    </item>
+    
+    <item>
+      <title>selenium 4 0新特性及新旧api对比</title>
+      <link>https://zh.ethanhan.cc/posts/selenium-4-0%E6%96%B0%E7%89%B9%E6%80%A7%E5%8F%8A%E6%96%B0%E6%97%A7api%E5%AF%B9%E6%AF%94-2805e5a829b74964afe8f263d7bb64ef/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/selenium-4-0%E6%96%B0%E7%89%B9%E6%80%A7%E5%8F%8A%E6%96%B0%E6%97%A7api%E5%AF%B9%E6%AF%94-2805e5a829b74964afe8f263d7bb64ef/</guid>
+      <description>众所周知，java语言版本的selenium一般被认为是最正宗的selenium版本，今天我们以java语言为例，来看看selenium 4.0的各种新特性以及新旧api的对比。
+Capabilities 如果你需要对浏览器进行一些全局设置，那么使用Capabilities是唯一的选择。说实话，旧的Capabilities有点不太符合直觉，具体用法如下。
+DesiredCapabilities capabilities = DesiredCapabilities.chrome(); capabilities.setCapability(&amp;#34;platform&amp;#34;, &amp;#34;Mac OS X&amp;#34;); capabilities.setCapability(&amp;#34;version&amp;#34;, &amp;#34;94&amp;#34;); driver = new RemoteWebDriver(capabilities); 在新版本中，我们直接设置options就可以了，语义上显得更为自然。
+ChromeOptions options = new ChromeOptions(); options.setBrowserVersion(&amp;#34;94&amp;#34;); options.setPlatformName(&amp;#34;Mac OS X&amp;#34;); driver = new ChromeDriver(options); Waits 在之前的版本里，我们实例化各种wait对象时候需要传入2个参数：time以及type of time，在新版本里我们只需要使用Duration类就可以了。
+这是之前的做法
+driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS); driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS); 新的方式
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(3)); driver.manage().timeouts().setScriptTimeout(Duration.ofHours(1)); 当然，现在支持各式各样的Duration了，需要注意的是这里接受的是long型的参数。
+Duration.ofNanos(long nanos); Duration.ofMillis(long millis); Duration.ofSeconds(long seconds); Duration.ofMinutes(long minutes); Duration.ofHours(long hours); Duration.ofDays(long days); 当然，我们还可以直接设置浏览器的各种全局等待时间，代码上看观感好了不少。
+ChromeOptions options = new ChromeOptions(); options.setImplicitWaitTimeout(Duration.ofSeconds(10)); options.setScriptTimeout(Duration.ofSeconds(10)); options.setPageLoadTimeout(Duration.ofSeconds(10)); 相对定位器 一些哲学流派告诉我们，世界是变化的，相对的，没有绝对的静，也没有绝对的动，物体总是相对着其他物体进行着运动。</description>
+    </item>
+    
+    <item>
+      <title>selenium 4 8正式发布</title>
+      <link>https://zh.ethanhan.cc/posts/selenium-4-8%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83-87e18b79a2314a47b0ba8551e3573392/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/selenium-4-8%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83-87e18b79a2314a47b0ba8551e3573392/</guid>
+      <description>1月23日 selenium 4.8的正式版本发布了，
+We’re very happy to announce the release of Selenium 4.8.0 for Java, .NET, Ruby, Python, and Javascript as well as the Grid and Internet Explorer Driver. Links to everything can be found on our downloads page.
+一些改动如下
+Chrome DevTools support is now: v107, v108, and v109 (Firefox still uses v85 for all versions) Large JS executions have the name as a comment to help understand what payload being sent to/from server/driver.</description>
+    </item>
+    
+    <item>
+      <title>string算法之二进制加法</title>
+      <link>https://zh.ethanhan.cc/posts/string%E7%AE%97%E6%B3%95%E4%B9%8B%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8A%A0%E6%B3%95-a9c3e1b342344161b60060ff87619ea5/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/string%E7%AE%97%E6%B3%95%E4%B9%8B%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8A%A0%E6%B3%95-a9c3e1b342344161b60060ff87619ea5/</guid>
+      <description>最近寒风凛冽，估计不少同学都在刷算法题了，这里给大家介绍一个python实现的算法仓库，里面有很多常见算法的实现，有兴趣的同学可以先通过既有算法学习，掌握一些套路之后再由易到难把题刷起来。仓库地址：https://github.com/keon/algorithms
+先给大家分享一个二进制加法的算法吧。
+题目 输入：2个二进制的字符串
+输出：也以二进制的方式返回相加后的结果
+比如
+a = &amp;#34;11&amp;#34; b = &amp;#34;1&amp;#34; Return &amp;#34;100&amp;#34; 分析 这道题看完之后我基本上没有任何思路，丝毫没有一点点挣扎，直接看答案了。
+实现 def add_binary(a, b): s = &amp;#34;&amp;#34; c, i, j = 0, len(a)-1, len(b)-1 zero = ord(&amp;#39;0&amp;#39;) while (i &amp;gt;= 0 or j &amp;gt;= 0 or c == 1): if (i &amp;gt;= 0): c += ord(a[i]) - zero i -= 1 if (j &amp;gt;= 0): c += ord(b[j]) - zero j -= 1 s = chr(c % 2 + zero) + s c //= 2 return s 看完以后发现实现思路非常的精妙。</description>
+    </item>
+    
+    <item>
+      <title>xswl：一些关于提bug的梗图</title>
+      <link>https://zh.ethanhan.cc/posts/xswl%E4%B8%80%E4%BA%9B%E5%85%B3%E4%BA%8E%E6%8F%90bug%E7%9A%84%E6%A2%97%E5%9B%BE-9a37b1736d0f4f018a62c3e4a67dbbec/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/xswl%E4%B8%80%E4%BA%9B%E5%85%B3%E4%BA%8E%E6%8F%90bug%E7%9A%84%E6%A2%97%E5%9B%BE-9a37b1736d0f4f018a62c3e4a67dbbec/</guid>
+      <description>会不会提bug是体现测试同学专业性的一个很重要的方面，关于这方面的讨论也是相对比较多的，最近发现了一些有意思的梗图，有些真的挺有意思的，跟大家分享一下。
+关于是不是真的需要提个bug 开发和测试总有不同的理解。
+问题根因分析 很多时候我们发现的问题其实只是误会，或者说是无效的，比如在不小心部署的中间版本上测试，某些全局配置项设置有误等，这时候需要测试同学进行根因分析，实锤是bug之后再提会更合适一些。那么问题就来了，如何进行有效的分析呢？下面是一些我们可以尝试的方向
+日志 监控 代码分支 配置文件或配置中心 很多时候我们感到困难的是如何去获得上面的数据，比如如何获取用户机器上的日志？
+标题党 好的标题可能意味着一切，标题可以尽量消除歧义，让人一目了然，当然长篇大论也是不可取的，总之写bug的标题经常会让经验不是非常丰富的同学感到挣扎。
+重现步骤 我们需要确保我们的缺陷是可重现的，我们需要添加关于如何重现问题的确切步骤，单步应该代表一个单一的动作，避免在重现步骤中使用“and”和“or”，因为这些添加了不必要的模棱两可。在描述客户出现的问题时，可以理解的重现步骤就更加重要了。
+包含截图screenshot 英文表示截屏的单词唤作screenshot，就像下面一样
+一张好的截图胜过万语千言了，而且很多开发其实只看图，一般情况下，对于web应用而言，尽量用全屏截图，因为这样可以包含浏览器的url，对排查问题很有帮助；另外有条件的情况下可以把开发者工具（windows操作系统上可以按F12打开）中的console或者network标签页也截进去，出错的地方重点高亮一下。
+录屏 录屏我觉得可以分两种
+录成视频 录成可以自动执行回放的脚本 第二种比较困难，但在web上也有不少可以尝试的工具
+实际结果和预期结果 预期 - 系统应该做什么 实际 - 实际发生了什么 描述应该简明扼要，避免歧义，比如不要用“是否”， “有没有”， “是不是” 日志和堆栈 有条件的话我们应该提供相关的日志和堆栈，特别是在移动端进行测试的情景下。
+软件版本和分支信息 对于客户端来说软件版本，比如操作系统版本，客户端版本等信息非常重要，对于后台系统来说分支信息对于错误分析也是相当有帮助的，所以有条件的情况下最好都包括上。
+数据库查询结果 在bug里贴上数据库查询语句和查询结果是非常高效且专业的。
+确定严重性和优先级 可以像下面这张表一样，用4个象限去区分优先级
+高严重性和高优先级 低严重性和高优先级 低严重性高优先级 低严重性低优先级 保持专业 最后但并非最不重要的一点是，在报告缺陷时，重要的是要坚持事实并使用专业和尊重的语言，避免添加个人意见，关于如何解决问题的建议，推卸责任和指责，吐槽的内容就留给之后的复盘会议好了。</description>
+    </item>
+    
+    <item>
+      <title>不做单元测试的6大借口</title>
+      <link>https://zh.ethanhan.cc/posts/%E4%B8%8D%E5%81%9A%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%9A%846%E5%A4%A7%E5%80%9F%E5%8F%A3-0a0c298766af4bcc8f2c295a00c787df/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E4%B8%8D%E5%81%9A%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%9A%846%E5%A4%A7%E5%80%9F%E5%8F%A3-0a0c298766af4bcc8f2c295a00c787df/</guid>
+      <description>看到了一篇不错的关于单元测试的文章，于是就机翻加改写了一下。作者的观点是适当的，不过稍微欠缺了些数据。原文地址：https://betterprogramming.pub/why-dont-we-do-unit-testing-e0bb55a38aa2
+我开始打算写一篇关于单元测试及其背后的哲学和过程的文章。 我想谈谈完成对项目的一组更改并能够部署它们所带来的满足感，因为数百个单元测试正在通过，并且在生产中出现问题的可能性很小。 然后我意识到我参与过的大多数项目（在计算行业的长期职业生涯中）都没有使用任何类型的单元测试。 因此，我认为检查未使用单元测试的各种原因以及对这些项目的影响可能会有所帮助。
+没有测试工具 当我在 80 年代开始以编程为生时，这是一个很好的借口。在 pascal 中编写航空电子代码，我们确实编写了测试，但几乎不得不推出我们自己的测试框架。这里没有fakes、mocks或DI。 但是，如果您今天使用 Visual Studio 在 .Net/C# 中编写代码，则没有理由不测试任何重要代码。 VS Code 有一个内置的测试运行器，其他测试运行器也可用。fake和mock框架被广泛使用，另外还有非常优秀的CI/CD支持，可以让你在构建过程中自动化的运行单元测试。
+后面作者又列举了一些例子来证明一个观点：就是测试工具实际上是持续进化的，而且现在已经很强大了，因此他的核心观点应该是在如今这个年代，单元测试工具其实不应该是匮乏的，大家应该有不少的选择。
+我们没有时间做测试 客户希望我们现在发货。写一些代码就行了。先搞出来吧，没有时间学习有关单元测试的象牙塔软件工程学士学位！ 你多久听说过一次？ 这种方法通常似乎在最初几周有效。然后，当您陷入莫名其妙的错误和副作用的泥潭时，生产力就会下降。加倍努力，开夜车，让更多的人进行手动测试！ 不必如此。我会说你没有时间不做测试。
+看看上面的图表。橙色线显示“没有做单元测试”项目。 起初，我们可以通过不进行任何测试来节省时间。 随着越来越多的功能被实现，（手动）回归测试的负担呈指数级增长。添加的每个新功能都会带来额外的回归测试负担。 很快，您的项目将不得不在质量、成本和实现每个新功能所需的时间之间做出妥协。 所以是的，最初编写一个好的单元测试可能比手工测试你的功能要长两到三倍。但是经过两三个循环的回归测试，你就会领先——而且只会变得更好。
+我们发现写单元测试好难 编写测试很难，这是绝对正确的。 编写好的测试更难。但不写测试会让你的生活更加艰难（或者你真的喜欢手动测试你的前任 5 年前写的代码？？？） 如果您的开发人员不知道如何编写好的测试，那么他们可能还不是好的开发人员（目前）。 但是他们可以学习。 写测试用例是一个不断进度熟能生巧的过程， 你做的越多，它就会变得越快越容易。 让最好的开发人员编写“模范”测试。 这些可以被经验不足的开发人员用作模板来创建他们自己的测试。 创建测试基类。 我经常这样做是为了封装经常重用的功能并简化单个测试用例。
+单元测试是白费力气！ 当我花时间编写单元测试时，我从不认为这是浪费时间。 如果我编写代码并手动测试它，我认为这是浪费精力。 在一系列手动测试结束时我会得到什么？ 代码在我做手动测试时候是没问题可以正常工作的，但如果我更改代码，我将不得不重复这些测试（或者更有可能不打扰&amp;hellip;&amp;hellip;） 如果我创建了自动化测试，那么我就有了一个测试套件，我可以随时重新运行这些测试，以验证代码是否仍然按照我编写时预期的方式工作。 更重要的是，如果我离开并且一位同事接管了这段代码，他们就会继承这个祖传的测试套件，他们可以使用这些测试来验证他们的更改没有破坏它，并且代码仍然以我预期的方式工作。 手动测试是浪费精力——手动测试的剩余价值为零（并且通常没有记录，因此不可重复）。 自动化测试可以在未来几年内使用，以证明您的软件仍然按预期工作。
+但是我们浪费了太多时间来修复失败的测试！ 我有没有提到编写单元测试很难？ 单元测试的目的是测试程序的核心功能。如果你不确定你的程序做什么（这比你想象的更常见），那么你将无法编写健壮的测试。 如果测试失败，这意味着您的软件不再按照您最初的预期运行。这可能是好事——因为你可能改变了需求（但是你不应该先改变测试来反映新的预期行为吗？）。 这也可能意味着您破坏了代码，至少您现在知道有一个问题需要解决。 编写健壮测试的第一步是准确了解您的软件应该做什么，这不会是坏事吧？ 测试驱动开发(TDD) 意味着您的代码在设计时至少需要考虑如何测试它。我建议您考虑 SOLID 原则和 DRY，以及它们如何应用于您正在编写的代码。这将始终使您的代码更好，并且更容易有效地进行测试。 我的经验是，这在各个方面都可以带来更好的代码。
+但是我们的代码从来没有被设计为进行单元测试！ 最困难的事情之一是尝试为现有代码编写测试。 它不是为测试而设计的，您经常会因为尝试测试没有规范的代码而让自己分心——这些代码试图执行许多不同且互不相关的操作（还记得 SOLID 中的“S”吗？）。 也许代码一开始就没有写好？ 理想情况下，您在编写代码时编写单元测试。 尝试返回并为现有代码编写测试通常会突出一个事实，即现有代码设计不佳，并且其需求缺乏清晰度。 这通常导致需要修复和更新现有代码，不过这也许不失为一件好事吧，见仁见智了。</description>
+    </item>
+    
+    <item>
+      <title>不要再使用了mock了</title>
+      <link>https://zh.ethanhan.cc/posts/%E4%B8%8D%E8%A6%81%E5%86%8D%E4%BD%BF%E7%94%A8%E4%BA%86mock%E4%BA%86-37a5812f0419469e8352e536c4621172/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E4%B8%8D%E8%A6%81%E5%86%8D%E4%BD%BF%E7%94%A8%E4%BA%86mock%E4%BA%86-37a5812f0419469e8352e536c4621172/</guid>
+      <description>最近看到一篇关于mock的文章，觉得挺有道理的，，简单总结分享一下，原文在这里：https://levelup.gitconnected.com/why-mocks-are-considered-harmful-b4e8fe60478d。 文章的观点很简单，就是mock其实是弊大于利的。
+自动化测试涉及到很多技术，其中mock技术我们应该尽量避免使用。mock用的好其实也只是锦上添花，用的不好的话则会给你带来一些过度的自信。
+首先看下什么是mock。mock其实就是模拟代码中的一些外部访问行为，比如访问第三方的付款api或者是对数据库进行访问，这会给单元测试带来一些好处
+运行加速，因为你不需要访问额外的服务； 提升稳定性，第三方服务提供商的一些不稳定因素被规避掉了 不过mock是为一些具有副作用的代码服务的，也就是说这些代码其实是依赖于外部服务，并不是依赖于各种参数的输入。我们可以把函数分成两类
+纯粹的函数：没有外部依赖的函数 不纯粹的函数：有外部依赖的函数 mock带来的问题 mock不等同于其替换掉的服务。
+比如你把代码中数据库访问的部分给mock掉了，这意味着你的代码可能会在有mock的时候工作良好，然而你还是需要进行集成测试以确保在没有mock的时候也可以正常工作。
+不可能进行特性平替
+如果你使用的是简单的mock方式，那么mock可能不会返回一些有用的数据，你花在mock上的时间越多，mock返回的data可能会约实用。然而mock不能平替被mock系统的方方面面。
+开发了mock但不使用其实就是浪费时间
+如果你开发了数据库的mock但从不使用的话，这就是浪费时间了。在现实世界中这是很有可能发生的，因为代码可能需要获取一些真实配置去做初始化，而mock的时候却很难满足这一条件。
+如何去找到mock的替代方案 很简单，就是重构代码，把代码重构成纯粹的函数和不纯粹的函数两种，纯粹的函数是不需要mock就可以测试的，，不纯粹的函数则可以通过集成测试来进行验证。
+举个例子
+def logic(): x = addition(1, 3) y = multiplication(2, 4) z = x + y database_write(z) return 上面的函数就是不纯粹的函数，因为其访问了db，然而我们还是可以把这个函数重构成1个纯粹函数和另一个不纯粹的函数
+def calc(a, b, c, d): x = addition(a,b) y = multiplication(c,d) return x + y def logic(): z = calc(1, 5, 2, 4) database_write(z) return 这样calc函数可以用单元测试覆盖了，而logic则留给集成测试去考虑吧。
+最后尽可能的优化你的自动测试方案，让更多的代码都通过自动化进行覆盖。
+总结 mock短期来看可能是一种解决问题的方式，然而长期看来确是一个麻烦的问题。如果你想快速交付软件产品的话，那么你应该少花时间在mock上，多花点时间在重构和自动化测试上面。</description>
+    </item>
+    
+    <item>
+      <title>不要害怕在周五部署</title>
+      <link>https://zh.ethanhan.cc/posts/%E4%B8%8D%E8%A6%81%E5%AE%B3%E6%80%95%E5%9C%A8%E5%91%A8%E4%BA%94%E9%83%A8%E7%BD%B2-b4ecfd9929554a10a34bbc7ae5496a9c/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E4%B8%8D%E8%A6%81%E5%AE%B3%E6%80%95%E5%9C%A8%E5%91%A8%E4%BA%94%E9%83%A8%E7%BD%B2-b4ecfd9929554a10a34bbc7ae5496a9c/</guid>
+      <description>一般情况下我们都会避免在周五进行发布，毕竟大家都不喜欢
+周五留下来加班发布，周五还是早点回去比较好 万一发出问题来了周六周日还要想办法去修复，休息的时间无形中被占用了 不过最近看到一篇文章观点很有意思，作者认为只要做的够好，在周五发布其实也不是什么大不了的事情。原文地址在这里，https://dev-tester.com/feel-free-to-deploy-on-friday/?utm_campaign=Software%2BTesting%2BWeekly&amp;amp;utm_medium=email&amp;amp;utm_source=Software_Testing_Weekly_147。 我稍微翻译了一下大意，也许它山之石可以攻玉。
+省略前面若干字。
+然而，我坚信，如果你想创建一个高质量的应用程序，大多数开发和测试团队的 &amp;ldquo;看在上帝的份上，不要在星期五部署 &amp;ldquo;的态度是不可取的。
+为什么避免周五部署是一种不健康的质量控制习惯？ 当一个团队像躲避瘟疫一样躲避周五部署时，通常可以认为他们对自己的的产品、流程或两者缺乏信心。这种不情愿通常源于组织需要知道或信任他们的应用程序已经准备好让客户使用。任何时候有人说 &amp;ldquo;我们不会在周五部署&amp;rdquo;，他们真正说的是 &amp;ldquo;我们不相信我们的应用程序或流程会在周五部署&amp;rdquo;。
+从长远来看，这种想法并不能带来高质量的系统。团队并不把这些不确定性的作为一个表明他们需要专注于改进的信号。无论缺乏信任和信心是一个现实的问题还是一个想象中的问题，大多数团队都采取简单的方法来掩盖问题，而不是花时间去寻找改进问题的方法。他们想出了一些规则，比如周五不进行部署。
+与其避免在周末进行部署，不如正面解决这些问题，加强现有的流程，让团队在任何需要的时候都能自由地进行部署。 作为一个开发人员或测试人员，如果不用担心因为在下班前要更新你的应用程序而使你的周末被打断，你会有什么感觉？
+任何认真推动整个团队和产品的质量的组织必须在他们的公司中建立这种信任。虽然对你的系统完全有信心需要时间，但好消息是任何人都可以做到这点，无论他们认为他们的应用程序和流程在他们的组织中是多么的混乱不堪。下面的三步计划可以让你比你想象中的更快达到目的。
+第一步：实现一个稳定的自动化测试集 自动化测试用例集合是任何想要快速构建和发布而不需要经常担心他们的应用程序的软件开发团队的必备工具。如果没有自动化测试套件，你就会严重削弱你的团队工作和部署的能力。如果你还没有给自己或你的团队一个空间来增加自动化测试覆盖率，你就会让自己处于不利的位置。
+提升质量的第一步是用自动化测试去覆盖所有的关键路径，所以如果你是从头开始，请关注这一步。然而，比覆盖率更重要的东西是稳定性。即使有很高的覆盖率，如果你的测试自动化不断失败，也不会有什么帮助。如果你的测试用例很不稳定，你在任何时候都不会感到舒服，更不用说在星期五部署了。在测试覆盖率方面的工作，重点是建立一个强大的、可维护的测试框架，以保持你的团队长期的高信心。
+另一个重点领域是你应该做什么类型的测试。根据你的应用程序的需求，你可能需要各种自动化测试的混合。有些团队写了几个单元测试就结束了，但今天的现代应用程序有很多变化的地方，你需要检查E2E、验证性能、确保安全性和可访问性等这些都只是冰山一角，提前计划哪些类型的自动化测试可以使你的组织受益。
+知道你需要什么类型的测试和你想覆盖的领域。拥有一个稳定的自动化测试用例集和正确的测试组合将加强你的团队对你的应用程序和部署的信心。
+第二步：不要忘记手动探索性测试 当团队养成了为他们的应用程序建立稳定的自动化测试的习惯，他们可能会对他们的测试套件在部署前捕捉问题的能力过于自信。通常，一种错误的安全感导致组织内的人认为他们不需要用测试自动化实践来执行额外的测试活动。这种想法与事实相差甚远。不管你的测试自动化习惯有多好，或者你的测试覆盖率有多高，你都不能忽视手动、探索性测试的重要性。
+自动化测试只能做他们被告知要做的事情，在快速开发周期中很好进行功能回归。另一方面，手动和探索性测试将允许你观察自动测试的盲点，并在没有人想到的地方发现问题&amp;ndash;所谓的 &amp;ldquo;未知的未知&amp;rdquo;。忽视测试的这一重要部分而依赖自动化，不可避免地会导致产品质量下降。
+人工测试需要时间和精力来完成。一些团队，特别是没有专门的QA团队的小团队，往往在最后一刻才进行这些测试。与我合作的大多数初创企业只在重大部署前几天甚至几小时做探索性测试。有时这很有效，但你有可能匆忙完成这个过程，让bug遗漏到了线上。
+理想情况下，手动探索性测试应该在整个团队的开发周期中持续进行并伴随着新的构建在staging环境上进行部署。让你的组织有时间做这种测试，你会发现自己在任何时候都不会担心部署的问题。
+第3步：建立一个自动化的构建和部署流程 在构建软件的组织中，开发和发布周期的一个部分经常被遗忘，那就是构建和部署过程。在我工作过的一些地方，构建和部署一个新的版本几乎感觉像是一个神秘的过程，只有少数被选中的人才能完成。他们的部署通常由一个漫长的步骤组成，按照精确的顺序和几乎完美的时机进行。如果执行这种仪式性行为的人在途中寄掉，这个过程的脆弱性可能会在瞬间使整个应用程序崩溃。
+我描述这个过程的方式可能略显夸张，但却非常接近事实。我合作过的许多公司都有不必要的复杂部署程序。当被问及原因时，一些团队试图证明为什么需要这样做，但他们回答背后的潜台词其实是 &amp;ldquo;我们一直是这样做的，所以我们从未改变过&amp;rdquo;。常见的原因是，很久以前有人创造了这个复杂的过程。既然它是有效的&amp;ndash;不管这个过程变得多么微妙或曲折&amp;ndash;他们从来没有费心去改善现状。
+如果你的团队必须执行多个步骤来构建和部署你的应用程序的新版本，那么你就对你的组织造成了巨大的伤害。无论你的整个系统包含多少模块，你都可以将几乎所有的发布过程自动化&amp;ndash;甚至将其浓缩为一个命令。如今，我们有大量优秀的工具，从Jenkins到AWS CodePipeline到CircleCI和无数其他工具，使构建和部署过程自动化变得非常简单。你的组织没有任何借口可以避免自动化部署。
+部署过程中一个同样重要但被遗忘的部分是回滚失败的部署。尽管有一个经过良好测试的自动化过程，它仍然可能由于许多不同的原因而失败，从糟糕的代码被合并到你的应用程序的基础设施的故障。大多数团队发现他们没有任何回滚策略，当部署失败时，他们的应用程序就会停机。在这种情况发生之前，制定一个适合你的情况的回滚策略，并经常测试，以确保当墨菲定律发生时，你不会感到惊讶。
+总结 这篇文章的目的不是让你的团队每周五进行部署，而是让他们在需要时可以毫无顾虑地进行部署。自信部署而不用担心某些幺蛾子会发生的能力，会让每个开发人员和测试人员在他们的项目周期中不用担心太多。如果我们幸运的话，也许我们会看到更少的memes在我们的LinkedIn feeds上乱窜。
+总之作者的观点是如果你够强，什么时候部署都没问题。然而时间总是自己的，为了不必要的节外生枝，还是建议大家在周五下班前或者下午不要进行部署，多一事不如少一事，不在周五部署不是真理，而是生活。</description>
+    </item>
+    
+    <item>
+      <title>两周内录完selenium教程是一种什么样的体验？</title>
+      <link>https://zh.ethanhan.cc/posts/%E4%B8%A4%E5%91%A8%E5%86%85%E5%BD%95%E5%AE%8Cselenium%E6%95%99%E7%A8%8B%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C-5e235bfb8896413ea51a8daf48502e84/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E4%B8%A4%E5%91%A8%E5%86%85%E5%BD%95%E5%AE%8Cselenium%E6%95%99%E7%A8%8B%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C-5e235bfb8896413ea51a8daf48502e84/</guid>
+      <description>2021年其实立过flag，但最终事情太多，没有完成既定的目标。2022年初的时候，想到很久都没有做过教程和视频了，于是兴冲冲的录了一些selenium的全套教程，目录如下：
+环境搭建 跑个脚本先 第1个自动化用例 前进和后退 搞定被测项目 使用id定位 使用name定位 使用xpath定位：定位王者xpath 使用tag name定位 使用class name定位 使用css选择器定位 往文本框里输入内容 执行js脚本 滑动到页面的最底部 各种表单元素的操作 显示等待 page object 常见问题答疑 做的不足的地方 因为录制的时间比较短，所以影片的编辑和准备其实是不够充分的，教程应该能看，不过节奏感不好，毕竟年纪大了，有时候会显得啰嗦了一些。
+另外selenium的一些新特性其实并没有涉及，后面有时间可以重点补充一节。
+亮点 当然，教程也是有一些亮点的。
+脉络基于官方文档，整体的思路还是清楚的； 修正了一些官方文档的不足； 使用本地文件进行演示，不依赖网络，脚本的稳定性还是比较高的 发布节奏 目前b站和微信公众号都在同步更新，每周更新4-5集，目前录了18集，应该1个月就能更新完吧。
+后续计划 准备专门弄一个软件测试视频教程分享站点，代码还没写，不过大致的思路有了，啥时候不忙了就可以开工了。</description>
+    </item>
+    
+    <item>
+      <title>五款最值得日常使用的命令行应用</title>
+      <link>https://zh.ethanhan.cc/posts/%E4%BA%94%E6%AC%BE%E6%9C%80%E5%80%BC%E5%BE%97%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%BA%94%E7%94%A8-ec7a76e3ce004c3fbae198fe1c07aa7c/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E4%BA%94%E6%AC%BE%E6%9C%80%E5%80%BC%E5%BE%97%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%BA%94%E7%94%A8-ec7a76e3ce004c3fbae198fe1c07aa7c/</guid>
+      <description>、
+命令行应用很多时候可以提升我们的工作效率，这里给大家推荐4款常见好用的命令行应用，希望对大家有所帮助。
+vim 大名鼎鼎的命令行编辑器，有时间的同学都可以尝试一下。
+说起来比较惭愧，当初学习vim的原因有两个。第一个是十多年前的室友表示vim这种工具的学习成本底，因为学会以后键位几十年不变，学一次用终生，性价比极高，尽管入门的时候学习曲线非常的陡峭，甚至有点反直觉。第二个理由是学习vim可以让我比较方便的在线上环境改代码，是的，你没看错，很多年前我们用php的时候确实做过线上调试和改代码的极限操作。
+如今随着运维的规范以及自动化发布的普及，线上改代码这种高危操作应该是被严令禁止了。不过使用vim仍然可以让你在任意机器ssh进远程服务器进行代码的编写和执行。配合上自定义的配置和第三方的插件，vim也是日常代码编辑的一个不错选择。
+另外很多编辑器都支持vim键位，比如atom，vscode，这会让你在写代码的时候更有如鱼得水的感觉。
+tmux tmux之前是运维同学的钟意之物，因为该工具可以
+分屏，将1个terminal分成多个部分 独立运行session，每个部分都是独立的会话，互不干涉 快照，任意时刻退出terminal，tmux都会保存当前会话，下一次可以无缝恢复 命令行的典型使用方式是，打开一个终端窗口（terminal window，以下简称&amp;quot;窗口&amp;quot;），在里面输入命令。用户与计算机的这种临时的交互，称为一次&amp;quot;会话&amp;quot;（session） 。 会话的一个重要特点是，窗口与其中启动的进程是连在一起的。打开窗口，会话开始；关闭窗口，会话结束，会话内部的进程也会随之终止，不管有没有运行完。 一个典型的例子就是，SSH 登录远程计算机，打开一个远程窗口执行命令。这时，网络突然断线，再次登录的时候，是找不回上一次执行的命令的。因为上一次 SSH 会话已经终止了，里面的进程也随之消失了。 为了解决这个问题，会话与窗口可以&amp;quot;解绑&amp;quot;：窗口关闭时，会话并不终止，而是继续运行，等到以后需要的时候，再让会话&amp;quot;绑定&amp;quot;其他窗口。
+Tmux 就是会话与窗口的&amp;quot;解绑&amp;quot;工具，将它们彻底分离。 （1）它允许在单个窗口中，同时访问多个会话。这对于同时运行多个命令行程序很有用。 （2） 它可以让新窗口&amp;quot;接入&amp;quot;已经存在的会话。 （3）它允许每个会话有多个连接窗口，因此可以多人实时共享会话。 （4）它还支持窗口任意的垂直和水平拆分。
+tmux对于我来说的典型用法就是
+把一个窗口分成几块，小的窗口运行mysql，redis之类的服务 用一个窗口运行主服务，比如python的flask开发服务器 用最大的窗口来运行vim编辑器，做代码的编辑 这样任意时刻我退出ssh，上面的这些服务都会一直运行，下次我再ssh上去的话就可以无缝的继续工作了。
+howdoi 大家可能有这样的经验，在写代码或者工作的时候经常会需要去各种搜索引擎查找一些信息，比如搜索python如何便利目录，go如何写文件并保存之类的。
+如果你的工作环境是标准的桌面环境，也就是有ui的，有浏览器的，这一切似乎不是什么问题。不过如果你只是ssh到服务器上做一些操作，如何在没有ui的环境下进行面向百度或者是google的编程和工作呢？
+howdoi这个工具就解决了这个问题。敲命令howdoi，然后再是你需要搜索的内容，howdoi就可以很快的给你具体的信息。比如
+$ howdoi format date bash &amp;gt; DATE=`date +%Y-%m-%d` 再比如
+$ howdoi print stack trace python &amp;gt; import traceback &amp;gt; &amp;gt; try: &amp;gt; 1/0 &amp;gt; except: &amp;gt; print &amp;#39;&amp;gt;&amp;gt;&amp;gt; traceback &amp;lt;&amp;lt;&amp;lt;&amp;#39; &amp;gt; traceback.print_exc() &amp;gt; print &amp;#39;&amp;gt;&amp;gt;&amp;gt; end of traceback &amp;lt;&amp;lt;&amp;lt;&amp;#39; &amp;gt; traceback.</description>
+    </item>
+    
+    <item>
+      <title>亲历裁员竞赛</title>
+      <link>https://zh.ethanhan.cc/posts/%E4%BA%B2%E5%8E%86%E8%A3%81%E5%91%98%E7%AB%9E%E8%B5%9B-0f886799147a44d1b20a0bbeee9fd5d1/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E4%BA%B2%E5%8E%86%E8%A3%81%E5%91%98%E7%AB%9E%E8%B5%9B-0f886799147a44d1b20a0bbeee9fd5d1/</guid>
+      <description>今年的年度关键词里大概率会出现裁员这个选项。国内互联网公司风风火火的进行了一整年，最近硅谷也在跟进，根据已经放出风来的口径统计的话，硅谷头部公司大概会裁员120k左右，超过了当年互联网泡沫时期的107k，有分析人士指出，这只是开始而已，这个冬天，裁员的寒风会更加凛冽。
+裁员的逻辑 逻辑其实很简单，全球经济不好，互联网增长不及预期，而且找不到新的增长点，这样之前为增长而储备的人力就需要释放，裁员明显是一个很好的选项，所以华尔街出现了一些公司越裁员股价越涨的情况。另外一般以增长为目标的项目或产品，往往投入高收益少，也就是所谓不赚钱的业务，后面裁员的目标将非常聚焦和具体，只要不赚钱，那么走人的可能性就非常大。
+被裁之后 首先被裁不是员工自身的问题，所谓的时势造英雄，整个大环境不好让所有人都很难独善其身。被裁之后的心理压力一定是巨大的，管理好情绪开始下一段旅程，这个世界还是充满着无限的可能，不要因为别人的错误而自怨自艾，记住，在这个大的时代背景和叙事框架下，你的被裁大概率是在为别人的失误买单。
+风暴中心 这次我其实处在裁员的风暴中心，分享几个事情。
+我们部门这次裁员了75%，之前坐满了一层楼，而且裁员两天后就已经冷冷清清，士气凋零。
+跟同事聊天，他说有些毕业生被裁后拿到的赔偿金额够他们生活1到2年，完全有时间去考公上岸，也算是提前离场，开启下一段人生。
+其他部门很多同事人心惶惶，下一个是不是自己无法确定，下一波什么时候到来也让人惴惴不安。
+跟国外的同事聊天，他们目前有11个人，下个月就只有10个人，因为其中1人收到了np，notice period，有兴趣的同学可以查查是什么意思。他们国家今年经济其实发展的不错，但是互联网行业整体不行，其他大厂也在裁员，相当惨烈。安慰了他几句，很默契的互相留了联系方式，因为大家都不知道哪天会突然离开。
+配合另一地区的同事进行上线之前的验收，那位同学早上还在提bug，下午的时候就忽然告诉我他要走了，刚刚被裁，last day就是今天下班。我无话可说，安慰了几句，互相留了联系方式。感觉像是在玩狼人杀，每天都有人被刀的样子，期待明天会是一个平安夜。他走的时候问我：你觉得今年会不会有年终奖？我的回答是: I doubt。
+有的人被裁后很快就找到了工作，也有的人两个月了没什么进展，找工作这个事情因人而异，但总体看来市场上的需求明显不如几年前那么旺盛。
+有人觉得压抑，想主动离开，我总是劝留不劝走，从行业内来看，外面的世界无奈大过于精彩。
+经常有滚动裁员，量不大，比如前两天又离开了10%左右，工作的安全感非常欠缺。
+总结 其实无话可说，安全第一，共克时艰。</description>
+    </item>
+    
+    <item>
+      <title>从吴亦凡事件学习安全测试</title>
+      <link>https://zh.ethanhan.cc/posts/%E4%BB%8E%E5%90%B4%E4%BA%A6%E5%87%A1%E4%BA%8B%E4%BB%B6%E5%AD%A6%E4%B9%A0%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95-f4fcfd1919004bae89ca78e6f0949ed6/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E4%BB%8E%E5%90%B4%E4%BA%A6%E5%87%A1%E4%BA%8B%E4%BB%B6%E5%AD%A6%E4%B9%A0%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95-f4fcfd1919004bae89ca78e6f0949ed6/</guid>
+      <description>一般情况下我是不喜欢追热点蹭热度的，不过这两天公安机关警情通报之后，吴亦凡事件发生了各种逆转，这起全员恶人事件非常凑巧的契合了安全测试中的一个概念：也就是中间人攻击。我们在吃瓜之余可以简单了解一下中间人攻击的一些原理，通过例子去学习，印象自然会深刻一些。
+什么是中间人攻击？ 下面的定义来自维基百科。
+中间人攻击（英语：Man-in-the-middle attack，缩写：MITM）在密码学和计算机安全领域中是指攻击者与通讯的两端分别创建独立的联系，并交换其所收到的数据，使通讯的两端认为他们正在通过一个私密的连接与对方直接对话，但事实上整个会话都被攻击者完全控制。在中间人攻击中，攻击者可以拦截通讯双方的通话并插入新的内容。在许多情况下这是很简单的（例如，在一个未加密的Wi-Fi 无线接入点的接受范围内的中间人攻击者，可以将自己作为一个中间人插入这个网络）。
+一个中间人攻击能成功的前提条件是攻击者能将自己伪装成每一个参与会话的终端，并且不被其他终端识破。中间人攻击是一个（缺乏）相互认证的攻击。大多数的加密协议都专门加入了一些特殊的认证方法以阻止中间人攻击。例如，SSL协议可以验证参与通讯的一方或双方使用的证书是否是由权威的受信任的数字证书认证机构颁发，并且能执行双向身份认证。
+举个例子 下面的内容依然来自维基百科。
+假设爱丽丝（Alice）希望与鲍伯（Bob）通信。同时，马洛里（Mallory）希望拦截窃会话以进行窃听并可能在某些时候传送给鲍伯一个虚假的消息。
+首先，爱丽丝会向鲍伯索取他的公钥。如果Bob将他的公钥发送给Alice，并且此时马洛里能够拦截到这个公钥，就可以实施中间人攻击。马洛里发送给爱丽丝一个伪造的消息，声称自己是鲍伯，并且附上了马洛里自己的公钥（而不是鲍伯的）。
+爱丽丝收到公钥后相信这个公钥是鲍伯的，于是爱丽丝将她的消息用马洛里的公钥（爱丽丝以为是鲍伯的）加密，并将加密后的消息回给鲍伯。马洛里再次截获爱丽丝回给鲍伯的消息，并使用马洛里自己的私钥对消息进行解密，如果马洛里愿意，她也可以对消息进行修改，然后马洛里使用鲍伯原先发给爱丽丝的公钥对消息再次加密。当鲍伯收到新加密后的消息时，他会相信这是从爱丽丝那里发来的消息。
+具体展开如下：
+1.爱丽丝发送给鲍伯一条消息，却被马洛里截获：
+爱丽丝“嗨，鲍伯，我是爱丽丝。给我你的公钥” &amp;ndash;&amp;gt; 马洛里 鲍伯
+2.马洛里将这条截获的消息转送给鲍伯；此时鲍伯并无法分辨这条消息是否从真的爱丽丝那里发来的：
+爱丽丝 马洛里“嗨，鲍伯，我是爱丽丝。给我你的公钥” &amp;ndash;&amp;gt; 鲍伯
+3.鲍伯回应爱丽丝的消息，并附上了他的公钥：
+爱丽丝 马洛里&amp;lt;&amp;ndash; [鲍伯的公钥]&amp;ndash; 鲍伯
+4.马洛里用自己的密钥替换了消息中鲍伯的密钥，并将消息转发给爱丽丝，声称这是鲍伯的公钥：
+爱丽丝&amp;lt;&amp;ndash; [马洛里的公钥]&amp;ndash; 马洛里 鲍伯
+5.爱丽丝用她以为是鲍伯的公钥加密了她的消息，以为只有鲍伯才能读到它：
+爱丽丝“我们在公共汽车站见面！”&amp;ndash;[使用马洛里的公钥加密] &amp;ndash;&amp;gt; 马洛里 鲍伯
+6.然而，由于这个消息实际上是用马洛里的密钥加密的，所以马洛里可以解密它，阅读它，并在愿意的时候修改它。他使用鲍伯的密钥重新加密，并将重新加密后的消息转发给鲍伯：
+爱丽丝 马洛里“在家等我！”&amp;ndash;[使用鲍伯的公钥加密] &amp;ndash;&amp;gt; 鲍伯
+7.鲍伯认为，这条消息是经由安全的传输通道从爱丽丝那里传来的。
+这个例子显示了爱丽丝和鲍伯需要某种方法来确定他们是真正拿到了属于对方的公钥，而不是拿到来自攻击者的公钥。否则，这类攻击一般都是可行的，在原理上，可以针对任何使用公钥——密钥技术的通讯消息发起攻击。
+边吃瓜边学习 首先我们看一下公安机关的调查结果，代入上面的中间人攻击原理，简单还原一下这次光怪陆离的事件。
+据北京朝阳警方通报： 近日，针对都某竹通过网络反映受到侵害和吴某凡一方报警称被敲诈勒索的情况，公安机关介入调查后，通过讯问嫌疑人、询问当事人、走访证人、调取书证、固定提取电子证据等工作，初步查明了有关事实。现就调查情况通报如下： 一、关于吴某凡与都某竹交往情况 2020年12月5日22时许，冯某（女，28岁，时任吴某凡执行经纪人）以挑选MV女主角面试为由，约都某竹（女，18岁）到吴某凡（男，30岁）家中参加聚会，10余人共同玩桌游并饮酒，次日凌晨至7时许，其他聚会人员陆续离开，都某竹酒后在吴某凡家中留宿，两人发生性关系。当日下午，都某竹在吴某凡家中用餐后自行离开，期间两人互相添加微信。12月8日，吴某凡给都某竹转账3.2万元用于网络购物。此后至2021年4月期间，两人保持微信联系。 二、关于都某竹等人发布网络信息情况 2021年6月，都某竹与好友刘某文（女，19岁）商议，在网上公开与吴某凡交往过程以提升网络知名度，遂由刘某文于6月2日以“刘美丽同学_”微博账号发布都某竹被吴某凡“冷暴力”的博文，7月8日至7月11日，都某竹跟进发布3篇博文。7月13日，网络写手徐某（男，31岁）为牟取利益，主动联系都某竹，经商议后，共同策划并由徐某撰写“决战”等10余篇微博文案，7月16日起由都某竹通过微博账号陆续发布。 三、关于犯罪嫌疑人刘某迢涉嫌诈骗犯罪的情况 2021年7月14日，朝阳警方接到吴某凡母亲吴某报警，称遭到都某竹敲诈勒索。当日警方依法进行了受理和调查，工作中锁定犯罪嫌疑人刘某迢（男，23岁），并于2021年7月18日在江苏省南通市将该人抓获。 经查，2021年6月，犯罪嫌疑人刘某迢看到都某竹和吴某凡的网络炒作信息后，遂产生冒充相关关系人对涉事双方进行诈骗的想法。期间，刘某迢虚构女性身份，以曾被吴某凡欺骗感情欲共同维权的名义骗取都某竹的信任，使用昵称为“DDX”微信号与都某竹联系，获取都某竹与吴某凡部分交往情况信息。7月10日，刘某迢利用获取的信息冒用都某竹名义与吴某凡律师联系，以双方达成和解为名索要300万元赔偿，并将自己和都某竹的银行账户一并发给吴某凡律师。同时，刘某迢使用“北京凡世文化传媒”微信号，自称系吴某凡律师，与都某竹协商达成300万元的和解赔偿，但双方未签署和解协议。 7月11日，吴某凡母亲分两次向都某竹账户转账50万元。此后，未得到钱款的刘某迢继续冒充都某竹，向吴某凡律师索要剩余250万元未遂。后又冒充吴某凡律师要求都某竹签署和解协议，否则索回50万元。都某竹同意退款后，刘某迢冒充吴某凡律师将本人的支付宝账号提供给都某竹，都某竹陆续向该账号转账18万元。 刘某迢被抓获后，对其诈骗犯罪事实供认不讳。目前，该人已被朝阳公安分局依法刑事拘留。 针对网民举报的“吴某凡多次诱骗年轻女性发生性关系”及近期网络互曝的有关行为，警方仍在调查中，将根据调查结果依法处理。
+这里涉及到3个人物，分别是吴，都，以及中间人刘
+1，刘某迢虚构女性身份，以曾被吴某凡欺骗感情欲共同维权的名义骗取都某竹的信任，使用昵称为“DDX”微信号与都某竹联系，获取都某竹与吴某凡部分交往情况信息。这部分信息其实只有吴和都知道，所以可以认为是吴和都进行身份认证的公钥，只要出示这个公钥，吴和都就可以确信对方的身份，毕竟一些事情只有天知地知你知我知；
+2，7月10日，刘某迢利用获取的信息冒用都某竹名义与吴某凡律师联系，以双方达成和解为名索要300万元赔偿，并将自己和都某竹的银行账户一并发给吴某凡律师。这一步中间人直接伪造消息发送给吴，并通过公钥获取了吴的信任，将自己认证为都；
+3，同时，刘某迢使用“北京凡世文化传媒”微信号，自称系吴某凡律师，与都某竹协商达成300万元的和解赔偿，但双方未签署和解协议。这一步，中间人又故技重施，伪造吴的消息发送给都。
+由于第1步刘已拿到了双方的公钥，所以已经具备了中间人攻击的条件。一般情况下中间人都是一个监听者，被监听双方互相通信时，中间人会收到消息，查看甚至篡改消息的内容，比如你用了一个wifi，通过http（非https）请求将密码发送给了对端，那么中间人可能会截取你的密码，造成信息的泄漏。不过这个事件里的刘很显然是一个勤奋的中间人，吴和都其实并没有主动发起通信，所有的消息都是中间人伪造，完全凭借自己的努力让两方鸡犬不宁，矛盾无法调和，从而将这场闹剧推向了高潮；
+4，7月11日，吴某凡母亲分两次向都某竹账户转账50万元。这里吴向都发送的消息直接被中间人截获，中间人没有向都转发，从而为日后的东窗事发埋下伏笔。有人说这一步其实吴母动了吴秀波的心思，这里见仁见智，大家应该有自己的判断；
+5， 此后，未得到钱款的刘某迢继续冒充都某竹，向吴某凡律师索要剩余250万元未遂。中间人伪造信息发送给吴，都是不知情的；
+6，后又冒充吴某凡律师要求都某竹签署和解协议，否则索回50万元。都某竹同意退款后，刘某迢冒充吴某凡律师将本人的支付宝账号提供给都某竹，都某竹陆续向该账号转账18万元。伪造吴的消息发送给都，吴不知情，都也应该很懵，毕竟凭空账户多了50万，前车之鉴还历历在目，这里警惕性应该是上来了的；
+7，刘某迢被抓获后，对其诈骗犯罪事实供认不讳。目前，该人已被朝阳公安分局依法刑事拘留。
+多行不义必自毙，刘的中间人攻击暴露是迟早的事情，毕竟中间人攻击的核心是隐藏在暗处，监听和篡改双方的信息从而达到获利的目的。这次的事件里，通信双方其实是没有主动联系过的，所有的魔幻情节全靠中间人一己之力全力推动，导致双方起疑，进而报警事发。这就好比中介卖房，本来买卖双方并没有强烈的意愿，结果中介强行撮合，给双方一些虚假信息，这样很容易引起买卖双方的反感，从而让交易泡汤。</description>
+    </item>
+    
+    <item>
+      <title>优秀测试工程师的5c特质</title>
+      <link>https://zh.ethanhan.cc/posts/%E4%BC%98%E7%A7%80%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%845c%E7%89%B9%E8%B4%A8-c8fba335b5ce468bb3296ec56944af2f/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E4%BC%98%E7%A7%80%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%845c%E7%89%B9%E8%B4%A8-c8fba335b5ce468bb3296ec56944af2f/</guid>
+      <description>原文地址：https://medium.com/geekculture/five-cs-of-a-test-engineer-59f0f74049d8
+简单来说，优秀的测试工程师应该具备下面的5种特质，因为对应的英文单词都是c开头，所以可以简称为5c特质。
+Critical Thinking 批判性思维。
+这是经常被人忽视的点，测试同学经常需要收集信息，对多个渠道的获取的信息进行整合和判断，具有批判性思维可以让我们理性清晰的思考，了解信息之间的逻辑性以及对业务和用户的造成的影响。
+Communication 沟通。
+这点是毋庸置疑的了，如果无法进行高效的沟通和表达，那么发现再多的缺陷和问题都没什么大用处了，测试工程师往往是杰出的沟通者。
+Collaboration 协作。
+测试同学一般不会孤立的工作，或者这样说，不应该孤立的工作。我们是团队的一员，大部分时间都在与开发人员和产品人员通力合作，同时收集有关业务规则和上下文的知识。因此，协作便成为了测试工程师为团队带来贡献的日常基本技能。
+Creativity 创造力。
+创造性和跳出条条框框进行思考是一种技能，它经常让我们找出那些可能会对整个产品产生巨大影响的不受欢迎的边缘情况，从而提升我们的自身的影响力，而影响力则在高级测试工程师所具有的独门技能中排名第一。创造力可以理解为不走寻常路，独辟蹊径的能力，在探索性测试的时候非常关键。
+Coding 每个测试工程师都需要具备表达和阐明业务规则并轻松为其进行领域建模的技能。他们是将实际用例和业务逻辑转换为代码的专家。
+综上，不过这几个技能套在开发同学身上也能行得通，可以这么认为在软件相关的行业，优秀的人才往往具备一些共性的特质，而这些特质是可以通过工作和学习进行培养和训练的。</description>
+    </item>
+    
+    <item>
+      <title>假如我被裁员了</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%81%87%E5%A6%82%E6%88%91%E8%A2%AB%E8%A3%81%E5%91%98%E4%BA%86-152a39be777344269c983e948760bee3/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%81%87%E5%A6%82%E6%88%91%E8%A2%AB%E8%A3%81%E5%91%98%E4%BA%86-152a39be777344269c983e948760bee3/</guid>
+      <description>最近在一些微信群里看到某互联网大厂裁员的消息，跟老同事确认了一下，他们部门的指标是20%，5个人里就要走1个，冰冷的数字背后是一个个鲜活的身影，一段段故事以及一声声的叹息和一阵阵的无奈，作为从业者，也不免有鸟尽弓藏兔死狐悲之感。
+作为一个35岁以上，可能会被大部分用人企业所婉拒的老互联网人，老测试人，我今天一直在思考，假如我被裁员了那应该怎么办？
+还完房贷 我想第一步可能是想尽办法还清房贷。这可能有点反直觉，丢了工作难道不应该先开源节流吗？房贷等与是长期定投，而且相对来说利率是较低的，失业之后把现金流丢到房贷里去岂不是没有任何的抗风险的空间了吗？其实我们可以反过来想，如果现在手上有些资金不去还房贷，那么很可能会去想办法创业或换个赛道做些自己不擅长的事情，这样一来如果投资或者创业失败，就目前的经济情况来看市场普遍缺乏信心，投资获益的可能性是比较低的，假如一不小心蚀了本金，那么房贷就难以为继，最后断供法拍，征信受损，大家可以了解一下失信的惨重代价。所以还清房贷，降低未来几十年的利息支出反而是更理智的选择。另外没有了房贷，每个月的生活成本其实是要低不少的，这样生存的压力也会相应降低，一石二鸟，何乐而不为。
+节流节流 今年居民负债率没有提升，可能是因为大家手上真的没钱了吧。没有富余的资金，杠杆也撬不动空气。如果在这个节骨眼上没有了收入，那么我会选择尽量的降低生活成本，先活下去熬过这段时间，如果整个社会对经济都没有期待，那么经济的复苏反而指日可待。节流的方式有很多种，比如每天老老实实买菜在家里做饭，尽量少出行，不仅省钱还能预防新冠，卖掉一切不需要的东西，比如汽车，这样可以省油费，停车费和保险费用；停掉一切可能产生账单的服务，比如注销掉之前因工作需要而办理的手机号，停掉有线电视等等。这样算下来一天100块的话一家三口就可以生活下去，一年只需要3.6万，加上其他的一些成本和支出，一年最低的生活成本大概在5万，如果稳健理财每年的年化收益是4%的话，那么有125万的本金就可以完全靠利息苟延残喘下去，寒冬总会过去，现在步入黑暗，但我仍然心向光明。
+坚持交社保和保险 社保是一种对未来的投资，坚持交其实就是对未来不确定性的对冲，不过现在社保和商业保险的成本还是比较高的，应该是苟活阶段家庭年度支出的大头。
+锻炼身体 前几天看到一个数据，大约在2050年，全球65岁以上人口的数量将是5岁以下人口数量的两倍。所以等我们这代人老去的时候，将是全球步入人口老龄化的时候。掐指一算，还有28年，按照中国人口结构和医疗水平推算，这个时间点可能会来的更早一些。最近一年见过一些生老病死，经历了一些世事无常，强烈的感觉到等我们步入老年之后
+身体的健康和神智的清晰是最大的福报 社会上应该有不少岗位会向高龄人群开放 假如未来真是这样的话，为什么不在社会对35岁左右群体横眉冷对的时候蛰伏一段时间，锻炼好身体，不让年轻时候的工作透支年老时的健康，积极学习，跟上时代的脚步，过些年之后，当最后一波人口生育高峰的红利过去，也许届时会有更好的复出和发展的机会。总之健康生活的越久，在未来的社会可能会越有竞争力。
+开源开源 做一些低成本的小生意，能赚就赚到，赚不到就当交了学费，当成是提升自我的必要投资。如果恩格尔系数过高，那么想办法种点菜补贴家用，灵活就业，赚不了大钱但心态好些就当是体验了生活。
+读万卷书或行万里路 合格勤勉的打工人是没有太多时间读书充实自己的。没有工作了可以多读书，一来可以了解这个世界是如何运转的，二来可以通过不同人群的视角去展望未来，也许以后的机会就在我们对未来的憧憬中慢慢萌芽。低成本的行万里路真正让我们认识到这个世界，尽管我们是农耕民族，但迁移的基因也许从我们的祖先由非洲出走时就扎根在了我们的基因里，我们大部分人还是希望在有生之年可以亲眼看一看更大的世界。另外时不我待，前几天我去爬了座山，强烈的感受到如果年纪再稍微大一些，那么这项运动可能会跟我割席断交，失之交臂，当时就感叹，有些事情应该趁年轻去做。工可以留着年纪大了再打，毕竟从趋势上看，未来是属于老年人的，到时候孩子也长大了，每天睡的时间也少了，吃的也不多了，心态也更加平和了，模范的打工人就这么完美的炼成了。读书的经济成本不高，不过难在坚持，旅行与节流冲突，需要权衡和取舍。
+培养一门爱好 有一门爱好可以全身心投入的话，那么人可能就不会那么焦虑吧。不过爱好除了投入时间之外还需要持续投入金钱，在经济压力比较大的情况下，一些烧钱的爱好可能就不太方便参与了。
+多陪陪家人 打工的时候春节假期往往令人矛盾，想回老家跟家人团聚，奈何时间紧票难买；想多请几天假，奈何卷王当道，难以启齿。没有工作了终于可以多陪陪家人了，亲情也是一种治愈，能让人不那么焦虑。
+总之 如果在这个时间节点我没有了工作，在有选择的情况下，我会跟家里人沟通，告诉他们我想先退一步海阔天空，调整好身体状态和心态，尽可能长的苟延残喘一段时间，然后充实自己，等待合适的机会复出；如果没有选择的话，我会默默的找出之前的简历，然后在开头加上一段话：“xx年工作经验，xx年管理经验，沟通能力强，有很强的抗压能力，能够适应高强度的工作”，加粗保存，发给之前有联系的一众猎头。最后盘算着离职补偿可以撑多久，从撑不住的那天倒推，给自己的求职行为立项，定目标，编okr，最后跟家人对齐deadline。好一似食尽鸟投林，落了片白茫茫大地真干净！</description>
+    </item>
+    
+    <item>
+      <title>假如有一天我躺平了</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%81%87%E5%A6%82%E6%9C%89%E4%B8%80%E5%A4%A9%E6%88%91%E8%BA%BA%E5%B9%B3%E4%BA%86-9fea410527774d839af9554f4d87e5fe/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%81%87%E5%A6%82%E6%9C%89%E4%B8%80%E5%A4%A9%E6%88%91%E8%BA%BA%E5%B9%B3%E4%BA%86-9fea410527774d839af9554f4d87e5fe/</guid>
+      <description>最近躺平几乎成了内卷的反义词，我了解了一下躺平最初的由来，发现是源自百度贴吧，帖子的主人公过着消费极低而且自在悠闲的生活。没有钱了就去横店躺平扮演尸体，赚了一点点钱就不再工作，反正他的消费非常少，躺几天尸够他活个一阵子了。
+这种生活方式突然受到了追捧，当然，很多人只是说说而已，真让他们去躺平难度还是非常大的，毕竟上有老下有小，现实总是不能允许你做任性的事情。这可能表现了喝彩者对内卷化下意识的反对和厌恶，也算是反内卷方程式的一个潜在的解法。
+我不知道内卷是不是经济发展变缓这个特殊缓冲区的产物。因为之前经济高速增长，人们已经有了努力就能获得一切的惯性，当经济稍微停滞一些的时候，努力的惯性也许就成了内卷的核反应堆。等经济增速回归到一个较低水平的时候，也许各种花式躺平就成了主流，比如现在的台湾和日本，到时候可能一部分人卷上加卷，大部分人默默躺平。这也没什么不好，之前旅行的时候经过一些小城市，穿梭在人流中竟然感受到了许久不见烟火气，心里也曾经有过这样一个念头，假如有一天我躺平了，我会做些什么？
+如何生存 做为一个测试人，我总是信奉一条原则，在项目越早期想的越多越清楚，后面的坑可能就会相对少一些。所以在躺平之前，我应该会重点思考一个问题，那就是生存还是毁灭的终极问题。
+躺平了就意味着不能在职场打工干饭了，因为如果打工的话，你的身体告诉你要躺平，但你的老板却花式要求你要更加努力，修更多福报。
+不能打工如何活下去呢？记得《穷爸爸富爸爸》里就有类似的讨论，不打工可能凭借自己的资产活下去，比如投资的公司的收入，隐形资产比如知识产权的收入。不过这些离我比较遥远，我觉得比较有可能的收入来源是
+稳健理财的收入。长期定期投入的话，可能会有年化5%左右的收入吧； 激进型理财的收入。比如股票和以股票为主的基金收入；我有个朋友曾经跟我分享过一个例子，他有个同事很多年前买了几百万的大头股，现在不仅股票涨了，而且每年都有十几万的分红，过的相当滋润，当然了，这是极其典型的幸存者偏差，大家听完一笑而过就好。另外我也见过有一对台湾夫妻分享他们财务独立的案例，他们定投了十几年的基金，后来财务独立环游世界，这个例子我找到了好几个佐证和类似的例子，所以应该有一定的可行性。好的年份激进型理财的年化收益可能会有10%左右； 零散收入。这部分收入可遇不可求，比如帮别人开发一些自动化工具或者自动化脚本之类的，随缘就好； 潜在收入。学一门手艺，比如木工电工之类的，接一些零活； 总的来说收入主要靠投资和理财，其他的只能随缘，不能糊口。
+下面来算支出。
+房租水电。在一线城市躺平成本比较高，而且周围的人在疯狂搞钱，受他们的影响容易焦虑，所以可以考虑搬去二线城市；一些优质教育资源集中的二线城市的头部学校可能比一线城市的普通学校综合实力更强，也能缓解一些鸡娃焦虑。那么二线城市的房租是多少呢？我随便搜了一下，好点的位置大概5000左右，如果稍微降低一下标准，算上水电等，一年6万应该是可以搞定的； 吃饭。在深圳自己买菜的话，一天100块应该够3口之家吃的很好了；现在物价基本上大部分城市都差不多，所以在吃上面的支出一二线城市100块一天是差不多了，加上偶尔出去吃一顿，那么一年4万应该是可以搞定的； 出行。去二线城市应该可以卖掉现在的车，因为一台车一年的成本差不多要1万块，然后换一个小电驴，周边的出行应该就没大问题了；出远门可以地铁或者打车，想开车自驾的话可以租车，租车很便宜，一天100多一点可以搞定。所以综合算来一年1万左右吧； 穿衣。我自己的衣服很简单，随便找个店买点基本款就可以了，如果住在南方几件t恤就能过一年，所以一年穿衣千把块就可以了。算上全家的一年大概1万左右可以搞定； 其他支出。比如换手机或者买点乱七八糟东西之类的，一年大概2万吧； 这样算下来，总支出应该是6+4+1+1+2=14万，再加上一些无法预计的支出，再放宽2万，一年的生活成本应该是16万。
+如果有400万左右的存款，放100万去做高风险投资，年化10%，300万做稳健理财，大概5%，这样一年的收入应该能有25万，粗茶淡饭一年生活下来，还有9万的盈余可以投入到下一年的激进理财里，因此除了跑不赢通胀的焦虑之外，拿400现金应该就可以躺平了吧。记得前不久有则新闻，一对北京土著夫妻卖了北京的房产，一家三口着1000万去昆明买房定居，其实算下投资收益，他们哪怕找不到工作一家三口平平淡淡过一生也应该足够了吧。
+可以做些什么 不工作的话可以做的事情就很多了。
+旅行。可以自驾也可以公共交通，丰俭由人，预算够的话就稍微放飞一些，预算吃紧就经济一些，行万里路，给生活带来不同的节奏； 读书。可以泡图书馆和书店，书非借不能读也； 带娃。我前几天听说一个数据，中国家庭在义务制教育阶段对孩子的教育投资大概占家庭总收入的12%左右，这还只是平均数，在一线鸡娃焦虑的城市这个数字只会更高，我估计可能有20%以上，所以如果孩子不上各种补习班，自己带孩子出去旅行或者教点什么的话，每年节省的费用是可观的；不过自己教娃很难，我觉得这个比上班累； 学一些实用的技能。比如木工电工自己理发之类的生存能力，做到万事不求人，这样长期看来也能节约不少支出； 学一些不实用的技能。比如英语钢琴之类的，这样可以教娃，省培训班的钱； 打游戏。我觉得我可以在家打一个月的足球经理或者三国志，足不出户； 锻炼身体。这只是说说，哪怕有时间了坚持锻炼身体还是挺难的，不过好的身体可以省药钱，还是要锻炼的； 这样算下来，有400万存款就可以在一个二线城市非常平静的生活下去了，有这样经济能力的人不在少数，起码我身边就有不少。不过大家还是坚持在一线城市卷珠帘，低绮户，照无眠，我猜大概率还是有激情有理想，另外伴随着深深的通货膨胀以及教育焦虑吧。
+其实，偶尔思索一下躺平的事情，你会发现其实放下一切安心生活的成本也没有那么高，也会让自己发现，其实自己真的是有路可退，还有的选。当你有了退路，多了一些选择的时候，你也许就不会那么焦虑，生活或者工作中多了一些从容吧。</description>
+    </item>
+    
+    <item>
+      <title>做一个没有感情的用例生成机器</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%81%9A%E4%B8%80%E4%B8%AA%E6%B2%A1%E6%9C%89%E6%84%9F%E6%83%85%E7%9A%84%E7%94%A8%E4%BE%8B%E7%94%9F%E6%88%90%E6%9C%BA%E5%99%A8-a8b3883ef23449509d3f784ce62cc9ff/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%81%9A%E4%B8%80%E4%B8%AA%E6%B2%A1%E6%9C%89%E6%84%9F%E6%83%85%E7%9A%84%E7%94%A8%E4%BE%8B%E7%94%9F%E6%88%90%E6%9C%BA%E5%99%A8-a8b3883ef23449509d3f784ce62cc9ff/</guid>
+      <description>最近我们准备把一些服务从一个二次开发的k8s平台迁移到另一个二次开发的k8s平台去，这时候我们遇到了一个比较棘手的问题：因为迁移是有损的，也就是说迁移的过程中伴随着一定量的代码修改和容器编排方式的适配，那么我们如何保证服务迁移以后的功能是正常可用的呢？
+想了一些方法，这些办法其实比较常见：
+增加监控指标和告警指标，迁移后如果服务有问题那么这些指标会让我们尽可能快的发现问题； 增加自动化的测试用例，通过用例尽可能的对现有服务功能进行覆盖； 那么问题就来了，如何用最低的成本去实现这些自动化用例呢？
+首先我们应该选择合适类型的自动化用例，目前我们可以实现的用例有
+单元测试用例，实现成本高，但是运行成本低，运行速度快，服务没有启动的情况下也能跑，如果有的选，那么单元测试用例是首选； 接口级的测试用例，实现成本相对较低，运行成本高，需要服务跑起来才能进行测试，运行速度相对单元测试是慢一些的； ui自动化测试用例，实现成本高，运行成本也高，运行速度也慢； 最终我们选择增加一些核心的单元测试用例和ui自动化用例，然后尽可能多写接口测试用例。
+我们的服务实现了一些微服务化，请求从最前面接入层进来之后会到http层，该层会调用更下层的rpc微服务层实现具体的业务逻辑，因此我们的接口就有两种，分别是
+http接口，客户端直接调用 rpc接口，http层以及微服务之间进行调用 因为业务逻辑往往需要多次的rpc调用才能实现，所以直接写http层的接口测试用例相对来说是一种比较经济的方式，因为一次的http接口调用会产生多次的rpc调用，从业务逻辑上和服务的触达性上来说都是令人满意的。
+那么怎么去用尽可能最低的成本去实现这些http接口的用例呢？我之前有过使用postman把自己变成一个没有感情的用例生成机器的经历，在这里可以给大家分享一下。
+举一个具体的例子，看这个接口。
+POST /api/users 请求 { &amp;#34;user&amp;#34;:{ &amp;#34;username&amp;#34;: &amp;#34;Jacob&amp;#34;, &amp;#34;email&amp;#34;: &amp;#34;jake@jake.jake&amp;#34;, &amp;#34;password&amp;#34;: &amp;#34;jakejake&amp;#34; } } 响应 { &amp;#34;user&amp;#34;: { &amp;#34;email&amp;#34;: &amp;#34;jake@jake.jake&amp;#34;, &amp;#34;token&amp;#34;: &amp;#34;jwt.token.here&amp;#34;, &amp;#34;username&amp;#34;: &amp;#34;jake&amp;#34;, &amp;#34;bio&amp;#34;: &amp;#34;I work at statefarm&amp;#34;, &amp;#34;image&amp;#34;: null } } 这是一个用户注册的POST接口，需要向后端传json类型的数据，我们可以看成是传递一个user对象，这个对象有username, email和password属性，用json字符串的形式表达出来而已。
+我们的目的是测试用户注册成功的情况。
+使用postman去调用这个接口，不出意外的话服务端会返回一个已经创建的user对象，也是用json字符串的形式进行表达，跟请求传递的参数相比，多了一些属性，其中最重要的就是token属性，用这个token可以完成鉴权，也就是登录，是调用一些需要鉴权接口的必要条件。
+接口调通之后，我们面临一个问题，目前传入的参数是固定的，这个接口再次运行的时候就会报错，因为用户已经注册过了，这是业务的要求，所以我们在做用例设计的时候需要去规避这个错误，因为我们的目的是测试用户注册成功。
+所以我们要对请求体里的数据进行参数化，postman实现参数化非常方便，可以这么做
+{ &amp;#34;user&amp;#34;:{ &amp;#34;username&amp;#34;: &amp;#34;{{$randomEmail}}&amp;#34;, &amp;#34;email&amp;#34;: &amp;#34;{{$randomEmail}}&amp;#34;, &amp;#34;password&amp;#34;: &amp;#34;{{$randomEmail}}&amp;#34; } } 我们使用了postman自带的全局变量randomEmail，这个变量会生成随机的email字符串，参数化的问题很容易就解决了。
+最后是断言，我们再看一遍响应的内容。
+{ &amp;#34;user&amp;#34;: { &amp;#34;email&amp;#34;: &amp;#34;jake@jake.</description>
+    </item>
+    
+    <item>
+      <title>先收藏 测试同学的成长之道—from github</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%85%88%E6%94%B6%E8%97%8F-%E6%B5%8B%E8%AF%95%E5%90%8C%E5%AD%A6%E7%9A%84%E6%88%90%E9%95%BF%E4%B9%8B%E9%81%93from-github-47ddeb01df294765bd908d165758d602/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%85%88%E6%94%B6%E8%97%8F-%E6%B5%8B%E8%AF%95%E5%90%8C%E5%AD%A6%E7%9A%84%E6%88%90%E9%95%BF%E4%B9%8B%E9%81%93from-github-47ddeb01df294765bd908d165758d602/</guid>
+      <description>今天在github上看到一份测试同学的成长之路图谱，不敢独享，在这里给大家汇报一下。
+基本概念 首先明确几个基本概念
+STLT: Software Testing Life Cycle 软件测试生命周期 SDLC:Software Develop Life Cycle 软件开发生命周期 TDD: Test Driven Development 测试驱动开发 RPA: Robotic Process Automation 过程自动化 必须掌握的基础能力 测试策略 白盒测试 灰盒测试 黑盒测试 测试类型 功能测试 单元测试 冒烟测试 集成测试 回归测试 健全性测试(sanity testing) 用户接受性测试(uat) 非功能性测试 负载测试 压力测试 安全测试 性能测试 上面的负载，压力以及性能测试在国内其实不怎么分，可以统一看作是性能测试，只不过测试策略不同而已。
+STLC 管理工具 qTest TestLink（常用） Zephyr Testrail 项目管理工具 Jira(常用) Youtrack Trello Assembla 软件研发模型 V模型 敏捷模型：迭代式，较为常用 瀑布模型 深度手工测试技能 手工测试目前看来还是软件测试工程师的核心能力，优秀的手工测试能力可以让你的职业生涯发展更加平滑。
+做一个数据驱动的测试人员可以节约你的时间精力并让你的质量改进行为更加有效。
+TDD 先写用例，开发的过程实际上就是不停的去实现这些用例。
+测试计划定义 测试范围 测试资源 测试策略 如何进行测试 测试用例及场景(必须掌握) 测试用例设计是测试同学的主要工具，基本上就是把用户的行为转换为测试用例。</description>
+    </item>
+    
+    <item>
+      <title>单元测试用例该如何设计</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AF%A5%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1-dc486bcdbe0746d988f477636b84de79/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AF%A5%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1-dc486bcdbe0746d988f477636b84de79/</guid>
+      <description>最近一些大公司在进行去测试化的操作，这一切的根源大概可以从几年前微软一刀切砍掉所有内部正式的测试人员开始说起，当时微软内部的测试工程师有一部分转职成了开发工程师，他们的职能中有很大一部分的职责是教会普通开发人员如何进行测试。我们都知道开发人员进行的测试一般以单元测试为主，假如有一天你所在的组织需要你转变成一名测试方面的教练，除了自动化测试之外还需要去推广单元测试，那么你该如何去定义单元测试用例的设计方法论呢？这里给大家一些思路，看看简单的单元测试用例究竟该如何设计。
+一个方法可以有任意数量的有效测试用例；它最终取决于方法的结构。有两种简单的方式可以帮助我们设计单元测试用例。
+参数方法 执行路径方法 我将通过提供真实的代码来进行演示。所有代码片段都将用 C# 编写，断言将使用我最喜欢的单元测试包 Fluent Assertions。
+我们将为以下方法提供测试用例：
+public static bool ContainsNamelessItems(this List&amp;lt;Item&amp;gt; items) { return items.Any(item =&amp;gt; item.Name.IsNullOrEmpty()) } 此方法将项目集合作为参数。它遍历项目列表，并针对每个项目Item检查其name属性是否为空。如果name存在且不为空，我们返回True，否则我们返回False。
+使用参数方法创建测试用例 这种方式主要考虑的是入参可以传递哪些值。
+查看该方法的参数ContainsNamelessItems，我们有一个List名为items. 此参数可能有几个可能的值：
+items 是空的 items至少包含 1 个Item具有Name未定义的属性 items不包含具有未定义Name属性的项目 items 是 null 这些可能的值中的每一个都可以作为单独的用例存在。
+以下是一些可能的测试用例和断言：
+1，当List&amp;lt;Item&amp;gt;为空时，我们期望返回值是False因为其的List&amp;lt;Item&amp;gt;无name属性。
+public void WhenItemsIsEmpty_ReturnFalse() { var items = new List&amp;lt;Item&amp;gt;(); var result = items.ContainsNamelessItems(); result.Should() .BeFalse(&amp;#34;because an empty collection cannot contain nameless items&amp;#34;); } 2，当List&amp;lt;Item&amp;gt;包含至少 1 项没有name属性的Item时，我们期望返回值是True
+public void WhenItemsContainsANamelessItem_ReturnTrue() { var items = new List&amp;lt;Item&amp;gt; { { new Item { Name = &amp;#34;Item1&amp;#34; }, { new Item { Name = string.</description>
+    </item>
+    
+    <item>
+      <title>在2023使用playwright进行自动化测试</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%9C%A82023%E4%BD%BF%E7%94%A8playwright%E8%BF%9B%E8%A1%8C%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95-9f1543e84f6649909fd00300f3de83a4/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%9C%A82023%E4%BD%BF%E7%94%A8playwright%E8%BF%9B%E8%A1%8C%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95-9f1543e84f6649909fd00300f3de83a4/</guid>
+      <description>playwright一直是我最看好的新一代自动化测试框架，2022年底playwright在npm上的下载量超过了100万，尽管不如selenium和cypress，不过势头还是相当强劲的。最近正好发现一篇文章简单的介绍了使用typescript，pageobject和fixture配合playwright进行用例编写的文章，这里把里面的精华拿出来分享一下。
+老生常谈，playwright的优势 有个好爹，微软出品，看好长期更新维护和迭代，但也可能突然被砍掉，毕竟大公司都在裁员 运行速度快 自动等待元素出现 报告的呈现很多元化，可以设置重试机制，捕获执行日志，截屏录屏等 支持多个浏览器并行执行 提供自动生成代码能力以及Inspector GUI 一套代码，跨浏览器执行的能力 目录结构 框架整体的目录结构如下。
+. ├── config │ ├── global-setup.ts │ └── playwright.config.ts ├── package-lock.json ├── package.json └── src ├── data │ └── data.json ├── fixtures │ ├── AxeFixture.ts │ └── TodoFixture.ts ├── pages │ └── TodoPage.ts └── tests ├── a11y.spec.ts └── demo-pom-todo-app.spec.ts config目录 playwright.config.ts playwright的配置文件 global-setup.ts 在所有用例执行前运行一次，主要的目的是登录一次被测系统并保存浏览器的全局状态到storageState.json文件中。这样就不需要每个用例都去单独登录一次了。更多信息可以参考文档。https://playwright.dev/docs/test-advanced#global-setup-and-teardown Page Object po基本上是自建框架的必选项了。具体的实现如下
+import { expect, Locator, Page } from &amp;#39;@playwright/test&amp;#39;; export class TodoDemoPage { readonly page: Page; readonly newTodoInput: Locator; readonly todoTitle: Locator; readonly todoCount: Locator constructor(page: Page) { this.</description>
+    </item>
+    
+    <item>
+      <title>在selenium中使用AjaxElementLocatorFactory来优化PO模式</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%9C%A8selenium%E4%B8%AD%E4%BD%BF%E7%94%A8ajaxelementlocatorfactory%E6%9D%A5%E4%BC%98%E5%8C%96po%E6%A8%A1%E5%BC%8F-ce6e6b02085c4323b2e36dccaccc8f41/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%9C%A8selenium%E4%B8%AD%E4%BD%BF%E7%94%A8ajaxelementlocatorfactory%E6%9D%A5%E4%BC%98%E5%8C%96po%E6%A8%A1%E5%BC%8F-ce6e6b02085c4323b2e36dccaccc8f41/</guid>
+      <description>之前看到的一篇对于po的改进的文章，非常有启发，简单翻译改写了一下，希望对大家有帮助。本文基于java，至于其他语言是否有类似的实现，没有具体研究过。
+原文地址: http://www.eliasnogueira.com/better-page-objects-strategy-using-ajaxelementlocatorfactory-with-selenium-and-java
+PO模式是page object factory设计模式的简称，主要是以页面为维度来聚合一些元素的定位，让代码有更好的维护性和重用性，具体细节可以看这里：https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models。这里是官方文档，非常值得精读。
+Page Factory 如果你已经对po很熟悉了，下面的内容可以放心跳过。
+下面是最基本的Page Factory套路，本质上是按页面去封装元素定位和操作。
+public class PageObjectExample { private final WebDriver driver; public PageObjectExample(WebDriver driver) { this.driver = driver; } public void login(String email, String password) { driver.findElement(By.id(&amp;#34;email&amp;#34;)).sendKeys(email); driver.findElement(By.id(&amp;#34;password&amp;#34;)).sendKeys(password); driver.findElement(By.name(&amp;#34;next&amp;#34;)).click(); } } 上面的代码只能说懂的都懂，不过这里有个问题，在login方法里，我们频繁使用driver.findElement方法，这会显得有一些的啰嗦，下面是改进版本，优雅了很多。
+public class PageObjectExample { @FindBy(id = &amp;#34;email&amp;#34;) private WebElement email; @FindBy(id = &amp;#34;password&amp;#34;) private WebElement password; @FindBy(name = &amp;#34;next&amp;#34;) private WebElement next; public PageObjectExample(WebDriver driver) { PageFactory.initElements(driver, this); } public void login(String email, String password) { this.</description>
+    </item>
+    
+    <item>
+      <title>基于k8s的测试执行工具：TestKube</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%9F%BA%E4%BA%8Ek8s%E7%9A%84%E6%B5%8B%E8%AF%95%E6%89%A7%E8%A1%8C%E5%B7%A5%E5%85%B7testkube-2fe7d0f536e1491bbd5eeb2fdedcf5f1/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%9F%BA%E4%BA%8Ek8s%E7%9A%84%E6%B5%8B%E8%AF%95%E6%89%A7%E8%A1%8C%E5%B7%A5%E5%85%B7testkube-2fe7d0f536e1491bbd5eeb2fdedcf5f1/</guid>
+      <description>之前我们自己开发过一些基于k8s的执行用例执行工具，原理大致是在用例执行的时候动态去k8s上创建容器，执行任务，上报指标，最后销毁容器，不过这些过程基本上与测试过程耦合在一起，难以平移扩展。最近发现了一款在开发早期的通用型的基于k8s的用例执行工具: TestKub。
+有用的链接 项目主页：TestKube (kubeshop.github.io) 代码库：GitHub - kubeshop/testkube: Kubernetes-native framework for test definition and execution 特性 支持执行postman collection 支持执行cypress的ui测试用例 支持执行基于curl的简单探活，比如站点，接口有没有挂的检测之类 工具希望解决的实际问题 避免vender锁定 CI/CD 管道中的测试编排和执行 在集群中轻松编排和运行任何类型的测试 - 功能、负载/性能、安全性、合规性等 - 无需将它们打包成在 docker-images 或提供网络访问 使测试执行与构建过程分离成为可能； 工程师应该能够在需要时运行特定的测试 以一致的格式集中所有测试结果，以实现“可操作的 QA 分析” 提供模块化架构以添加新类型的测试脚本和执行器 简单来说就是提供了与ci/cd解耦的纯测试容器编排和执行能力，并提供了统一的报告输出。
+主要模块 kubectl 插件 API Server - 调度器，执行器，收集执行结果 CRDs Operator - 观看 TestKube CR，处理与 API Server 通信的更改 Executors - 运行为特定运行程序定义的测试，目前可用于 Postman、Cypress 和 Curl 结果数据库 - 用于集中测试结果管理 一个简单的基于浏览器的看板，用于监控测试结果 总结 这里就不列举如何安装以及简单使用该工具进行用例执行了，目前TestKube的版本是0.6，还处在早起的开发阶段，不过项目的文档较为全面，而且模块化良好，有一定的扩展性，所以后面可能吸引一些使用者，有强烈需求的同学可以直接拿来就用，拿不定主意的同学建议再观察一定时间，等到1.0版本再入坑。</description>
+    </item>
+    
+    <item>
+      <title>大厂的测试经理们都在干什么呢</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%A4%A7%E5%8E%82%E7%9A%84%E6%B5%8B%E8%AF%95%E7%BB%8F%E7%90%86%E4%BB%AC%E9%83%BD%E5%9C%A8%E5%B9%B2%E4%BB%80%E4%B9%88%E5%91%A2-9b0e53172eec44b6b9516784e1d2d53d/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%A4%A7%E5%8E%82%E7%9A%84%E6%B5%8B%E8%AF%95%E7%BB%8F%E7%90%86%E4%BB%AC%E9%83%BD%E5%9C%A8%E5%B9%B2%E4%BB%80%E4%B9%88%E5%91%A2-9b0e53172eec44b6b9516784e1d2d53d/</guid>
+      <description>最近因为面试的关系跟一些大厂的测试经理有过一些交流，我们不妨看看大厂的测试经理们都在做什么吧。
+A来自某一线互联网大厂，担任测试经理应该十多年了，有着丰富的质量管理经验。在聊的过程中我发现A近两年的工作重心都放在效能提升方面。因为机会难得，我就问了一些我比较关注的问题。
+问：如何提升测试开发比，比如从1比3提升到1比4？
+答：我们之前的测试开发比其实也很高，不过现在已经降到1比7或者1比8了。这里面有一些事情是可以做的。首先质量管理方面产品的出厂质量不能降低，质量保障是一个端到端的事情，不能只靠测试同学去保障，研发人员也是质量控制中很重要的一环，所以研发人员在质量上游也要做好测试，这样后面的质量压力就会轻一点。另外我们还会定义标准的出厂测试以及uat测试的流程和指标，哪些东西要测以及怎么测，哪些指标要达到多少，什么环境进行什么样的测试，我们都会定义的很精细，这样才能花比较确定的力气去做一些相对确定的事情。另外需要尽可能的去自动化，或者开发相关的工具平台，给测试提效；最后还要管理好老板的预期，因为尽管有提升的空间，但整个过程还是需要花时间的。
+问：自动化测试的维护成本很高，比如系统的频繁改动会导致用例的更新速度跟不上，针对这一点有什么好的办法呢？
+答：接口测试没有界面相对来说维护成本还好，但是带ui的自动化测试维护成本确实很高，但一些项目又不能没有ui的自动化测试用例，对于这种情况，我们只能说用外包来尽量补，技术债总是有的，测试也有技术债，需要花成本去还。
+在跟A的聊天过程中，我发现大厂的质量管理现在做的越来越精细化和标准化，一些质量度量指标也更加立体和实际，聊完之后非常有收获。
+相对于A一直在一线大厂，B的经历要丰富一些。两年多之前在某一线厂负责核心系统的整体测试，目前在二线大厂负责整体的测试工作，下属规模还是比较大的。
+问：可以简单了解一下在公司的主要工作职能吗？
+答：做的事情可以分为两大块。第一块是规范质量流程，定义质量度量的指标，比如怎么样才算是质量好，这里可以做的事情非常多，比如规范测试流程方面，我们定义了具体的质量保障流程以及流程中的交付物和产出物，质量的管理变得更加的高效和精益。第二块就是测试效率的提升和整体研发效能提升，里面也有很多细节。
+问：可以方便了解一下在度量质量方面，我们定义了哪些指标呢？
+答：主要的指标就是线上故障数。线上故障数来自几个方面。首先是用户的反馈。用户反馈分三个方面。第一个是吐槽；第二个是产品建议；第三个就是线上故障了。我们通过一些渠道收集这些用户反馈并进行记录；然后是发布时出现的故障，看回滚数就可以了；第三是我们一些钉钉群里的反馈，比如老板的反馈和内部反馈等；最后就是测试和开发在日常使用过程中发现的线上故障数和用户app端上报时发现的故障数。
+问：所以线上故障数就是线上bug对吧？
+答：不太一样，线上bug是汇总过的，比如一个线上bug可能会引发几百个故障，如果只记录1个线上问题的话，那么就没办法比较好的比较bug的严重程度的。所以记录故障，对故障的影响范围的评估就相对容易一些，就不会出现线上问题的影响范围变小的问题了，因此对线上的质量就有比较客观的评估了。
+问：那在效能提升方面，我们做了哪些实践呢？
+答：主要几个方面吧。首先定义了标准的开发过程，比如之前我们抽查过一些项目，从需求提出到上线可能要30多天(这里记得不是很清楚了)，后来我们通过定义好开发的标准过程，主要是消除状态扭转时的耗时，我们发现需求上线周期可能只要7天了。其实研发的效率并没有得到提升，开发一个需求还是需要3-4天，但是由于过程定义清楚了，大家的职责范围更明确了，就不能甩锅了，因此研发整体效率提升了不少；另一个实践就是专项测试。我记得当时我来的时候某个功能开发要3天，测试却要21天，这实在是吓到我了，后来我们进行了测试专项的优化，这个时间只需要2天了，而且发现的bug数还有了较大的提升，这是一个很典型的例子 。最后就是工具的研发，提升开发的debug效率以及测试的效率。
+这两位候选人都是谈吐得体，胸有成竹，思维缜密，经验丰富。尽管目前不参与一线研发工作了，但是两位的技术基础都是过硬的，看一下他们的履历，都是国内一流大学毕业，工作经历都以大厂为主。A基本上是大厂质量管理体系的职位的天花板般的存在；B则是二线大厂的整体质量负责人，也是二线大厂的天花板了。我何德何能竟然以面试官的角色跟二位进行交流，说来确实是惭愧的很。
+总来的来说这些高端职位的面试我尽管没有诚惶诚恐，但确实看到了跟一流人才的巨大差距。保持谦逊，向头部人才学习，继续上下求索吧，自勉。</description>
+    </item>
+    
+    <item>
+      <title>如何优化selenium webdriver的执行速度</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E4%BC%98%E5%8C%96selenium-webdriver%E7%9A%84%E6%89%A7%E8%A1%8C%E9%80%9F%E5%BA%A6-c4641f738ca24347bf25f316e0199bbd/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E4%BC%98%E5%8C%96selenium-webdriver%E7%9A%84%E6%89%A7%E8%A1%8C%E9%80%9F%E5%BA%A6-c4641f738ca24347bf25f316e0199bbd/</guid>
+      <description>让自动化测试脚本正常工作只是自动化测试的第一步，由于自动化脚本会经常执行并更新，因此测试脚本需要
+可以快速执行 容易维护 容易阅读 本文会提供一些让selenium自动化脚本运行的更快的技巧。
+在page_source中断言text比直接使用text属性断言要快 我们经常会需要断言页面中的某个部分包含一些具体的文本，下面的语句的输出结果是相同的
+driver.page_source driver.find_element(:tag_name =&amp;gt; ‘body&amp;#39;) . 不过对于第二条语句来说，selenium需要去分析页面的结构，最后再找到对应的元素并输入结果，这显然是需要花费时间的。如果页面比较小的化，那么二者的差距可能不大，不过对于大的页面来说，第一条语句速度明显会更快一些。
+使用page text的情况
+expect(driver.find_element(:tag_name =&amp;gt; &amp;#34;body&amp;#34;).text).to include(&amp;#34;platform- and language-neutral wire protocol&amp;#34;) 使用 page source的情况
+expect(driver.page_source).to include(&amp;#34;platform- and language-neutral wire protocol&amp;#34;) 来看一下差距
+Method 1: Search whole document text took 0.823076 seconds Method 2: Search whole document HTML took 0.039573 seconds 当然两者的使用场景是不太相同的，不过我们这里只关注性能，显然page source要更快速一些。
+元素越具体，获取text的速度越快 根据经验，我们可以通过缩小更具体的 Web 控件的范围来节省执行时间。下面的两个断言语句在很大程度上实现了相同的功能，但在执行时间上有很大的不同。
+expect(driver.find_element(:tag_name, “body”).text).to include(“language-neutral wire”) 这条语句的执行时间是0.93s
+expect(driver.find_element(:id, “abstract”).text).to include(“language-neutral wire”) 这个断言只执行了0.02s
+很明显，第2个断言除了在执行速度上更快之外，断言也更加精确，更容易理解。
+使用变量去缓存没有变化的元素 我经常看到有人编写如下测试来检查页面上的多个文本。</description>
+    </item>
+    
+    <item>
+      <title>如何加速执行集成测试</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E5%8A%A0%E9%80%9F%E6%89%A7%E8%A1%8C%E9%9B%86%E6%88%90%E6%B5%8B%E8%AF%95-645011fe06e54b3c89eb28fc6ca2a6d0/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E5%8A%A0%E9%80%9F%E6%89%A7%E8%A1%8C%E9%9B%86%E6%88%90%E6%B5%8B%E8%AF%95-645011fe06e54b3c89eb28fc6ca2a6d0/</guid>
+      <description>今天我看到了一个有趣的UI集成测试加速方法，该方法与我想的底层优化、分布式运行或多线程运行方式不同。该作者重新编排了测试用例的执行顺序，删除了一些代码，并从执行流程上进行了优化。这确实很有趣。在本文中，我将简单介绍他的原文，希望对大家有所帮助。
+我们将展示如何加速一个客户的构建过程，这样他们可以在相同的预算下多运行40%的构建。
+我必须承认，我是单元测试的超级粉丝。我早期的一些博客文章就是关于单元测试的。
+单元测试是快速的、可预测的、而且隔离的。它们被很好地隔离在一个沙盒中，这就是它们的可预测性和快速性。
+我们推出了一个版本，用户无法进入登录页面，但这是另一个故事了。我把它命名为“一个没有集成测试和几十个单元测试的项目”。
+并不是说我完全停止写单元测试，而是我很少使用它们。大部分是用于可以安全地进行隔离测试的功能，例如一个接受各种输入并返回各种输出的函数。用集成测试来测试可能的值矩阵是不值得的。
+想象一下，有一个日历组件，用户可以输入一个日期，从一个下拉日历中选择数据，然后点击一个按钮来获得一个建议的日期。所有的日期都可以是不同的格式，这取决于用户如何输入它们。是否值得为每种可能的日期格式进行集成测试？也许不值得！
+然而，我们把输入的日期发送到一个负责解释许多不同格式的输入日期的实用函数，但它总是返回一个Date对象。为这个实用函数写一个单元测试将是一个很好的主意！对于整个应用来说，就不是那么回事了。
+假设你正在建立一个问题跟踪器。你有一个集成测试，打开一个对话框，试图保存一个里程碑而不指定名称。这将导致一个错误。你的另一个测试试图创建一个里程碑，但现在指定了一个名称。这不会导致错误，并显示消息“新的里程碑已保存”。
+beforeEach(async () =&amp;gt; { await createNewProject(); }); it(&amp;#39;cannot create milestone without a name&amp;#39;, () =&amp;gt; { clickNewMilestoneButton(); newMilestoneDialog.clickSave(); newMilestoneDialog.should(&amp;#39;have.text&amp;#39;, &amp;#39;Milestone name is required&amp;#39;); }); it(&amp;#39;creates a milestone&amp;#39;, () =&amp;gt; { clickNewMilestoneButton(); newMilestonDialog.getNameField().type(&amp;#39;February Milestone&amp;#39;); newMilestoneDialog.clickSave(); newMilestoneDialog.should(&amp;#39;have.text&amp;#39;, &amp;#39;New milestone saved&amp;#39;); }); 乍一看，上面的测试没有问题。然而，从零开始创建一个新项目涉及设置名称，填写一些起始/结束日期，键入描述，从下拉列表中选择项目所有者，为项目提供相同的标签，填写其他几个字段。我们的测试运行器（我现在使用Cypress）必须单击所有这些字段，键入一些内容，等待一些建议出现，然后单击，再等待。
+或者，将运行时间放在注释里，像这样想象：
+beforeEach(async () =&amp;gt; { // 运行10秒 await createNewProject(); }); it(&amp;#39;cannot create milestone without a name&amp;#39;, () =&amp;gt; { // 运行2秒 clickNewMilestoneButton(); newMilestoneDialog.</description>
+    </item>
+    
+    <item>
+      <title>如何实现线程安全的内存缓存</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%86%85%E5%AD%98%E7%BC%93%E5%AD%98-c7ae4d48e73f491282c975897d821e50/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%86%85%E5%AD%98%E7%BC%93%E5%AD%98-c7ae4d48e73f491282c975897d821e50/</guid>
+      <description>这两天正好看到一个用go实现的线程安全的内存缓存，实现代码非常简洁高效，不卖弄不烧脑，非常值得初学者拿来学习。
+项目地址 项目地址在https://github.com/muesli/cache2go，目前已经有1.8k的star。
+如何使用 package main import ( &amp;#34;github.com/muesli/cache2go&amp;#34; &amp;#34;fmt&amp;#34; &amp;#34;time&amp;#34; ) // Keys &amp;amp; values in cache2go can be of arbitrary types, e.g. a struct. type myStruct struct { text string moreData []byte } func main() { // Accessing a new cache table for the first time will create it. cache := // We will put a new item in the cache. It will expire after // not being accessed via Value(key) for more than 5 seconds.</description>
+    </item>
+    
+    <item>
+      <title>如何用指标去度量bug本身的质量情况</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E7%94%A8%E6%8C%87%E6%A0%87%E5%8E%BB%E5%BA%A6%E9%87%8Fbug%E6%9C%AC%E8%BA%AB%E7%9A%84%E8%B4%A8%E9%87%8F%E6%83%85%E5%86%B5-d71f493c58f8466b88a10806cdbc3ae4/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E7%94%A8%E6%8C%87%E6%A0%87%E5%8E%BB%E5%BA%A6%E9%87%8Fbug%E6%9C%AC%E8%BA%AB%E7%9A%84%E8%B4%A8%E9%87%8F%E6%83%85%E5%86%B5-d71f493c58f8466b88a10806cdbc3ae4/</guid>
+      <description>作为测试同学我们会经常苦恼如何使用一些指标来度量版本或产品的质量情况，近些年来比较主流的声音可能变成了如何使用指标来度量研发效率，以及如何在不影响线上质量的前提下提高研发效率，降低交付周期，不过今天我却听到了不同的声音，无意中浏览到一篇文章，讲的是如何去度量测试同学提的bug本身的质量情况。
+先上图，先看看在这形形色色的图表下隐藏有哪些通用指标。
+Bugs Integrity Level 就是上面那4个圈，颜色越绿就代表bug的完整性越好，也就是提出的bug的质量越高。
+Dev Efficiency - Bugs per resolution with drill across 中间位置左边的那几个柱状图，这里汇总了下面一些信息。
+绿色部分：开发解决了的bug，也就是这些bug被开发接受，并被测试验证过了 非绿色部分表示的是被开发拒绝的bug，其中拒绝理由有下面4种 Works as designed (WAD)：这不是bug，产品设计就是如此 Ir-reproducible：无法复现 Environment：环境问题，嗯，是不是很亲切 Duplicated：重复的问题 Dev Efficiency - % Rejected 中间部分靠右的4个圈，按季度统计了bug的被拒绝率，颜色越深拒绝率越高。
+Average time in status - bug bug在特定的生命周期停留的平均时间，不过作者也说了，他们仅将其视为一种晴雨表，把这个当成硬指标，因为并非所有状态都掌握在 QA 手中，而且创建这个bug的人其实并不总是对bug的所有状态负责。用过jira的同学可能会这个图表会有些印象。
+Bugs integrity - number of missing fields 这部分是对字段不完整的bug的统计。我们先看一下作者公司的提bug模版。
+Description：bug描述 Steps to Reproduce：重现步骤 Expected results： 预期结果 Actual results：实际结果 这个图表展示了所有创建了的bug数量以及缺失具体字段的bug数量，看上去还是很清晰的。不过我会有一些疑问，如果1个bug这些字段都缺失了，那么这个bug会不会被重复算到每一种具体的缺失分类中去？另外为什么这些字段不能设置成必填？
+Bugs integrity - % perfect bugs 这里展示了字段完整的bug比例，也就是完美的bug的比例。
+# UI bugs without visual attachment 如果某个bug跟ui相关，那么我们会期望提bug的时候带上截图或者录屏，这里就是展示的没有放图的ui bug比例，如果这个比例高于10%那么bug的质量就是异常的。</description>
+    </item>
+    
+    <item>
+      <title>如何编写测试计划</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E7%BC%96%E5%86%99%E6%B5%8B%E8%AF%95%E8%AE%A1%E5%88%92-fb24f300af014335945a795002909ca8/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E7%BC%96%E5%86%99%E6%B5%8B%E8%AF%95%E8%AE%A1%E5%88%92-fb24f300af014335945a795002909ca8/</guid>
+      <description>测试计划在国内其实不是很流行。之前在外企工作的时候，每一次的测试工作基本上都是以编写测试计划开始的。好的测试计划可以让团队成员对测试整体进行和测试策略以及方法有一个大体的认识，在一定程度上可以节约沟通成本。最近正好在github上看到一份测试计划文档，我们就一起来学习一下其中的精华吧。项目地址：https://github.com/fityanos/awesome-quality-assurance-roadmap#test-plan-sample
+1 介绍 1.1 项目介绍 介绍项目上下文
+1.2 读者 描述一下读者人群，比如来自A团队的alice以及来自B团队的bob
+2 测试策略 2.1 测试目标 比如完整的回归测试，还是增量的功能验证等；
+2.2 测试假定 假设某些东西不需要考虑或者满足某些条件，比如测试环境上可能没有配置负载均衡，这时就可以假定大家都理解这个点，并可以进行适当的忽略
+2.3 测试原则 比如所有bug必须fix之类的原则性的东西
+2.4 测试范围和级别 这里可以定义测试的范围，该做的就做，不该做的就先约定清楚。比如可以定义
+功能测试范围和时间以及交付物 性能测试范围和时间以及交付物 回归测试范围和时间以及交付物 UAT测试的范围和时间以及交付物 2.5 LOE(level of effort) 这里就是工作量的分解了，越清晰越好。
+3 执行策略 3.1 开始和退出条件 比如功能测试的开始条件是产品体验通过和开发自测通过，结束的条件是所有的bug都被fix
+3.2 测试轮次 第一轮 第二轮 &amp;hellip;&amp;hellip; 对于敏捷测试团队来说，其实可以忽略测试轮次的概念。对于瀑布流开发团队来说则需要定义清楚，因为每一轮的时间都很宝贵。
+3.3 测试指标 这里实际上定义的是测试报告的类型的频率，比如测试执行进度的汇报频率是每天，而测试覆盖率的汇报频率可以低一些，比如每个迭代汇总一次。
+3.4 缺陷的追踪及报告 这里定义bug的生命周期。
+4 测试管理流程 4.1 测试设计流程 4.2 用例执行流程 4.3 测试风险以及依赖方 这里需要提前考虑清楚测试风险以及依赖方，最重要的是需要找到back up，先把退路想好。
+4.4 团队成员及角色 5 测试环境 这里可以描述测试环境的详细信息，比如测试环境的配置以及数据库情况，staging环境的相关情况，因为staging可能用的是线上正式库。
+6 排期和交付 项目过程中每个测试阶段的排期和交付物在这里定义，也是整篇文档最重要的部分。</description>
+    </item>
+    
+    <item>
+      <title>工程度量的5个类别</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%B7%A5%E7%A8%8B%E5%BA%A6%E9%87%8F%E7%9A%845%E4%B8%AA%E7%B1%BB%E5%88%AB-7d10c5580b6a47c78265f63114e4efdd/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%B7%A5%E7%A8%8B%E5%BA%A6%E9%87%8F%E7%9A%845%E4%B8%AA%E7%B1%BB%E5%88%AB-7d10c5580b6a47c78265f63114e4efdd/</guid>
+      <description>当Mojtaba Hosseini帮助指导Zapier成为一个更加以数据和指标为导向的工程组织时，当团队继续增加和使用指标时，他发现他们有时会遇到这个问题。我还应该注意和使用哪些指标？
+让我们加入Mojtaba的另一个嘉宾系列，他将探讨5类工程指标，这些指标可以帮助团队实现指标的多样化和平衡化
+但首先，打个比方&amp;hellip;
+想想一个汽车的主仪表盘。
+有许多指标和表盘，每个都以不同的方式帮助司机。
+速度和性能：汽车的速度有多快？发动机的工作强度如何？ 维护：发动机健康状况，机油和电池健康状况，汽油水平，发动机温度。 状态：车门、后备箱、引擎盖开/关，灯开/关，指示灯开/关，手刹开/关。 汽车越复杂，这些类别中的表盘和仪表盘就越多。如果司机只能接触到一个类别，他们可能会损坏汽车（或更糟）。
+工程测量的5个类别 可以说，工程团队可以使用的指标有5类。
+客户指标 这些指标主要是衡量团队的客户情况。这个类别的指标包括
+客户净推荐值(NPS，可以理解为口碑) 产品HEART指标。幸福感、参与度、采用率、留存率、任务完成率 关于我们对客户咨询的反应速度的SLI指标 这些通常被认为是一个团队最重要的一些指标，因为它们涉及到团队的客户。然而，这些指标可能是滞后指标，可能无法让团队充分了解客户满意（或不满意）的原因。
+团队工作量指标 一些团队发现衡量团队的工作量是很有用的，可以深入了解各种类别的工作量。比如说。
+参与到feature开发工作与非feature开发工作的百分比 团队的支持工作的负荷及其对整体工作量的影响 团队的bug fixing工作的负荷及其对整体工作量的影响 战术性工作与战略性工作的百分比 这些指标可以帮助团队理解和阐述他们的痛点，甚至有时可以与客户指标联系起来。它们有时也能揭示出团队以外的问题和瓶颈，这些问题和瓶颈影响了团队的工作量。
+团队效能指标 如果说团队工作量指标衡量的是团队的工作投入，那么团队绩效指标的目的是看团队在处理工作量方面的情况。比如说。
+周期时间和吞吐量以及在制品（WIP 半成品）的大小：团队如何处理其工作负荷 4个DORA指标：一个团队部署到生产的速度和频率以及这些部署的质量，可以参考这篇文章:https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance 团队速度：完成需求的平均速度 这些指标通常是最有可能被管理层错误使用的指标&amp;ndash;最糟糕的是被武器化。如果使用得当，它们是团队工作量和客户指标的绝佳配套指标。
+服务水平度量 软件团队也可以衡量他们维护的服务的健康状况。比如说。
+资源使用率（CPU/内存）：服务使用资源的程度，通常在一段时间内查看 (云）成本：资源的成本（通常会进一步细分），通常会随着时间的推移查看 服务正常运行时间：服务正常运行的时间百分比 服务错误率：一项服务出错或超时的频率 请看这篇来自亚马逊的文章，关于服务指标的各个层次以及为运营可见性创建仪表盘。https://aws.amazon.com/cn/builders-library/building-dashboards-for-operational-visibility/
+请注意，对于一些团队，这些服务指标与客户指标有直接或间接的关系&amp;ndash;当客户是服务的直接用户时，甚至可能是客户指标。
+团队幸福感/参与度 另一类指标是围绕着团队的参与度和幸福感。一些例子包括。
+员工参与度调查 高功能团队调查 工作量和战略的模糊性调查 这些指标旨在平衡一些绩效、工作量和客户指标与团队参与度。例如，参与的团队往往是高绩效的团队。</description>
+    </item>
+    
+    <item>
+      <title>常用的adb命令</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%B8%B8%E7%94%A8%E7%9A%84adb%E5%91%BD%E4%BB%A4-3818512e5e2a40fb8aededff3994128e/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%B8%B8%E7%94%A8%E7%9A%84adb%E5%91%BD%E4%BB%A4-3818512e5e2a40fb8aededff3994128e/</guid>
+      <description>Android Debug Bridge是我们比较常用的命令行工具，该工具可以在Android 设备上执行不同的操作，例如安装或卸载应用程序、输入文本、捕获屏幕截图等，下面是一些常用的adb命令及使用场景。
+列出连接的设备 adb devices 上面的命令可以列出设备的序列号和状态，如果连接了许多设备并且我们想将它们区分开来，我们可以运行带有-l选项的命令以列出有关设备的更多详细信息。
+adb devices -l 此命令向我们显示设备、型号等。
+安装应用程序 通过提供.apk文件的路径，可以在设备上安装应用程序
+adb install &amp;lt;path_to_apk&amp;gt;.apk 如果连接了多个设备，直接运行上面的命令是会报错的，这时应使用-s选项指定目标设备的序列号。
+adb -s &amp;lt;serial_number&amp;gt; install &amp;lt;path_to_apk&amp;gt;.apk 这里的-s是一个常用选项，用于指定具体的设备，会在adb命令中大量使用到。
+列出package adb shell 中的包管理器(package manager)工具可用于列出设备上安装的所有包
+adb shell pm list packages 后面接grep命令可以实现更为精确的过滤
+adb shell pm list package | grep what_you_want 启动Activity 可以用下面的命令来找到指定的package中的某个activity
+adb shell dumpsys package | grep &amp;lt;package_name&amp;gt; | grep Activity 然后下面的命令可以启动activity
+adb shell am start &amp;lt;package_name&amp;gt;/&amp;lt;activity_name&amp;gt; 比如下面的命令可以启动google map
+adb shell am start com.google.android.apps.maps/com.google.android.maps.MapsActivity 在浏览器中打开URL 这里要用到工具是活动管理器am，activity manager</description>
+    </item>
+    
+    <item>
+      <title>度量自动化测试效果的10个指标</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%BA%A6%E9%87%8F%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%95%88%E6%9E%9C%E7%9A%8410%E4%B8%AA%E6%8C%87%E6%A0%87-5fe520b7d0b141c1852e079a5aaa7202/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%BA%A6%E9%87%8F%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%95%88%E6%9E%9C%E7%9A%8410%E4%B8%AA%E6%8C%87%E6%A0%87-5fe520b7d0b141c1852e079a5aaa7202/</guid>
+      <description>低代码自动化测试平台的普及，测试同学代码能力的提升使得目前自动化测试已经成了测试工作中非常重要的组成部分，不管是由于kpi压力也好，还是因为需要消除其他方面的质疑声音也罢，我们经常需要在工作中制定一些可以度量的指标来描述某项工作或者改进的实际效果。那么有哪些指标可以去度量自动化测试的最终效果呢，这里给大家一些常见指标作为参考。
+可自动化率 这个指标主要是描述所有的测试用例中有多少的用例可以被用自动化的方式进行回归，毕竟有一些用例可能还是要手动去执行的，这个值越高那么进行自动化的边际成本可能就越低。
+计算公式：可自动化率 = （可以实现自动化的用例数量 / 用例总数）* 100
+自动化脚本bug发现率 这个指标可以直观的描述自动化测试的效果，你可以通过这个指标来评估当前的投入产出比是否可以接受，另外在不同的测试环境中的效果应该是不一样的，举例来说在测试环境中我们可能主要是进行新功能的测试，那么发现的大多数问题可以都是来自手工测试，但是在staging环境或者说是预发布环境，我们应该主要通过自动化脚本来发现bug，所以这个效果值应该相对高一些。
+计算公式：（自动化测试发现的bug数 / 有效bug数）* 100
+用例通过率 这个指标用来衡量用例的稳定性和自动化测试的实际效率，毕竟如果通过率低的话就意味着我们需要花费大量的时间去定位运行失败的原因。在多次测试中，通过率如果明显下降那么可能意味着：要么是我们的用例不稳定，不值得信赖；要么是本次的发布中包含了太多的bug。
+计算公式：（通过的用例数 / 执行的用例数）* 100
+用例执行时间 天下武功，唯快不破。如果用例执行的速度太慢那么我们就没有办法在代码部署后迅速的给开发人员以反馈，浪费时间就是浪费生命。
+计算公式：用例结束时间 - 用例开始时间
+自动化测试用例覆盖率 耳熟能详的概念，也是很多团队都会追求的一个指标，覆盖率越高就证明测试回归的效率越高，这是一个需要长期追踪的指标，kpi里寻常见，okr前几度闻。
+计算公式：（自动化用例数 / 用例总数）* 100
+自动化用例异常率 顾名思义的指标，值得去长期关注的指标，其实就是通过率的另一种体现，失败率高可能意味着系统或产品的行为发生了更新，用例也需要进行相应的修改了。
+计算公式：每次用例执行（失败用例数 / 执行的用例数）* 100
+构建异常率 用例追踪cicd中构建质量的指标，异常率越高可能就意味着代码质量相对较差。
+计算公式：（构建失败次数 / 构建总数）* 100
+迭代中的自动化测试创建率 理论上说我们这个迭代开发的功能就应该在该迭代中被自动化用例所覆盖，迭代完成之后补作业的行为是不推荐的。这个指标可以告诉我们我们离该目标还有多少距离。
+计算公式：（本迭代中创建的用例数 / 非本迭代中创建的用例数）* 100
+自动化进度 我们的目标是将所有可以自动化的用例都进行自动化，这个指标告诉我们距离这个小目标实现有还有多少路要走。
+计算公式：（当前自动化用例总数 / 可以被自动化的用例数）* 100
+测试金字塔 这个指标可以告诉我们当前自动化用例的分布情况，理想情况下测试用例的分布应该是金字塔型的，ui用例最少，接口和集成用例较多，单元测试用例最多。
+计算公式：（每种自动化测试用例的数量 / 用例总数）* 100
+总结 年底了，希望这些指标可以帮助大家进行下一年度的kpi或okr规划。</description>
+    </item>
+    
+    <item>
+      <title>开发人员应该进行思路转变以提升软件质量</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E5%BA%94%E8%AF%A5%E8%BF%9B%E8%A1%8C%E6%80%9D%E8%B7%AF%E8%BD%AC%E5%8F%98%E4%BB%A5%E6%8F%90%E5%8D%87%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F-a19a6990c7bb43429a8215f9ff4ac262/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E5%BA%94%E8%AF%A5%E8%BF%9B%E8%A1%8C%E6%80%9D%E8%B7%AF%E8%BD%AC%E5%8F%98%E4%BB%A5%E6%8F%90%E5%8D%87%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F-a19a6990c7bb43429a8215f9ff4ac262/</guid>
+      <description>Mindset Shifts For Engineers to Achieve Higher Software Quality
+看到个开发小哥写的关于测试的文章，挺有意思的，翻译了一下，观点虽不新颖，但能从开发角度去思考软件质量，格局上面是值得称赞的。原文地址：https://medium.com/@phdmeyildiz/mindset-shifts-for-engineers-to-achieve-higher-software-quality-8ef8ee00a041
+作为一个刚从大学毕业的初级工程师，没有什么是比掌握越来越多的工具、编程语言等更重要的事情了。当你刚进入工程领域时，你想捣鼓点新东西，然后你想看这些玩意可以正常工作。这是职业生涯早期最大的动力来源。我也是这样做的，并把大部分时间花在这上面。我一直不太理解我的前辈们，他们更关注工作方式，而不是下一个很酷的技术。现在，经过12年的时间，我不仅理解了他们，而且在这里，我写下了我的第一篇文章，讲述了一个简单的思维方式的转变对你的项目的影响会比几十种编程语言大。
+这篇文章是关于转变我们作为软件工程师的心态，在交付产品时获得高的视角，最终让客户的满意提升。下面的思维转变说明没有详细解释，只是用简短的句子写出来，我们可以做更深层次的思考。
+让我们来谈谈我们需要改变的思维模式。👍表示目标思维模式，👎表示我们需要远离的思路。
+哪种工作方式？ 持续交付👍 软件总是处于可发布的状态。 我们可以随时进行发布。 QA尽早介入开发流程。 尽早测试以避免bug的产生，并分析产品的质量。 瀑布式的敏捷 👎 软件需要经过完善流程才能到可发布的状态。 我们需要等到发布那的那个星期才能来进行发布。 QA等到发布之前才能检查软件质量。 测试置后旨在发现已经开发的功能中的错误。 什么时候测试？ 从一开始就进行测试👍 从一开始就进行测试，以增加最终结果的可预测性。 在开发过程中做探索性测试。 开发和测试同时结束。 最后测试 👎 以部署前的例行测试作为开发流程的结束。 在开发过程中可能已经引入了错误，我们的作用是找到它们。 首先开发，最后测试。 谁为质量负责？ 每个人都要对质量负责👍 把质量放在前面和中心，而不是放在pipeline的末端。整个团队都要关注质量。 bug的检测是在开发过程中同步进行的，不存在QA资源是瓶颈的说法! 更少的资源可以做得更多。 只有QA团队对质量负责 👎 把质量作为最后一道防线。 QA成为瓶颈的可能性很大。 需要越来越多的资源来战胜质量问题。 何时交付？ 更快、更小的交付👍 尽量高频率的交付少量的代码 高质量来自于小的、快速的、明确的工作步骤，我们可以在创造变化的过程中进行监控。 岁月静好，我憋大招 👎 一次性交付大量的代码。 当软件很复杂的时候，要验证其质量是比较困难的。 质量保证（QA）还是质量控制？ QA高于质量控制👍 主要关注点是高效的工作方式和建立团队间的和谐。 在从事任何工作时，都要考虑到质量问题。 不断的反馈机制来改善SDLC（软件开发生命周期）的pipeline。 只有质量控制👎 主要关注的是检查最终结果。 当出现问题时，质量成为关注点。 在最后的测试中收到反馈。 什么是QA？ QA是指质量协助👍Q QA团队从开发的开始到结束都处于顾问的位置。 重点是放在质量上，而不是寻找错误。 错误更容易修复，也更便宜。 QA不应该发现bug。当发现一个bug时，它不仅应该被修复，而且应该调查其根本原因。 错误意味着SDLC过程中存在问题，这个过程需要被修正。 QA意味着发布守门员👎 QA团队是一个测试者和bug寻找者。 没有改善质量的空间。 修复问题的成本和风险都比较大。 QA应该找到bug，然后bug应该被修复而不需要进一步挖掘其根本原因。 错误只是一个软件问题。 观点 你对上面的一些思路转变有什么样的看法呢？</description>
+    </item>
+    
+    <item>
+      <title>强行为新项目写ui自动化用例是一种什么样的体验</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%BC%BA%E8%A1%8C%E4%B8%BA%E6%96%B0%E9%A1%B9%E7%9B%AE%E5%86%99ui%E8%87%AA%E5%8A%A8%E5%8C%96%E7%94%A8%E4%BE%8B%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C-98ad086dc03c4469827a0e1a02f7657f/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%BC%BA%E8%A1%8C%E4%B8%BA%E6%96%B0%E9%A1%B9%E7%9B%AE%E5%86%99ui%E8%87%AA%E5%8A%A8%E5%8C%96%E7%94%A8%E4%BE%8B%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C-98ad086dc03c4469827a0e1a02f7657f/</guid>
+      <description>最近接了一个新项目，配套有个web管理后台页面，尽管需求一直在迭代以及测试时间相对不宽裕，我还是决定写点自动化用例作为功能测试的补充和回归测试的输入，顺便玩一下playwright，不在真是项目中使用一种技术其实是很难对这种技术产生深刻理解的。
+项目介绍 管理后台是前后端分离的，前端用的react加上蚂蚁的前端组件库，后端是基于golang构建的微服务。其实这种项目更适合做接口测试，ui自动化作为补充就好了。
+技术选型 这点很清楚，之前benchmark过，playwright比cypress性能要好，所以直接选playwright，另外playwright的python版本完全安装之后自带了pytest和一系列断言，基本上开箱即用，非常方便。另外为什么不用js而用python，主要是因为我用python写了一点接口用例，有些数据库操作的代码可以稍微复用一下，所以统一起见用python+playwright
+第一个难点：登录 管理后台接的是google auth，由于我的账号开启了二次验证，需要收验证码，所以从ui上输入用户名和密码登录就走不通了。不过登录的原理基本相同，就是往cookie里写一些东西，后面所有的请求都自动带cookie到后端，后端通过之前写的那些东西就可以判断用户是谁，什么时候登录失效等。知道了原理后面就是随便试试了，我的代码大概是这样写的
+def login(page): page.goto(&amp;#34;url&amp;#34;) page.evaluate(f&amp;#39;()=&amp;gt; document.cookie=&amp;#34;{COOKIE}&amp;#34;&amp;#39;) 其实就是先访问被测页面，然后自动跳到登录页面，这时候去用js设置cookie，之后再访问一次被测页面就可以自动登录了。
+cookie的话可以从浏览器的开发者工具里直接拷贝出来，因为是测试环境，所以cookie的有效期很长，基本可以放心使用。
+至于如何定期刷新cookie其实也不难搞，写个浏览器插件，每次打开被测页面的时候就把cookie发到一个自建后台服务，这个服务就是把cookie存到redis里，在测试用例里直接访问redis拿最新的cookie就好了。
+定位有点麻烦 作为熟练工，定位对我来说应该不会是大问题，然而现在的前端组件层级嵌套厉害，html的表意性不强，而且id，name等比较有标志性的属性也不是很多，踌躇良久之后我决定请前端同学在一些关键的组件上面加上id或者name，尽管他们不是很愿意，但是我倚老卖老，还是让他们从了。
+playwright的元素定位策略非常灵活，从这几天的使用情况来看，建议还是css加xpath，如果你css不熟那就直接用xpath，优点是从浏览器上就可以直接复制xpath，缺点是复制的xpath稳定性很差，页面结构稍微发生一些变化就不可用了。
+最后就是playwright有录制的功能，我一般是在调试暂停的时候顺便打开录制，看看playwright自己录制的定位器是怎么样的，感觉大多数时候playwright的录制结果很靠谱，不比自己写要差。playwright生成的代码里text属性用的相对比较多点，对于多语言的系统来说需要慎用。
+日期选择器 大人，大清早就亡了。
+很多年前我们在处理日期选择器的时候基本上是用js来set相应的input的value值，可以做到不管ui怎么样，我想设置成什么值都可以的效果。
+然而，这次时代变了。ant框架的日期选择器直接设置value值并没有什么用。我尝试过打开日期选择器选择今天的日期，因为今天的日期会高亮，所以选起来比较容易，但这样就做不到选择任意一天的效果，对于写用例来说相当不友好。
+最后经过一番尝试，还是使用黑科技，模拟键盘在日期框上输入相应的日期，模拟键盘按下回车键，代码如下。
+def select_time_range(self, start, end): start_str = start.strftime(&amp;#39;%Y-%m-%d 00:00:00&amp;#39;)	end_str = end.strftime(&amp;#39;%Y-%m-%d 23:59:59&amp;#39;)	self.page.locator(&amp;#39;#validTime&amp;#39;).type(start_str) self.page.locator(&amp;#39;.ant-picker-input input &amp;gt;&amp;gt; nth=1&amp;#39;).type(end_str) self.page.locator(&amp;#39;#validTime&amp;#39;).press(&amp;#39;Enter&amp;#39;) 数据清理 我的用例基本建立在数据的基础上，比如我会先创建一系列的数据，然后通过确定的条件去搜索数据，再度创建数据，编辑数据等，等于是写了剧本的，每个用例按照安排运行，这就要求在所有用例执行之后做数据清理的工作，这就要求我去数据库里更新每条记录的软删除字段。另外搜索页面的数据放在es里，这就要求清理的过程中除了数据库之外还要顺便把es清掉，稍微有一点点麻烦，不过还好，几行代码的事情。
+import pymysql.cursors import requests, logging, sys logging.basicConfig(format=&amp;#39;%(asctime)s:%(levelname)s:%(message)s&amp;#39;, level=logging.DEBUG) mysql_conf = { &amp;#39;host&amp;#39;: &amp;#39;xxxxx&amp;#39;, &amp;#39;user&amp;#39;: &amp;#39;test&amp;#39;, &amp;#39;port&amp;#39;: 3306, &amp;#39;db&amp;#39;: &amp;#39;xxx_db&amp;#39;, &amp;#39;password&amp;#39;: &amp;#39;secert&amp;#39;, } class DBCleaner: def __init__(self) -&amp;gt; None: self.</description>
+    </item>
+    
+    <item>
+      <title>强行为新项目写接口测试是一种什么样的体验</title>
+      <link>https://zh.ethanhan.cc/posts/%E5%BC%BA%E8%A1%8C%E4%B8%BA%E6%96%B0%E9%A1%B9%E7%9B%AE%E5%86%99%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C-c5e43bb1f307421db462a9066a3990e4/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E5%BC%BA%E8%A1%8C%E4%B8%BA%E6%96%B0%E9%A1%B9%E7%9B%AE%E5%86%99%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C-c5e43bb1f307421db462a9066a3990e4/</guid>
+      <description>继续上次的话题，为新项目写ui自动化测试是一件非常有挑战的事情，写接口测试会不会容易一点呢？这次我就尝试了一下。
+现阶段我们的管理端接口其实不多，就8个左右，所以从工作量上评估其实还可以。
+测试策略 讲策略之前我们先看一下项目的简单业务属性。该项目的管理后台其实就是稍微复杂一点的增删改查。增加一条记录，编辑记录，各种组合条件查询记录，删除功能暂时没有，后面可能会跟进。
+我的测试策略也很简单，首先搭建1个单独的测试环境，防止跟其他测试形式冲突，然后把最大的精力放在数据的准备和清理上。
+准备数据：为了测试查询，比较好的方式是每次都先清空数据库，然后动态创建一些固定的数据，我指的固定是比如固定100条，每条的排序规则，各个字段都是确定的。 数据清理：完成测试后清空数据库，比如搜索测试完成之后清空数据库去测试创建和编辑，这样创建的时候就没有存量数据造成的断言干扰，就可以实现每次创建之前数据都是0条，创建成功之后变成1，这样断言就相对容易，而且用例能够以随机的顺序运行，减少了依赖； 代码实现 这里最有挑战的是数据准备和清理的代码实现，我需要准备下面的数据
+通过接口创建一些数据到db，之所以用接口创建是因为一些联动的操作直接写db的话无法触发。我们的接口是http的，用python+requests就可以了，稍微麻烦的点是构造的数据需要通过接口的有效性校验，比如时间区间之类的，因为我们的服务会跑在多个不同的国家和地区，timezone也是需要关注的 把创建成功的数据id以及一些需要用到的字段存到redis里。我习惯于用redis的set，因为天生去重，并且可以使用srandmember来随机返回几条数据，在做查询校验的时候非常方便 查询一些关联表的信息或者需要用到的数据，保存在redis里。这里我用的是redis的string类型，需要保存的信息直接序列化成json字符串，非常的方便； 直接写sql做数据库的清理，直接调用es的resetful api做索引的清理。我们的查询使用的是es，所以清理数据的时候除了用sql去delete之外，es的index也是要清理的 使用配置文件来进行多环境多地区的配置，比如mysql每个地区的配置都不一样，同样的地区不同的业务数据也在不同的库里，把配置弄起来还是很有必要的 最终实现的效果是运行TEST_ENV=test REGION=cn python data_builder.py这条命令之后就可以在对应的环境创建初始化数据了。代码比较啰嗦我就不粘贴了。
+用例编写 用例编写无非是增删改查。
+新增记录
+测试各种边界条件，比如一些字段本来是必填的，就是任性不填。本来要求string类型结果传number类型等待 测试正常的情况，起码要把正常流程跑通 下面是一个例子
+def test_ads_target_keyword_list_should_be_mandatory(valid_data_set): del valid_data_set[&amp;#39;target_keyword_list&amp;#39;] res = common_helpers.post_with_cookie(&amp;#34;/create&amp;#34;, valid_data_set) common_assertion(res) assert res[&amp;#39;code&amp;#39;] != SUCCESS assert &amp;#39;required&amp;#39; in res[&amp;#39;msg&amp;#39;] 这里可以分享2点有意思的地方
+返回值的错误码尽管可以枚举，但是逐一判断还是比较麻烦的，这里我就直接断言返回码不等于SUCCESS，SUCCESS其实可以看成是一个宏，所有用例里都统一 错误信息可以不需要精确判断，判断几个关键字是否存在就好了，比如上面例子里的required 编辑记录
+从之前生成的记录里随机挑1条进行更新，因为我把所有初始化的记录id都存在了redis的set里，这一步其实就非常的自然了 测试各种边界情况，除了字段的合法性之外还要测试一些编辑特有的用例，比如只能编辑自己的记录 测试正常编辑成功的情况 搜索及查询
+因为数据是提前生成好的，所以我们可以构造各种条件来进行断言，比如我就构造了10条active状态的记录，10条inactive的记录，按照状态来搜索时我可以直接断言，active就是10条，多一点少一点就是bug 构造多维度的搜索条件，这样覆盖面就更广一点，比如按A字段搜索，按B字段搜索，按A和B组合在一起搜索等 比如这个用例
+def test_search_with_no_conditions(): page_size = 20 data = { &amp;#39;filter&amp;#39;: {}, &amp;#39;page_num&amp;#39;: 1, &amp;#39;page_size&amp;#39;: page_size, } res = common_helpers.</description>
+    </item>
+    
+    <item>
+      <title>微软的office365给软件测试带来的变革</title>
+      <link>https://zh.ethanhan.cc/posts/good_news_for_ui_automation/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/good_news_for_ui_automation/</guid>
+      <description>微软今天发布了集成了GPT-4模型的office套件，从演示视频看，大概可以做这样一些事情
+输入指令自动做表 输入指令写邮件 输入指定自动做ppt，而且一做就是好多页，挺震撼的 稍微了解了一下原理，大概流程是
+用户发送prompt到office office获得用户授权访问用户的核心数据（email，聊天记录，会议信息，日程，联系人列表等） office整合用户信息修改prompt office将修改后的prompt发送到语言模型 office拿到语言模型的返回，并结合用户数据进行信息整合 office拿到整合后的信息和app的命令列表，进行自动化和信息展示 从原理可以看出office基本上把语言模型，目前也就是GPT-4当成了黑盒，这样应用软件层面其实不需要了解太多模型的细节和实现，只需要把模型当成语言理解器，内容生成器就好了。语言模型只负责理解用户的prompt和生成内容，office负责整合数据，调整prompt，以及我们今天讨论的话题，执行ui自动化。
+未来办公软件的形态 未来办公软件有很大概率会跟AI结合起来，他们大概会是
+有自己的主要形态和业务领域，比如邮件客户端，文字处理软件客户端，也就是有UI，有交互，有一些逻辑，跟现在的办公软件差不多 有AI辅助的能力，可以接受用户的prompt并进行修改和吟唱，然后调用大语言模型 有完善的UI自动化能力，根据大语言模型返回的内容自动化的进行操作，并展现给用户 所以简单来说，未来的办公软件将会调用AI，并执行自动化。
+那么未来的软件都会有ui自动化的接口 这个结论是水到渠成了，有ui自动化接口，那么就需要做ui自动化测试。所以对于一些泛化的办公软件开发团队来说，测试人员不仅要负责传统的功能测试，还需要调用ui自动化接口，保证接口的正确性，甚至是ui自动化的测试代码都可以成为大语言模型的无监督学习物料。
+更泛化的办公软件实现 也许未来会出现更加泛化办公软件或者是办公流程软件，可能包含这些部分
+结构化的用户以及组织数据，也就是用户的私有数据 用户prompt的预处理单元，负责接收用户prompt并join用户私有数据，形成新的输入给语言模型的prompt 大语言模型 指令执行hub，接收各种command，然后调用接口或者是ui自动化接口帮助人类进行工作 举个例子，未来可能会直接跟语音助手说：帮我预定一下10点的线上会议，邀请xx项目所有的相关人员参加，讨论一下xxx议题。这时候新的办公流程软件就可以直接调用语言模型进行内容理解和生成，拿到生成的内容后调用会议预定系统的api以及邮件或者im系统api，发送会邀和预定时间段。
+未来软件测试行为的变革 未来的测试保障工作可能就会变成
+面向AI也就是大语言模型的测试，join用户私有数据之后的prompt是否合理，是否有助于AI生成正确的内容？是否有足够的上下文帮助AI进行内容的生成？ 面向API的测试，UI自动化API和后端API是否可以正确的工作？ 面向数据的测试。用户数据的安全性和完整性是否可以保障？AI生成的内容里是不是有一些核心内容需要加入到用户的核心数据中去？ 点来点去。不是所有人都会使用AI助手，也不是所有情况下都需要使用AI，保障软件基本的GUI基本功能也是非常必要的 </description>
+    </item>
+    
+    <item>
+      <title>情感驱动测试</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%83%85%E6%84%9F%E9%A9%B1%E5%8A%A8%E6%B5%8B%E8%AF%95-8f579ac3b79748d09c886ce94d19154a/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%83%85%E6%84%9F%E9%A9%B1%E5%8A%A8%E6%B5%8B%E8%AF%95-8f579ac3b79748d09c886ce94d19154a/</guid>
+      <description>看到一篇非常有意思的女性测试从业者的技术分享，忍不住翻译了一下，角度非常感性，引人深思，测试的世界其实特别多元，也希望以后有机会能遇到各种有意思的观点。
+原文地址: https://fishouthebox.medium.com/the-power-of-emotion-driven-testing-280a944d352b
+昨晚，我在Ministry of Testing的TestBash World做了一个演讲，其中有一部分是关于情感的。其中有一部分我分享了10条情感路径，你可以用来指导你的测试。来源于Gojko Adzi, David Evans和Tom Roden的《改善我们测试的五十个快速想法》一书。
+我把这个写在博客上是出于Gwen Diagram的一个建议，以文字的形式来分享这个内容会很有用。因此，我们开始吧。
+可怕的路径&amp;ndash;对你的利益相关者来说，什么会真正烧毁你的房子？可能是品牌效应？安全风险？ 快乐的路径&amp;ndash;每次都能通过的道路。 愤怒的路径 - 试图让应用程序做出糟糕的反应。如验证错误、不良输入和逻辑区域。 疏忽的路径 - 考虑需要测试的安全风险，如认证、授权、权限、数据保密性。 尴尬的路径&amp;ndash;会造成巨大尴尬的事情，如主页上的拼写错误。 荒凉的路径&amp;ndash;为应用程序或组件提供暗淡的东西。例如nulls、blanks或缺失的数据。 遗忘之路&amp;ndash;填满内存和CPU容量，使应用程序没有地方可以存储任何东西。看看它变得多么健忘，是否开始丢失数据，要么是已经存储的东西，要么是它正在持有的东西。 犹豫不决的路径&amp;ndash;打开和关闭一些东西，点击浏览器上的返回按钮等。 贪婪的路径&amp;ndash;选择一切，勾选每一个方框，选择每一个选项。 紧张的路径&amp;ndash;找到功能和组件的突破点。负载/性能测试的考虑。 by乙醇：情绪相关的分类方式更加感性一些，相比于我们理性的测试用例和测试场景来说，这里没有对错之分，只要考虑的全面，用任何分类方式都是合理的。</description>
+    </item>
+    
+    <item>
+      <title>惨遭打脸：字节某部门竟然有这么多测试</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%83%A8%E9%81%AD%E6%89%93%E8%84%B8%E5%AD%97%E8%8A%82%E6%9F%90%E9%83%A8%E9%97%A8%E7%AB%9F%E7%84%B6%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E6%B5%8B%E8%AF%95-7d8df3dda38744d4aa3b27c20513ddca/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%83%A8%E9%81%AD%E6%89%93%E8%84%B8%E5%AD%97%E8%8A%82%E6%9F%90%E9%83%A8%E9%97%A8%E7%AB%9F%E7%84%B6%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E6%B5%8B%E8%AF%95-7d8df3dda38744d4aa3b27c20513ddca/</guid>
+      <description>之前发过一篇公众号文章，大意是字节某些部门在推进去测试化，当时就有同学留言表示，在字节的某些部门测试同学其实很多，果不其然，昨天跟一位字节的候选人聊天，候选人就表示在他所在的部门，测试同学确实不少。
+他表示他们部门的测试主要有两种编制的同学构成，分别是正式和外包，正式员工跟外包的比例是1：2，整个部门有几百人的测试规模。
+由于时间关系，我也没仔细了解这几百人全部是正式员工还是外包员工，也没弄清楚他们部门一共有多少人，不过从一个单体产品的角度上看，这几百人的规模还是比较大的。
+这些信息拼凑起来，我们可以知道大公司的去测试化进度并不是整个公司统一的，可能有些部门比较激进，有些部门就保守一些，测试同学的数量很多，但可能是外包为主。比如很多年前手Q团队的测试人数特别多，但是正式员工其实数量有限，大部分的功能测试都是外包同学，华为也类似。
+那么字节这个部门的测试同学在做些什么呢？
+候选人表示在4个方面进行探索。
+质量维度。负责产品的质量保障工作，这点大家其实很熟悉了； 安全维度。负责产品的安全测试和安全方面的各种建设，其实候选人也表示这里的安全可能不够准确，其实应该是各种专项维度，比如性能稳定性之类的，不会只局限于安全； 体验维度。这里是最有意思的，我们可以想一想，影响用户体验的是哪些因素？是不是应用的打开速度，给你推送内容的精准度之类？这里的体验就是量化可以影响用户体验的指标，然后持续监控指标，保障指标的值持续达标；比如持续监控app crash率，一旦大于某个阈值就告警，然后紧急进行定位和修复； 效率维度。通过工具或其他活动提升测试效率。这里可以理解为偏测试开发的部分，比如开发测试工具提高自动化回归的效率等； 所以总结起来，测试同学在字节该部门的关键字其实是：质量+专项+体验+效率，质量这边其实有大量的活动是外包同学可以去承担的，其他的部分专业性比较强，自行做团队建设可能会更好一点。
+总之在同一个公司的不同部门里，对于测试的态度可能是不尽相同的，之前讨论的腾讯去测试化也是腾讯的某一个bg，可能不一定是整个公司的行为。
+另外去测试化不是说完全不要测试，而是之前的一些必要的测试工作用一些成本更低的方式去做，比如外包。另外提高测试效率从另一方面说也就是降低测试的成本，是不是感觉有点卷起来了？想反内卷？字节的测试同学其实给我们提供了一个很好的思路，那就是换赛道。目前字节的测试有了4个赛道，而且除了质量赛道之外其他的赛道其实专业性还是很强的，所以也许在未来测试这边会分的越来越细，专业化越来越强，赛道越来越多。在某个赛道做专才或者在大部分赛道做通才都是不错的反内卷的方式吧。</description>
+    </item>
+    
+    <item>
+      <title>我是怎么熟悉一个新项目的</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E7%86%9F%E6%82%89%E4%B8%80%E4%B8%AA%E6%96%B0%E9%A1%B9%E7%9B%AE%E7%9A%84-3316d95788c24961939d75ab1772869e/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E7%86%9F%E6%82%89%E4%B8%80%E4%B8%AA%E6%96%B0%E9%A1%B9%E7%9B%AE%E7%9A%84-3316d95788c24961939d75ab1772869e/</guid>
+      <description>最近新接手了一些项目，所以需要从0开始熟悉这些项目，这里正好跟大家分享一下相关的心得。
+特殊情况 由于项目是从别的团队跨国交接过来的，而且项目本身处在开发过程中，所以交接的时候会有一些困难。
+首先大家都很忙，没有办法正式交接，所以只能先旁敲侧击，尽量的阅读现有代码和文档，多看少问成了一种常态。
+其次交接项目其实在一定程度上是抢了别人的饭碗，所以整个过程要非常小心，要照顾对方团队的感受。
+如何开始 我是这样开始的。
+拿到代码库权限，这样可以直接看下代码，了解项目的技术栈，做到心里大致有数 拿到文档系统权限，先读一下存量文档 拿到监控系统权限，知道项目在监控些什么指标 找到对接人，有问题可以稍微问一下 所以看上去这个开始过程跟谈恋爱差不多，先通过各种方式去了解对方，然后再小心翼翼的进行接触。
+了解技术栈 接手的系统大概有十几个代码库，分为4-5个项目，其中一个核心项目基本上提供了其他项目所需要的依赖接口。我们暂且将这些系统命名为A/B/C/D。
+系统A:后端主要使用go实现，用到了go的全栈web框架和grpc；前端主要是react全家桶实现； 系统B:后端语言是python，用django实现；前端是nextjs写的； 系统C:后端django，前端nextjs； 系统D：纯前端项目，用nextjs实现； nextjs之前没有接触过，所以花了点时间看了看官方文档，因为大致是再react生态中，所以理解起来还是没有太大障碍的
+搭建开发环境 我一般通过搭建开发环境来熟悉系统之间的依赖，自己动手做一遍胜过万语千言。
+熟悉数据库结构 我一般喜欢从系统的持久化层去熟悉系统的大致逻辑，因为持久化反映了系统处理的结果，代码则反映了系统处理的过程，从结果去反推过程，尽管有点本末倒置，但数据的最终状态相对来说还是比较好去掌握的。
+接手的项目里有两个核心系统，A系统有100+表，B系统有60+表，我粗略的将这些表都过了一遍。过的思路是这样的
+首先在现有文档找实体图，如果有的话可以参考实体间的关系 没有实体图就自己找关系，比如外键，这反应了关系表之间的关联关系；一些实体没有外键的，但很明显是一些核心业务实体，比如电商里的订单信息之类的，这时候就需要找关联表，看看是不是有一些表记录了单独的关联关系。这样梳理一遍过后，就可以大致知道数据的结构，了解业务逻辑在数据库层面是如何表达的 画出实体之间的关系图，在图中出入线最多的实体大概率就是核心实体，也就是核心表 熟悉数据流向 数据库是数据最终的归宿，但数据在入库前和出库之后都可能会被加工，这些加工的过程就是业务逻辑的体现。那么如何去快速了解数据流向呢？我的经验是通过api。
+因为我们的系统是前后端分离的系统，所以业务逻辑的表达大部分都是通过api进行的。通过现有的api文档我们就可以知道系统有哪些功能，这些功能里会用到哪些数据表。把所有的接口都过一遍之后，我大概可以理解系统后端提供了哪些功能。另外交接的小哥给了我一份postman的collection，上面有大部分接口的测试用例，非常管用。
+如果没有文档的话只能通过代码去熟悉这个流程了。
+画出系统大致的架构图 数据库和数据流向偏向细节，在更宏观的层面上我喜欢画一些简单的部署架构图，注意不是逻辑架构图，来加深我对系统整体的理解。
+学会看线上监控 如果有线上监控，那么就要学会看线上监控指标。简单的监控可以分为两个层次
+基础监控。比如容器的健康度 服务监控。比如api的请求数量，耗时以及失败率等 如果没有监控的话，可以考虑将这个基础建设事项放到比较高的优先级去做
+学会查日志 日志可以给我们提供很多信息，在这些系统里，之前的开发者都使用了elk做日志存储，因为是相对标准的方案，交接的时候就会比较顺利。
+另外由于系统里用到了微服务架构，所以Distributed tracing机制也是必须的，这里就不展开了。
+空发布 空发布其实就是给代码加一些注释进行发布，尽管没有产生任何新的功能，不过空发布可以让我们了解系统是如何部署的，以及代码库的管理规范，比如哪个分支用来发布，如何做分支管理等。
+输出重构以及迁移思路 看代码的时候总会遇到一些觉得可以重构的地方的，这里可以先记下来，后面再去逐步推动改进。另外项目之前跑在之前开发者维护的k8s上，后面也要想办法把服务迁回来，这个思路可以先有，等完全熟悉了以后再动手去做。
+以上就是我对新项目熟悉的过程，不知道大家有什么建议没，欢迎评论哦。</description>
+    </item>
+    
+    <item>
+      <title>手把手教你xss攻击</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0xss%E6%94%BB%E5%87%BB-f057ab07002f4a5e8eef98541b490af5/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0xss%E6%94%BB%E5%87%BB-f057ab07002f4a5e8eef98541b490af5/</guid>
+      <description>一句话解释xss就是通过提供恶意的用户输入让浏览器执行恶意的JavaScript代码。
+最简单的例子 &amp;lt;div&amp;gt; &amp;lt;h1&amp;gt; Welcome {your input} &amp;lt;/h1&amp;gt; &amp;lt;/div&amp;gt; 这里页面希望你通过文本框输入自己名字，然后把你输入的名字展示出来。假如你输入的名字是:&amp;lt;script&amp;gt;alert(&#39;XSS&#39;)&amp;lt;/script&amp;gt;
+这时候浏览器将解析下面的html代码
+&amp;lt;div&amp;gt; &amp;lt;h1&amp;gt; Welcome &amp;lt;script&amp;gt;alert(&amp;#39;XSS&amp;#39;)&amp;lt;/script&amp;gt;&amp;lt;/h1&amp;gt; &amp;lt;/div&amp;gt; script标签里的js代码就被执行了，这就是一个最简单的xss。
+复杂一点点的例子 &amp;lt;div&amp;gt; &amp;lt;h1&amp;gt; Welcome &amp;lt;input value=&amp;#34;{your input}&amp;#34;&amp;lt;/h1&amp;gt; &amp;lt;/div&amp;gt; 这时候如果你输入&amp;lt;script&amp;gt;alert(&#39;XSS&#39;)&amp;lt;/script&amp;gt; 那么将得到类似下面的结果
+&amp;lt;div&amp;gt; &amp;lt;h1&amp;gt; Welcome &amp;lt;input &amp;#34;&amp;lt;script&amp;gt;alert(&amp;#39;XSS&amp;#39;)&amp;lt;/script&amp;gt;&amp;#34;&amp;lt;/h1&amp;gt; &amp;lt;/div&amp;gt; 因为script标签被包含在双引号里，浏览器会认为这是一个普通的字符串，所以不会执行js代码。不过如果你输入“&amp;quot;&amp;gt;&amp;lt;script&amp;gt;alert(&#39;XSS&#39;);&amp;lt;/script&amp;gt;” 那么你将会打开一个新的局面
+&amp;lt;div&amp;gt; &amp;lt;h1&amp;gt; Welcome &amp;lt;input &amp;#34;&amp;#34;&amp;gt;&amp;lt;script&amp;gt;alert(&amp;#39;XSS&amp;#39;)&amp;lt;/script&amp;gt;&amp;lt;/h1&amp;gt; &amp;lt;/div&amp;gt; input标签被强行闭合，script标签成功上位。这时候js代码又可以执行了。
+再来个例子 &amp;lt;script&amp;gt; document.getElementsByClassName(&amp;#39;name&amp;#39;)[0].innerHTML=&amp;#39;{input}&amp;#39;; &amp;lt;/script&amp;gt; 这个例子里我们要想办法在现有的代码中插入恶意的js代码，这里需要用到2点小知识
+js代码中;号可以结束一行语句 js代码中//表示后面的所有内容都是注释，可以被忽略掉 因此如果我们输入的是&#39;;alert(&#39;XSS&#39;);// 那么中间的alert语句是可以执行的
+&amp;lt;script&amp;gt; document.getElementsByClassName(&amp;#39;name&amp;#39;)[0].innerHTML=&amp;#39;&amp;#39;;alert(&amp;#39;XSS&amp;#39;);//&amp;#39; &amp;lt;/script&amp;gt; 前面的单引号被第1个单引号匹配并终结，后面的分号直接结束了这一句，而后面的那个单引号则被// 注释掉了，所以中间的alert代码是可以顺利执行的。
+还有例子 有时候页面会过滤掉一些危险的关键字，比如script标签，这时候可以试试构造下面的数据
+&amp;lt;sscriptcript&amp;gt;alert(&amp;#39;XSS&amp;#39;);&amp;lt;/sscriptcript&amp;gt; 当script标签被过滤掉之后，html代码如下
+&amp;lt;script&amp;gt;alert(&amp;#39;XSS&amp;#39;);&amp;lt;/script&amp;gt; 恶意代码可以顺利执行。
+探针 如果每次见招拆招的话，那么攻击的效率是不太高的，这时候就可以试试下面的这种标准化探针字符串，如果页面存在一些基本的xss漏洞的话，下面的代码是可以被顺利执行的。
+jaVasCript:/*-/*`/*\`/*&amp;#39;/*&amp;#34;/**/(/* */onerror=alert(&amp;#39;XSS&amp;#39;) )//%0D%0A%0d%0a//&amp;lt;/stYle/&amp;lt;/titLe/&amp;lt;/teXtarEa/&amp;lt;/scRipt/--!&amp;gt;\x3csVg/&amp;lt;sVg/oNloAd=alert(&amp;#39;XSS&amp;#39;)//&amp;gt;\x3e 我们可以使用自动化的工具在页面上所有可以输入的地方批量植入探针，这样就可以大规模高效率的进行攻击了。
+非持久化的xss 上面的例子是持久化的xss，简单来说就是需要把用户输入的内容保存到数据库里然后在页面进行回显，在现实中其实还有一种不需要持久化就进行xss攻击的例子。</description>
+    </item>
+    
+    <item>
+      <title>接口测试进阶：在接口测试中框架中使用json schema</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E8%BF%9B%E9%98%B6%E5%9C%A8%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%A1%86%E6%9E%B6%E4%B8%AD%E4%BD%BF%E7%94%A8json-schema-20fd23ad35e845238bf979572632fd60/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E8%BF%9B%E9%98%B6%E5%9C%A8%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%A1%86%E6%9E%B6%E4%B8%AD%E4%BD%BF%E7%94%A8json-schema-20fd23ad35e845238bf979572632fd60/</guid>
+      <description>当今接口测试越来越重要，一般情况下我们总是会对接口的返回的json字符串进行验证，看返回是否跟我们的预期相符。不过很多情况下我们会遇到下面的问题
+响应结果在测试中不停的发生变动，比如昨天还是3个字段，今天可能返回值里只有2个字段了，测试这边没有比较好的方式感受到后端的变化 我们需要对json的返回值进行一些校验，需要写很多的断言，大部分时候这些断言都是相似的，或者是重复的，比如说校验某个字段的长度必须小于10之类的 那如何解决呢？
+与前后端沟通好返回值的字段，类型以及校验规则，最好有前后端+测试端统一一份合约，大家都按照合约来进行数据的处理 测试的时候通过合约里定义好的校验规则进行数据校验 这时候json schema就派上用场了。
+json schema JSON Schema 是一种 JSON 媒体类型，用于定义 JSON 数据的结构。 JSON 模式旨在定义 JSON 数据的验证，可用于验证响应和请求 JSON。 在 JSON Schema 中，我们可以验证数据类型、字段是否为必填、最小长度或最大长度等。
+举例 下面的数据代表了一个员工的信息
+id: employeeId 员工名称: employeeName 年龄: employeeAge 职称: jobTitle 爱好: hobby { &amp;#34;employeeId&amp;#34;: 1, &amp;#34;employeeName&amp;#34;: &amp;#34;Fulan&amp;#34;, &amp;#34;employeeAge&amp;#34;: 23, &amp;#34;jobTitle&amp;#34;: &amp;#34;SDET&amp;#34;, &amp;#34;hobby&amp;#34;: [ &amp;#34;watch movies&amp;#34;, &amp;#34;play football&amp;#34; ] } 上面的定义其实是有一些疑问的，比如
+id是什么意思 employeeName的最大长度是多少 employeeAge的最小值是什么 jobTitle是必填吗 hobby可以填几个 我们可以通过生成JSON schema来回答上面的问题
+{ &amp;#34;$schema&amp;#34;: &amp;#34;http://json-schema.org/draft-07/schema&amp;#34;, &amp;#34;$id&amp;#34;: &amp;#34;http://example.com/example.json&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;object&amp;#34;, &amp;#34;title&amp;#34;: &amp;#34;The root schema&amp;#34;, &amp;#34;description&amp;#34;: &amp;#34;The root schema comprises the entire JSON document.</description>
+    </item>
+    
+    <item>
+      <title>推荐：Docker备忘录</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%8E%A8%E8%8D%90docker%E5%A4%87%E5%BF%98%E5%BD%95-349dffabed5944459e2d0a09085ab6b0/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%8E%A8%E8%8D%90docker%E5%A4%87%E5%BF%98%E5%BD%95-349dffabed5944459e2d0a09085ab6b0/</guid>
+      <description>项目源地址：https://github.com/wsargent/docker-cheat-sheet
+docker的安装 略，windows上可以用docker desktop，具体可以参考官方文档。https://hub.docker.com/editions/community/docker-ce-desktop-windows
+安装之后用admin身份打开powershell，输入
+#Display the version of docker installed: docker version ##Pull, create, and run &amp;#39;hello-world&amp;#39; all in one command: docker run hello-world 容器相关 容器的生命周期 [docker create](https://docs.docker.com/engine/reference/commandline/create) 创建但未启动 [docker rename](https://docs.docker.com/engine/reference/commandline/rename/) 重命名容器 [docker run](https://docs.docker.com/engine/reference/commandline/run) 一个命令创建并启动容器 [docker rm](https://docs.docker.com/engine/reference/commandline/rm) 删除容器 [docker update](https://docs.docker.com/engine/reference/commandline/update/) 更新容器的资源限制 几个有用的点
+一般启动容器我们用docker run -td container_id, -t表示分配TTY session，-d表示后台运行并打印容器id docker run &amp;ndash;rm 用来运行容器后自动删除 docker run -v $HOSTDIR:$DOCKERDIR 用来做volume的映射 容器的启动和停止 [docker start](https://docs.docker.com/engine/reference/commandline/start) 运行容器 [docker stop](https://docs.docker.com/engine/reference/commandline/stop) 停止一个运行中的容器 [docker restart](https://docs.docker.com/engine/reference/commandline/restart) 重启容器 [docker pause](https://docs.docker.com/engine/reference/commandline/pause/) 暂停容器 [docker unpause](https://docs.</description>
+    </item>
+    
+    <item>
+      <title>放弃postman？一个月4k star？接口测试工具hoppscotch评测</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%94%BE%E5%BC%83postman%E4%B8%80%E4%B8%AA%E6%9C%884k-star%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7hoppscotch%E8%AF%84%E6%B5%8B-9addc18c7a464236b992a309019b69c2/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%94%BE%E5%BC%83postman%E4%B8%80%E4%B8%AA%E6%9C%884k-star%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7hoppscotch%E8%AF%84%E6%B5%8B-9addc18c7a464236b992a309019b69c2/</guid>
+      <description>天下苦postman久矣！
+记得当初potman刚横空出世时，其形态只是一个浏览器扩展而已，尽管功能简单，不过却带来了另一个非常大的优势，那就是软件体积非常小，安装到浏览器上以后可以借助于浏览器同步的功能，实现各种跨平台支持，特别是对我我这种拥有win/mac/iinux的人来说，方便快捷是第一位的。
+后来postman推出了独立的桌面版本，功能逐渐迭代，性能差的慢慢变态，现在劝退我的是两点：启动速度慢和我用不到的功能慢慢变多；当然除了这两点外还有个相当大的槽点是：postman会想方设法让你登录，如果你不小心使用了同步功能的话，你的测试文件会公开分享到postman上供人品评，这是一个巨大的安全隐患。
+D轮融了2.25亿美金，postman注定要在商业化的道路上越走越远，注定会增加很多我不需要的功能，各种同步，花式协作，满屏的效率提升，不厌其烦的提示我升级等等，对我来说其实需求很简单，只要可以让我朴素的调试接口就可以了。
+于是各种postman的替代工具应运而生，比如postwoman，insomnia等等，这种工具的技术栈都差不多，都是用js开发的类似于原生客户端的跨平台工具，今天给大家带来的是一款很火的开源postman替代工具: hoppscotch，这个工具在github上目前有40,000的star，3月份新增4000的star，应该是目前最火的测试工具了。
+安装 hoppscotch只需要安装一个浏览器扩展就可以了，支持chrome和firefox。比postman动则上百兆的安装包来说，安装过程简单了不少。
+安装好扩展之后访问https://hoppscotch.io/就可以使用了。
+UI hoppscotch的界面跟postman差不多，会用postman的同学应该会感到比较亲切。
+功能 功能上hoppscotch也跟postman不相上下
+支持rest api调试 支持GraphQL语法 支持websocket和socket.io 支持从collection生成文档，这个我不会用 支持collection的创建及导出 支持多种Authorization方式 支持pre-request script 支持断言，跟postman的写法不能说很像，只能说是一摸一样 完善的快捷键支持 支持pwa，轻量化的网页解决方案，让网页应用的体验跟desktop一样，再也不用忍受postman的龟速启动了 支持proxy，支持自建proxy 个性化定制：白天模式和暗夜模式，各种颜色主题，可以调整字体大小 支持cli，这个真是没想到，看了一眼是go写的，功能有限，不过可以在命令行运行collection了，不过似乎不支持websocket 完全开源，前端应该是vue写的，有开发能力的同学可以进行定制 部署 我们可以在远程服务器上部署个hoppscotch版本，然后远程进行访问。不过用docker部署的话似乎有点问题，就是浏览器插件无法识别的问题，于是就需要部署个proxy用来转发请求，这样就会出现本地localhost无法解析的问题，所以如果不是必须的话，用pwa的版本体验上就已经很好了。
+总结 总的来说hoppscotch是可以替代postman的，这里推荐大家去试一试。另外hoppscotch也可以登录上传workspace，我也试过也不想试，还是那句话，能不登录就不登录，如果遇到需要协作进行collecton的场景，可以试着用git去管理。</description>
+    </item>
+    
+    <item>
+      <title>有意思的bug</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84bug-bb296541ea594be395e1b5d1e2260dd7/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84bug-bb296541ea594be395e1b5d1e2260dd7/</guid>
+      <description>这是最近看到的一个有意思的bug，乍一看好像确实没有问题，不过稍微想一想就知道症结所在了。不知道你能不能看出来，评论区给出你的解读吧。</description>
+    </item>
+    
+    <item>
+      <title>每个离谱的bug背后总有一个精彩绝伦的幕后故事</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%AF%8F%E4%B8%AA%E7%A6%BB%E8%B0%B1%E7%9A%84bug%E8%83%8C%E5%90%8E%E6%80%BB%E6%9C%89%E4%B8%80%E4%B8%AA%E7%B2%BE%E5%BD%A9%E7%BB%9D%E4%BC%A6%E7%9A%84%E5%B9%95%E5%90%8E%E6%95%85%E4%BA%8B-02dda34703e24d5b859777523a45c340/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%AF%8F%E4%B8%AA%E7%A6%BB%E8%B0%B1%E7%9A%84bug%E8%83%8C%E5%90%8E%E6%80%BB%E6%9C%89%E4%B8%80%E4%B8%AA%E7%B2%BE%E5%BD%A9%E7%BB%9D%E4%BC%A6%E7%9A%84%E5%B9%95%E5%90%8E%E6%95%85%E4%BA%8B-02dda34703e24d5b859777523a45c340/</guid>
+      <description>今天看到一个很有意思的bug，背后的故事令人印象深刻。
+你知道吗，docker的windows版本不能跟Razer Synapse的驱动管理程序同时运行，至于原因嘛，我们慢慢道来。
+这两个程序都希望用户只运行1个程序的实例，这个大家很好理解，同1个程序只打开1次，第2次打开的时候并不打开1个新的窗口，而还是使用之前的打开的程序的实例。
+那这个是如何实现的呢？答案是使用它们的.NET assembly 提供的GUID作为全局锁来实现，就像是去上洗手间，每次进去以后把门锁上，这样就可以保证洗手间里一次只有一个人使用了。
+那么.NET assembly是什么呢？我对.NET一无所知，翻了下文档，这是官方的解释
+An assembly is a collection of types and resources that are built to work together and form a logical unit of functionality. Assemblies take the form of executable (.exe) or dynamic link library (.dll) files, and are the building blocks of .NET application.They provide the common language runtime with the information it needs to be aware of type implementations.
+看起来assembly提供了获取程序运行时信息的接口，每个应用程序都有自己独占的assembly。
+那么这两个程序是怎么实现获取自身运行时的GUID的呢？下面是代码</description>
+    </item>
+    
+    <item>
+      <title>没有QA就没有Bug</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%B2%A1%E6%9C%89qa%E5%B0%B1%E6%B2%A1%E6%9C%89bug-963e025993844064b6e66b7c0aa3c12b/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%B2%A1%E6%9C%89qa%E5%B0%B1%E6%B2%A1%E6%9C%89bug-963e025993844064b6e66b7c0aa3c12b/</guid>
+      <description>关于测试左移shift left的讨论已经持续了很长一段时间了，前几天刚好看到有外国友人亲身参与了这个过程，结果有点出人意料，所以翻译出来分享了一下。
+在2017年，成为一名QA是一个有趣的时间。但不是搞笑哈哈，是有点点诡异了。每个人都想着测试左移（在合理范围内），但不是为了提高他们的质量，他们会以减少传统的质量保障人员的瓶颈的心态来做，那就是在迭代结束时，测试所有的东西。
+我记得几年前，我是一个由5个开发人员组成的团队中唯一的QA，我们没有大量的自动化测试，但左移的思维方式得到了应用，至少是部分应用。我在开发人员做需求时，尽早地帮助他们，这在迭代结束后会得到回报，测试阶段的时间是最少的。充其量，我们会在测试阶段发现一两个问题，并迅速修复它们（或假设该问题到下一个版本）。
+公司内部的一个新项目已经开始了，他们想在一开始就应用左移的思维方式，但他们不需要QA。所有的工作都可以通过自动化测试完成，开发人员将完全承担和拥有这些测试。作为一个QA人员，我很好奇，我想看看他们是怎么做的，他们是怎么涵盖这个用例的，或者其他用例的，我想学习并帮助他们。但是我被推到了一边，因为自动化才是王道，不需要 &amp;ldquo;手动QA&amp;rdquo;。
+当他们在几个月后找到我的时候，我遇到了 &amp;ldquo;告诉你 &amp;ldquo;的时刻，他们在生产中出现了大量的问题。那是一个混乱的局面。这时他们意识到，即使他们写了大量的测试，他们也没有考虑到他们的测试策略。解决方案是在团队中加入一个 &amp;ldquo;手动QA&amp;rdquo;，来处理应用程序的问题，防止生产中出现更多的错误。
+快到今天，我意识到他们已经非常接近了。他们拥有自动化测试策略。团队中的任何新开发人员都经历了严格的代码覆盖率、配对编程和细致的提交代码审核过程。他们唯一缺少的是一个好的测试策略，按照测试金字塔的描述进行工作（我知道你们中的一些人鄙视这个，但有时，它真的可以帮助团队分类并专注于正确的事情！），以及在用户体验上多想一点。
+那么，你的QA团队成员可以在左移的转型或项目中扮演什么角色呢？ 在开始 &amp;ldquo;左移 &amp;ldquo;时，文档被证明是有用的。通过确保针对现有功能和新功能中最关键的点，它可以更容易地从传统的方法过渡。通常把重点放在用户的关键功能和你的应用程序中常见的脆弱点上。 参加研发的启动会议。帮助提前考虑潜在的问题，用例子来引导这些会议是最好的做法。就我个人而言，我更喜欢在开发人员开始一个需求时以非正式的方式召开这些会议，但你也可以把这些会议变成一个定期会议，类似于你的scrum计划和复盘会议。这种做法也被称为3 amigos（读起来不错）。 学会阅读代码，看看PR评论，学习自动化，你的QA团队成员越是多才多艺，开发人员就越有信心作为一个团队来交付他们的功能，而不是依赖一个QA警察。 如果你的团队没有一个已经在职的QA，你的团队已经可以开始应用同样的准则。停下来，呼吸，花15分钟思考可能的测试用例。不要在功能上走得太深，但思考所有可能的用户行为有很大的帮助。把它们写下来👏。这将帮助你防止很多 &amp;ldquo;我没有想到的 &amp;ldquo;情况。
+虽然这不是一个完美的指南，但这是很好的第一步，我称之为 &amp;ldquo;在3天周末前的星期五下午4点部署的信心&amp;rdquo;。但这是另一个故事了。</description>
+    </item>
+    
+    <item>
+      <title>测试人员不可不知的7个浏览器小技巧</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E4%B8%8D%E5%8F%AF%E4%B8%8D%E7%9F%A5%E7%9A%847%E4%B8%AA%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B0%8F%E6%8A%80%E5%B7%A7-3655f764c6234f79b91d8231a57ee9b6/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E4%B8%8D%E5%8F%AF%E4%B8%8D%E7%9F%A5%E7%9A%847%E4%B8%AA%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B0%8F%E6%8A%80%E5%B7%A7-3655f764c6234f79b91d8231a57ee9b6/</guid>
+      <description>今天我将谈论浏览器技巧——你甚至可能没有意识到这些小功能的存在，主要是在浏览器的“开发者工具”部分。 这些不是关于代码，而是使测试更容易一些的方法。
+响应式模式 这是我之前在做前端开发时候每天必用的工具，因为那时候响应式前端框架刚刚兴起，我们都希望用一套代码实现pc端和移动端的统一体验。这个工具是chrome和firefox上的轻量手机模拟器，可以模拟网页在不同设备上的显示情况。在 Firefox 中，它是 Tools-&amp;gt;Web Developer-&amp;gt;Responsive Design Mode，而在 Chrome 中是 View-&amp;gt;Developer tools，然后单击设备工具栏 - 看起来像全尺寸屏幕旁边的移动设备图片 . 单击后，您将看到 chrome 认为该网站将如何显示在设备上。
+自己编辑网页 如果您发现前端错误，你可以直接编辑页面上的html代码，并查看是否修复了错误。 以chrome为例，就是这样：
+打开开发者工具，选择第一个tab页也就是Elements，选择你想要编辑的html代码， 在左侧会有三个点，单击它们会出现一个包含“Edit as HTML”的菜单； 然后您可以编辑元素本身。 当您按 ENTER 或 RETURN 时，网页就会发生变化了。
+这意味着你可以做的不仅仅是查找错误，而是实际提出修复方案。 这样依赖测试是开发团队的一个完全参与的部分了，从辅助变成了输出。
+离线模式 有时候我们会希望测试一下网页在弱网甚至是断网时候的表现，直接关wifi或者拔网线的话其实挺麻烦的，这时候离线模式就派上用场了。
+以chrome为例，打开开发者工具，选择Network标签，紧挨着的下面一行有个默认是&amp;quot;No throtting&amp;quot;并且旁边带个小三角箭头的东西，这其实就是个下拉列表了，点开可以选择&amp;quot;Offline&amp;quot;，如果你想模拟弱网的话，还可以选择&amp;quot;Slow 3G&amp;quot; 等选项。
+javascript控制台 这个控制台里可以执行任意的js代码，最有利的一点是我们可以在控制台里直接写代码去调用后端接口进行调试，之前阿里内部员工抢月饼的脚本应该就是在控制台里运行代码去实现的。当我们学会操作dom之后，我们还可以直接用控制台写代码去实现一些页面上的简单自动化，提高我们的测试效率。
+修改文件的保存路径 在 Firefox 中，在首选项下，你可以看到下载的位置选项。 如果您像我一样，每天可能会保存数十个文件，那么将它们直接放在桌面上将为您节省两次点击。 这样一天就是五十次点击，也许一周会节约一两分钟。 这样你在花时间阅读我这篇文章时候就不会感到内疚了。
+观察页面如何加载 页面是逐步加载完成的，我们可以录制整个页面加载的过程来找到页面的性能瓶颈。
+打开开发者工具，选择&amp;quot;performance&amp;quot;标签，记得勾选上&amp;quot;Screenshots&amp;quot; 这个勾，然后点录制按钮，就是那个圆圈，刷新页面就可以了。
+获得免费的前端性能报告 您可以对每个网页的性能、可访问性、最佳实践、搜索引擎优化以及它如何根据屏幕大小添加功能进行评分，所有这些都是免费的，内置于 Google Chrome 中。 转到开发人员工具并单击“lighthouse”选项卡， 向下滚动以了解有关您的分数的详细信息 - 以及如何提高分数！
+就是这样。 只需点击几下鼠标，就可以学会加快测试速度的七个技巧，也许没有人会预料这些技巧可能具有不错的价值。
+Chrome 和 Firefox 的问题不在于缺少这些工具，而是工具太多了——工具太多，很难研究并找到一些你会经常使用的真正强大的技巧。
+你最喜欢浏览器的什么自带工具呢？ 请在评论中留下您的想法。</description>
+    </item>
+    
+    <item>
+      <title>测试人员必会的docker秘籍</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E5%BF%85%E4%BC%9A%E7%9A%84docker%E7%A7%98%E7%B1%8D-8bb6149b7970479ab1914f127ce319f8/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E5%BF%85%E4%BC%9A%E7%9A%84docker%E7%A7%98%E7%B1%8D-8bb6149b7970479ab1914f127ce319f8/</guid>
+      <description>Docker现在是许多 QA 工程师的常用工具。它用于生产环境和测试环境或两者兼而有之。docker 的文档制作精良，相对容易理解，但有时我们需要一些常用命令来解决问题。
+在这里我列举一下对于测试同学来说比较值得去弄明白的docker秘籍。
+如何使用不同的参数运行已经启动的 docker 容器？ 可以用这个工具：https://github.com/lavie/runlike/
+使用方法: runlike -p &amp;lt;container_name&amp;gt; ，这样就可以拿到该容器第一次启动时候用的具体命令了。
+runlike -p testservice docker run \ --name=testservice \ --user=test \ --env=KAFKA_HOST=172.17.0.1:9092 \ --env=PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin \ --env=LANG=en_US.UTF-8 \ --workdir=/home/testapp \ -p 8015:8080 \ --restart=always \ --log-driver=journald \ --runtime=runc \ --detach=true \ myrepo/testservice:master-1374 这时候我们就可以修改一些参数，比如端口号信息，生活变得容易了一些。
+如何在 docker 容器中运行本地 bash 脚本？ cat local_script.sh | docker exec &amp;lt;container_name&amp;gt; /bin/bash 如何重启或移除所有的容器？ 这个技巧非常管用，推荐牢记。
+docker stop $(docker ps -a -q) docker restart $(docker ps -a -q) 如何清理旧的 docker 镜像、容器和卷？ docker system prune -a 如何过滤 docker ps 命令，以仅获取所需的信息，例如容器名称、状态和镜像？ docker ps --format &amp;#34;table {{.</description>
+    </item>
+    
+    <item>
+      <title>测试低下论或现代测试行业所遇到的问题</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E4%BD%8E%E4%B8%8B%E8%AE%BA%E6%88%96%E7%8E%B0%E4%BB%A3%E6%B5%8B%E8%AF%95%E8%A1%8C%E4%B8%9A%E6%89%80%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98-2cd3ec3f043b49cc8600518891cbf3a1/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E4%BD%8E%E4%B8%8B%E8%AE%BA%E6%88%96%E7%8E%B0%E4%BB%A3%E6%B5%8B%E8%AF%95%E8%A1%8C%E4%B8%9A%E6%89%80%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98-2cd3ec3f043b49cc8600518891cbf3a1/</guid>
+      <description>前几天看到一篇blog讨论现代测试行业中存在的一些问题，我愿称之为测试行业的劝学篇。有些观点还是非常中肯的，翻译了一下，希望对大家有所帮助，下面是正文。
+在这篇博文中，我想强调我在测试行业看到的问题，以及我们都可以如何解决它。(你可能有不同的经历&amp;ndash;所以让我们在评论中分享吧！）。这是我在2022年初在阿布扎比MoT会议上发表的演讲的文字版。
+10年来行业发生了什么变化 在过去的十年里，我们见证了技术的大幅提升&amp;ndash;无人驾驶汽车、人工智能、AR / VR、区块链、无人机和机器人。许多测试和测试自动化从桌面转移到网络和移动设备上。
+从瀑布模型，许多企业走向了敏捷和Scrum。
+从编写自动化测试的大型和昂贵的工具，我们已经转移到小型，灵活，最重要的是 - 免费的库和工具。现在我们有智能报告系统和Docker容器中的测试。现在在云端并行运行成千上万的测试用例并其实不那么昂贵。
+但与此同时，许多事情和声明仍然没有改变。
+以下是一些在测试人员中不断肆虐的无尽话题
+&amp;ldquo;手工测试已死！&amp;rdquo; &amp;ldquo;让我们把一切都自动化吧! 通过UI&amp;ndash;这才是最好的！&amp;quot;*。 &amp;ldquo;SDET是测试工程师进化的高峰! 我想成为像谷歌一样的人！&amp;rdquo; &amp;ldquo;我在开发领域找不到工作，所以我将做一年左右的测试，然后再尝试转行。&amp;rdquo; &amp;ldquo;测试人员的工资都在底部！&amp;rdquo; &amp;ldquo;测试工程是一份低技能专业人士的工作！&amp;rdquo;
+但为什么行业中会出现这样的情况？问题会不会是别的原因呢？我看到了哪些问题？
+现代测试的问题 我将把问题分为两个大组。
+对技术的追求 **寻找银弹。**一些工程师为一个项目（和一个背景）创建了一个成功的框架，然后开始把它拉到所有其他的项目中作为一个 &amp;ldquo;完美的解决方案&amp;rdquo;。这不是可重用性，它只是将一把锤子怼所有的钉子和螺栓。 **面向框架的自动化。**在一些项目中，工程师们急于编写完美的框架，而忘记了测试本身。结果是，我们有3-6个月的开发时间没有测试！。但是对于客户来说，没有测试是自动化应用不充分的的直接指标。 **专注于流水线通过的崇拜者。**在这种情况下，已经成功地将测试纳入CICD管道的测试工程师开始迷恋于使测试一直保持绿色。这种痴迷往往导致忽略甚至删除不稳定的测试（这导致忽略了被忽略的测试背后的问题）。 **简历驱动的开发。**许多测试人员只考虑工作和项目，作为在简历中获得一个花哨的新行的方式。没有任何关于深化技能和用测试和自动化解决业务问题的内容。 **只专注于短期目标。**许多工程师只喜欢快速的解决方案。这种对自动化测试的态度是很普遍的。工程师们很快就写出了 &amp;ldquo;东西&amp;rdquo;，而没有考虑到可维护性，就跑去做新项目了。 技能和知识水平不足 知识的缺乏可以有多种形式。
+技术知识
+在面试中，资深候选人往往能迅速回答任何关于测试的问题。他们可以为你画一个 &amp;ldquo;测试金字塔或任何你想要的数字&amp;rdquo;，告诉你世界上所有的测试设计技术，并写出完美的测试报告。但是，当你问及基本技术方面的问题（如HTTP或网络如何工作），候选人很快就会失去信心。
+你可以告诉我，不是每个项目都需要特定的知识。这倒是真的。但测试工程师应该知道（或至少知道）基本的技术知识。理想情况下，比谷歌搜索中的第一个链接更深入一点。
+90%的现代系统以这种或那种方式与网络一起工作，发送消息或请求，并使用数据库或分布式存储。多层的抽象可以覆盖它&amp;ndash;但总的来说&amp;ndash;它的工作原理都是类似的。
+编程和架构
+一些测试工程师仍然认为，学习编程是复杂和不必要的。让程序员来写代码吧!
+另一部分是那些已经学会了一点代码，但只集中精力于UI测试的人。这些测试之外的世界似乎并不存在。
+在测试工程师中，关于系统结构和它们如何工作的知识是一种稀缺的技能。所有这些都被认为是有经验的 &amp;ldquo;大胡子 &amp;ldquo;架构师的工作，或者只有有十几年经验的高级开发人员才能做。
+但是，如果不知道系统的内部和相互之间是如何工作的，就很容易错过很多关键的错误。另一方面，缺乏技术知识将使我们很难在测试报告中描述这些问题。
+我并不是说，如果不了解系统的组成部分，就不可能指出系统糟糕的不可测试性。结果是，我们继续编写脆弱的XPath定位器，因为没有人给元素添加ID。
+对业务和产品的了解
+当然，这一切都取决于项目的情况。有一些项目，测试团队就像在工厂生产线上工作一样：开始构建，测试，然后传递给下一个环节（不问任何问题）。
+测试工程师明显缺乏产品知识。很少有工程师与用户或客户支持一起工作。但是那些人可以提供关于应用中最危险的部分的有用信息，或者对可用性系统进行反馈。
+甚至更少的测试和自动化工程师思考他们的工作如何影响业务。那些自动化测试是否为公司节省了资金？或者比人工测试更快地提供问题反馈？
+工程师的个人发展
+关于个人发展，有两个重要的工程师群体存在。
+&amp;ldquo;我为什么要学习编程（任何其他技能）？那会使我成为一个不太熟练的测试工程师！&amp;rdquo; &amp;ldquo;据说我想学习，但我在等待一年后的反馈。我的经理或测试负责人会来告诉我需要学习什么。&amp;rdquo; 但这里有最关键的一点。只有你对个人的技能、知识和职业生涯的发展负责！你的经理只（或其他任何一个人）对你的工作负责。
+你的经理（或互联网上的任何其他人）将无法为你创建一个技能地图。只有你知道自己的优势和劣势。只有你知道（或猜测）你在知识方面有哪些差距。只有你能了解如何获得这些知识并达到一个新的水平（并获得梦想的提升）。
+你的上级只能调整你的计划并指出公司的资源投入情况：比如说参加会议或其他发展的预算。
+不确定性的恶性循环 那么，一个普通的测试工程师日常的灵魂拷问是什么呢？
+&amp;ldquo;我不会写代码&amp;ndash;我不是一个开发者.&amp;rdquo; &amp;ldquo;我有什么资格和架构师讨论系统组件的架构或可测试性？&amp;rdquo; &amp;ldquo;DevOps团队已经关闭了流水线中不稳定的测试&amp;ndash;好吧，他们更知道应该怎样做.&amp;rdquo; &amp;ldquo;经理一直问我：你到底在测试什么？为什么是那个？还有那个？&amp;rdquo; &amp;ldquo;企业只是想削减成本，干掉整个部门的不必要的测试人员&amp;hellip;.&amp;rdquo; &amp;ldquo;我怎么知道我们的用户有什么问题？&amp;rdquo;
+结果，大多数测试工程师陷入了一个不确定的无限循环。
+测试人员不能正确地向团队、其他工程师、管理层和企业证明他们的存在意义。在这种情况下，测试人员很难在团队内部建立信任和信心。 测试工程师的积极性越来越低。转向软件开发或管理的想法却随之增长。 许多有经验的高级工程师离开了测试行业。成功的测试人员的案例越来越少。测试工程师影响产品和流程并进行技术改进的案例&amp;ndash;用手指都能数出来。会议上的成就和故事归结为 &amp;ldquo;嗯，我们得到了这个框架或这个测试管理的工具&amp;ndash;现在一切都很美好&amp;rdquo;。缺少能够编写新库和工具的人。没有人去测试复杂且科学的软件。没有人做测试领域的研究。 业界继续认为，测试人员是 &amp;ldquo;只按按钮，几乎什么都不做 &amp;ldquo;的人。年轻的测试工程师也看到了同样的情况，因此他们的积极性和向上的动力更低。 如何改变这种状况 **为你的职业发展准备一个计划。**掌握什么技能，学习什么，以及如何在工作中使用这些技能。如果你能在公司获得知识和技能&amp;ndash;那就很好!</description>
+    </item>
+    
+    <item>
+      <title>测试同学找工作要不要刷题</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E5%90%8C%E5%AD%A6%E6%89%BE%E5%B7%A5%E4%BD%9C%E8%A6%81%E4%B8%8D%E8%A6%81%E5%88%B7%E9%A2%98-45c8075f234c4187bcb199b953bdba68/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E5%90%8C%E5%AD%A6%E6%89%BE%E5%B7%A5%E4%BD%9C%E8%A6%81%E4%B8%8D%E8%A6%81%E5%88%B7%E9%A2%98-45c8075f234c4187bcb199b953bdba68/</guid>
+      <description>最近有公司裁员火到上了热搜，今年就业形式不容乐观，相信有不少同学正在努力找工作中，另外可能有一些同学被裁员的阴影所笼罩，也许在默默的为下一份工作而努力。看到一些开发同学正在刷题刷的飞起，而与之对应的是工作机会的减少，简历字面要求的提高，以及面试周期的增加，据说现在面试题难出了天际，其实也是一种变相提高门槛的表现，那么这个时间点测试同学在面试之前是否需要刷题呢？
+答应是不一定，具体情况可以具体对待。
+初级测试同学 一些公司对初级测试的同学的要求不是特别高，人聪明能干活就行，所以可能不需要频繁刷题，但一些简单的编程能力还是要有，防止被一些不太复杂的代码题被动过滤，如果时间不是很充裕的话，优先级是了解测试流程，测试方法，测试工具，各种测试种类（功能性能接口等），最后才是简单的算法和数据结构题。
+中高级测试同学 其实中高级在技术上的要求差不多，所以放到一起讲，技术的广度上中高级的区别不大，不过深度上高级同学可能需要有一个强点可以侧重，能讲出东西来，让人信服。这两个职级都强烈建议刷题，不过优先刷简单的题先，中等难度的适当刷一点点，有些实在是看不明白的放弃也不可惜，高难度的题的就不用刷了，如果在面试中遇到的话，那这个职位可能是为某些人高度定制化的，或者根本就没有诚心招人，做不出来也不要紧。至于算法，可以了解比较简单的排序递归等，高级一点的贪心算法和动态规划可以适当的看看，大概知道概念，做不出来也问题不大。数据结构的话推荐优先了解二叉树及各种变种，更复杂的数据结构不看也可以。
+管理岗位 管理岗位的话一般来说不用刷题，因为管理者可能很多年都没写过代码了，实在是霸王硬上弓的话可能会让场面一度显得比较尴尬。不过不写不意味着就可以不知道，数据结构和算法应该有所了解，比如merge sort写不出来具体的实现，但是其过程和原理应该是可以表述清楚的。算法的话可以了解一些简单的，数据结构也是从二叉树开始，结束在你没有时间去了解的地方。
+测试开发 岗位相对较少，所以可能会更卷一些。建议初中级难度的全部刷完，高级难度如果能熟练掌握的话就转开发吧，大部分的开发没有花时间准备的话中高级题都很难写出来，简单题翻车也不是没有可能。
+其他测试相关岗位 比如pmo，qa等质量度量和流程管理类的角色，其核心竞争力与刷题无关，不刷是完全没问题的。</description>
+    </item>
+    
+    <item>
+      <title>测试工程师如何跟开发沟通？</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%A6%82%E4%BD%95%E8%B7%9F%E5%BC%80%E5%8F%91%E6%B2%9F%E9%80%9A-c5103bc7f4f942a9a06bf5940f32b747/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%A6%82%E4%BD%95%E8%B7%9F%E5%BC%80%E5%8F%91%E6%B2%9F%E9%80%9A-c5103bc7f4f942a9a06bf5940f32b747/</guid>
+      <description>原文应该无法访问到，这里就不给出链接了。原文的标题是：DO’S and DON’TS in Communication Between Developer and QA Engineer。我做了一些简单的翻译，大家应该可以大概了解到作者的真实想法。本文只是翻译而已，作者的观点仅代表她的个人看法。
+在担任 QA 工程师多年后，我决定分享一些有关与开发人员沟通的技巧。
+这些不要做 **如果不紧急，不要分散开发人员的注意力。**不要马上走到他的办公桌前。首先通过 Messenger 询问或提前安排会议。我意识到，一旦自己开始写代码的时候，当有人过来打断我的时候，我需要花费大量的时间和精力才能再次进入之前写代码的沉浸状态，这种中断根本不会增加生产力。
+**别害怕寻求帮助。**你不可能什么都知道，问别人是有没关系的，因为这比假装你很酷要好！不过要确保你理解了答案，不要问同样的问题两次。大家都在同一条船上，如果每个人都有一支桨，我们就可以朝着一个方向前进，这对每个人都有好处。
+**不要相信开发人员的话。**您需要找到证据来证明开发人员对“一切都应该没问题！”或“我只是改了代码中的一个字符串，它不会破坏任何逻辑”的信心。
+**不要责备。**不要固守消极，尝试解决问题，对事不对人。稍后我们可以决定如何避免将来出现类似问题。没有人是完美的，错误是不可避免的。主要目标是有能力做出健康的反应，然后做好自己的工作就好了。
+**别偷偷摸摸直接给开发人员分配给缺陷。**与跟开发人员在未经 QA 批准的情况下关闭bug有异曲同工之妙，这可能会令人生气的。
+不要对开发人员进行事无巨细的管理。“你检查缺陷了吗？”，“现在怎么样？”，“你什么时候修复错误？”。这很烦人，他们不能更快地解决问题。只需将自己置于开发人员的位置即可。
+**别把事事都放在心上，脸皮可以厚一点。**不要情绪化，不以物喜，不以己悲，不需要对别人的无意间的言行睚眦必报。你要学会同傲慢的人打交道，它实际上可以应用于任何人。这就是为什么厚脸皮和委婉的表达是必须的。
+可以这么做 **与开发人员交流知识。**让他们了解您的测试方法，为每个与你合作的开发人员找到“access_key”，高告诉他们你会如何进行测试，这可以帮助你避免部分错误。但是，由于一些原因，这并不总是可能的。第一，时间不够。其次，公司流程不允许这样做。最后，开发者出于多种原因不愿意与某人合作。但是，如果你能找到我上面提到的“access_key”，从长远来看，保持健康的关系会容易提升产品质量。
+**学会说服。**如果你想在工作中得到一些非测试方面的提升，这是一项有用的技能。寻求支持并将您的计划变为现实，不过如果你在你的陈述中感到孤独，也许你的计划或想法是有改进空间的。所以，不要为了说服而说服，让别人接受你并不总是正确的事实，学会倾听和倾听你周围的人。
+**说实话。**否则，它会很快毁掉你的声誉。或者这取决于你是一个多么好的骗子，不是每个人都是老罗。
+**准备好为你提的bug辩护。**有时候你必须捍卫需要修复的缺陷的重要性。但是你必须在你的陈述中说明自己的观点，让别人信服。随着时间的推移，这会让你得到其他人的信任并节省公司的资金成本。
+**在压力下保持冷静。**我知道，这很难。当每个人都不断催促你或你的团队时，你很难不乖乖就范。然而，说“不”是我们工作的一部分，即使这不是流行的观点。当然如果有人把你推到墙上或用枪指着你的头，这条规则就不起作用。
+**与开发人员讨论测试用例。**根据我的经验，这很难做到。这需要双方的时间和奉献精神，魅力和测试同学的强大说服力。我已经这样做了一段时间，但我无法采用这种方法。我从与开发人员的此类会谈中看到了巨大的好处。但是，我可能看不到的东西可能会告诉我相反的情况。你怎么认为？
+**在bug描述中要准确。**如果可以，请使用开发人员的语言。在其他情况下，让你的表述尽可能的简单。它应该是瑞典语中的“lagom”。具有良好的规模结构并为开发人员提供足够信息，让别人知道你描述的是到底是什么。
+**鼓励队友深入了解产品。**团队中的这种意识将减少愚蠢的bug数量。根据我的经验，低级的bug会消耗大量精力来报告它们。这些bug最好直接就预防住，让我们专注于更重要的事情。而不是让我们报告错误的*字体大小，*测试的边缘情况、安全性、性能等。
+**要有耐心。**不是每个人都是好相处的，要学会应对困难的、自恋的人。这是适用于任何人的一般性规则。
+一旦我开始为这篇文章写想法，我决定记下我自己的想法，然后再与““Lessons Learned in Software Testing. A Context-Driven Approach” —— Cem Kaner、James Bach 和 Bret Pettichord 撰写的一本书做比较。我是故意这样做的，所以这本书不会影响我对这个话题的看法。如果您同意它们，您可以完全阅读他们提供的课程并每天应用它们。
+根据我的观察，有些想法已经存在于第 7 章中。它让我感到温暖，因为我获得并放入下面清单中的经历让我想到有人也有同样的想法。
+我读过的一些课程实际上不在我的清单上，这意味着我学到了一些新东西，可以尝试将这些课程融入我的 QA 策略中。
+你读过我提到的那本书吗？在与开发者的交流中，您有什么样的观察？如果你有什么要补充的，请留言哦。不管你是不是QA。不同的观点永远不会受到伤害。</description>
+    </item>
+    
+    <item>
+      <title>测试并不能改进产品质量</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E5%B9%B6%E4%B8%8D%E8%83%BD%E6%94%B9%E8%BF%9B%E4%BA%A7%E5%93%81%E8%B4%A8%E9%87%8F-0f605927158a4f8caef1e732d6aceee9/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E5%B9%B6%E4%B8%8D%E8%83%BD%E6%94%B9%E8%BF%9B%E4%BA%A7%E5%93%81%E8%B4%A8%E9%87%8F-0f605927158a4f8caef1e732d6aceee9/</guid>
+      <description>今天看到了有人给出了这样的观点，那就是测试并不能改进产品质量，觉得挺有意思的，所以把作者的原文翻译一下，希望对大家有所裨益。
+在世界上有一种天经地义的看法，那就是在软件开发过程的早期预防问题会比在测试后期发现问题带来更高质量的产品,但那不是真的。
+这是不真实的，但不是因为大多数人可能首先想到的原因。问题不在于尽早解决问题是个坏主意。这通常是一个非常好的主意。
+问题是，测试自身不会导致更高质量的产品，在所有。问题预防和测试是不同的追求。测试不能预防问题，测试不能改进产品。
+对我而已——一名教师和熟练测试的倡导者——这可能看起来很疯狂，但这是真的。称体重不会让你减肥。验血不会让你更健康。学校的标准化考试不会让孩子更聪明，当然也不会提高教育质量。
+测试可以做的是通过质疑产品以对其进行评估来提高我们对可能摆在我们面前的事物的理解和意识。测试——通过体验、探索和试验了解产品来评估产品的过程——帮助我们意识到可能需要解决的问题。
+在日常生活中，浴室秤上的某个特定读数可能会促使我们更加谨慎地进食，或者进行更多的锻炼。验血可能会促使医生开抗疟疾药物。这些标准化的学校考试可能会建议改变课程、教育资金或教师培训。但在有人采取行动之前，测试只会提高对现状的认识，而不是情况本身。
+在软件开发中，除非有人解决测试帮助我们发现的问题，否则改进不会发生。当然，如果问题没有被发现，改进的可能性就会大大降低——这就是测试如此重要的原因。测试帮助我们了解我们拥有的产品，因此我们可以判断是否是我们想要的产品。在需要改进的地方，测试揭示了改进的必要性。
+有些人认为测试要求我们操作产品，这是软件开发流程的一部分。确实这是是一种非常重要的测试，但也只是产品测试的一种方式而已。
+将产品更广泛地理解为某人生产的东西会很有帮助。这意味着我们可以有单元，模块，原型等多种手段的测试。
+尽管我们通常将其称为审查，但我们确实可以在产品开发之前就进行全方位的思考，在这种情况下，产品其实就是之前所有的讨论，设计和思考的产出物，测试其实在产品的研发的初期就开始了。
+测试的结果是通过这些活动进行的评估和学习。这种学习可以应用于产品——但它是响应测试而发生的事情，而不是测试本身，这是可以改进产品。
+正如测试不能改进产品一样，测试也不能防止问题。作为测试人员，我们有一个持久的信念，即我们被要求测试的任何东西都已经存在问题。也就是说，产品中的问题在我们遇到之前就已经存在。
+那么，如果测试不能预防问题，那又有什么用呢？测试可以帮助我们意识到存在的问题，然后人们可以进行更改以防止这些问题进一步发展。
+在开发早期尝试预防问题是一个好主意。如果尝试能够成功，我们就更有可能开发出高质量的产品。尽管如此，即使是高度规范的开发过程也可能会出现问题。至少有两种方法可以确定是否发生了这种情况。
+第一种方法是全程测试产品。通过与一系列客户互动并了解他们所做的事情，确定我们开发的东西就是客户想要的。通过检查和讨论，测试那些最初模糊然后却越来越清晰的设计。
+另一种方式是在代码开发的初级就做单元测试，然后在后续的构建步骤里进行集成测试，code review，静态代码扫描和自动化测试，从而找出组件自身的问题或者是配置的问题。这些形式的测试通常不是很深入——这是一件好事，因为深度测试可能需要时间、精力和准备，这可能会对开发人员造成更多负担。
+在开发人员测试的同时，测试人员专注于并执行深度测试。深度测试的目标是测试少见的、隐藏的、微妙的、偶尔发生的、紧急的错误，这些错误可以通过手工测试或者探索性测试来发现。
+如果您的问题预防和问题缓解策略是成功的，并且你的代码和产品是可测试的，那你不太可能在测试后期遇到一些显而易见的低级问题。如果您不需要测试和报告这些问题，那么后续的深度测试会相对更快、更容易。
+如果您的问题预防和问题缓解策略不成功，全面和深入测试是找出问题的一种方法。您发现的问题可以解决；可以改进产品，并且可以在产品交付之前防止业务和客户出现问题。
+当人们面临损失、伤害、不良情绪或价值降低的风险时，最好在为时已晚之前意识到问题，这就是测试的终极意义之所在。
+测试本身既不能防止问题也不能改进产品。但是测试确实可以预测需要预防的问题，并且测试可以照亮产品需要改进的地方。
+因为全文大部分是机翻，所以行文肯定有不流畅的地方，另外加上作者本身的笔法比较曲折，有一些点机器翻译可能难以驾驭，因此全文可能看起来观点比较分散，没有强一致性，不过大家可以简单的意会，忽略那些遣词造句里的机器感。
+总而言之作者的观点其实并不离经叛道，而且还是有一定的道理的，比如癌症筛查并不能治疗癌症，不过如果你尽可能早的可以通过筛查确定自身的风险，提前治疗和预防，那么癌症很有可能将不会发生。测试也是如此，测的再多开发和产品不去修改，那么产品本身的质量也不会得到改进，但是如果我们频繁的提前的进行测试，那么我们就可以尽早的暴露问题，我们的开发和产品也就会有足够的时间去进行修复工作。这也是为什么我们总强调bug生命周期的原因，测试并不只是简单的提bug，而是要尽早提bug，并保证bug得到及时修复并得到验证。
+原文地址：Testing Doesn&amp;rsquo;t Improve the Product (linkedin.com)</description>
+    </item>
+    
+    <item>
+      <title>测试是整个开发过程的瓶颈吗</title>
+      <link>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E6%98%AF%E6%95%B4%E4%B8%AA%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E7%9A%84%E7%93%B6%E9%A2%88%E5%90%97-a8bf91f0fbad43cc975e7612a99b08a9/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E6%98%AF%E6%95%B4%E4%B8%AA%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E7%9A%84%E7%93%B6%E9%A2%88%E5%90%97-a8bf91f0fbad43cc975e7612a99b08a9/</guid>
+      <description>最近一项针对开发人员 GitLab 调查发现，与开发过程中的任何其他流程相比，测试造成的项目延期其实会更多。换句话说，很多开发人员认为项目延期的主要原因其实就是因为测试，那么测试真的是项目开发过程中的瓶颈吗？有人收集了一些有意思的数据，我们不妨先看一下。
+超过80%的项目还在进行手工测试，哪怕是在大企业和大组织中
+超过50%的测试人员每周花费5-15小时去处理测试数据(平均等待测试数据的时间相当于是2周)
+84%的测试人员会因为测试环境产生的各种问题而造成例行的延期(平均等待测试环境被修复的时间相当于32天)
+只有30%的受访者认为他们的devops实践有1-3年的历史
+25%的团队要么是没有自动化测试要么是刚开始准备了解如何去做自动化测试
+52，这是平均1个系统在进行测试时候需要进行交互的依赖系统数量
+59%的测试人员认为需求的快速变化是自动化测试的最大挑战
+不过上面的数据统计仅仅是冰冷的数据而已，大家觉得测试到底是不是开发过程中的瓶颈呢？欢迎留言讨论。</description>
+    </item>
+    
+    <item>
+      <title>用python实现简单的版本号生成工具</title>
+      <link>https://zh.ethanhan.cc/posts/%E7%94%A8python%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7-943e6a6de3444b308f7a9b986ca30c25/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E7%94%A8python%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7-943e6a6de3444b308f7a9b986ca30c25/</guid>
+      <description>我们发布比较频繁，每次发布都需要从release分支打1个tag，不过可能是因为年纪大了的缘故吧，尽管借鉴了一些版本号的制定规则，不过每次我都记不太住，需要翻文档去重新复习，不如把这步自动化一下，为未来的自己节约一点时间，另外有了工具就好统一规则，后面所有相关的项目都可以用同一套规则来生成版本号，去掉了人工对齐的成本，变相提升了效率。
+版本号规则 我们的版本号大概长这个样子
+v1.00.0-hotfix-20221111-1 版本号 发布类型 发布时间 第几次发布 版本号规则: 大版本1位 + 小版本2位 + patch版本号1，比如v1.00.0表示大版本是1，小版本是0，patch版本是0 发布类型：普通发布/hotfix/adhoc(临时版本) 设计 首先不考虑写页面做系统，其实用vue随便写个单页应用是可以很快搞定的，不过没那个必要，用命令行工具就好了，简单快速，而且生成了版本号之后可以调用githlab(我们公司用私有化部署的版本)api来自动打tag，在微服务化当道的今天，手动为每次发布的所有repo打版本号本身就不是一个很好的体验。命令行工具在这方面比单页应用更具优势一些。
+另外交互式的命令行可以省去很多参数validation的工作量，这也应该是考虑的。随便搜索了一下，发现了1个名为inquirer的库可以很好的满足我的需求。
+代码实现 import inquirer from datetime import datetime STR_MAP = { &amp;#39;regular&amp;#39;: &amp;#39;&amp;#39;, &amp;#39;hotfix&amp;#39;: &amp;#39;-hotfix&amp;#39;, &amp;#39;adhoc&amp;#39;: &amp;#39;-adhoc&amp;#39; } def build_version(options): release_type = STR_MAP[options[&amp;#39;release_type&amp;#39;][0]] date = datetime.now().strftime(&amp;#39;%Y%m%d&amp;#39;) return f&amp;#34;v{options[&amp;#39;version&amp;#39;]}{release_type}-{date}-{options[&amp;#39;seq&amp;#39;]}&amp;#34; if __name__ == &amp;#34;__main__&amp;#34;: questions = [ inquirer.Text(&amp;#34;version&amp;#34;, message=&amp;#34;Please enter a version, for sample 1.00.0&amp;#34;, default=&amp;#39;2.00.0&amp;#39;), inquirer.Checkbox( &amp;#34;release_type&amp;#34;, message=&amp;#34;Please select a release type&amp;#34;, choices=[&amp;#34;regular&amp;#34;, &amp;#34;hotfix&amp;#34;, &amp;#34;adhoc&amp;#34;], default=[&amp;#39;regular&amp;#39;] ), inquirer.</description>
+    </item>
+    
+    <item>
+      <title>用wiremock自建mock服务</title>
+      <link>https://zh.ethanhan.cc/posts/%E7%94%A8wiremock%E8%87%AA%E5%BB%BAmock%E6%9C%8D%E5%8A%A1-f9e2c255d6de47ac9d165a43e45855f2/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E7%94%A8wiremock%E8%87%AA%E5%BB%BAmock%E6%9C%8D%E5%8A%A1-f9e2c255d6de47ac9d165a43e45855f2/</guid>
+      <description>我们很多时候都需要mock服务，比如
+在做性能测试的时候，我们希望调用第三方服务的接口可以被mock掉，这样就不会因为压测而对第三方依赖造成巨大的负载 第三方服务归属于其他团队，不同环境之间的沟通和协调其实比较麻烦 消除不同测试环境之间的差异 控制请求的时延 如果是使用云服务的话，使用mock接口还可以节约出口的带宽 提升第三方服务的稳定性 所以mock的作用就是用最小的代价实现跟第三方接口几乎一样的假的接口，最好返回的内容是动态可配置的，这样我们在测试环境就可以直接去调用这个假接口，从而消除了对第三方的依赖。
+实现mock的方式很多，最简单的做法就是随机应变，自行实现，比如在python技术栈里，我们可以用flask去这样实现
+from flask import Flask, jsonify app = Flask(__name__) @app.route(&amp;#39;/api/get-json&amp;#39;) def hello(): return jsonify(hello=&amp;#39;world&amp;#39;) # Returns HTTP Response with {&amp;#34;hello&amp;#34;: &amp;#34;world&amp;#34;} 用go实现起来也不难，下面的例子来自go的官方文档，使用了gin框架。https://go.dev/doc/tutorial/web-service-gin
+package main import ( &amp;#34;net/http&amp;#34; &amp;#34;github.com/gin-gonic/gin&amp;#34; ) // album represents data about a record album. type album struct { ID string `json:&amp;#34;id&amp;#34;` Title string `json:&amp;#34;title&amp;#34;` Artist string `json:&amp;#34;artist&amp;#34;` Price float64 `json:&amp;#34;price&amp;#34;` } // albums slice to seed record album data. var albums = []album{ {ID: &amp;#34;1&amp;#34;, Title: &amp;#34;Blue Train&amp;#34;, Artist: &amp;#34;John Coltrane&amp;#34;, Price: 56.</description>
+    </item>
+    
+    <item>
+      <title>移动测试指南</title>
+      <link>https://zh.ethanhan.cc/posts/%E7%A7%BB%E5%8A%A8%E6%B5%8B%E8%AF%95%E6%8C%87%E5%8D%97-31ddadb1681b4287803ef98d6ca78960/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E7%A7%BB%E5%8A%A8%E6%B5%8B%E8%AF%95%E6%8C%87%E5%8D%97-31ddadb1681b4287803ef98d6ca78960/</guid>
+      <description>Guide to Mobile Testing
+移动应用已经风靡全球，在移动互联网如此普及的今天，移动测试的重要性不言而喻。个人认为移动应用现在是大部分互联网公司的主要业态，在竞争激烈的现时，移动应用的质量可能会影响某个产品的成败与存亡，在去测试化思潮如此普遍的今天，移动端应用应该是最不可能砍掉测试人员的。因为
+移动应用的质量是第一大事 竞争越激烈，好的质量越重要 测试移动应用的效率目前还是偏低，用高薪的开发人员去兼任测试职能有点得不偿失 移动端更新成本相对较高，测试充分再发出去才能尽可能地规避更新应用进行bugfix的风险 诚然，有些公司在推进去测试化，但那些公司可能是
+所在行业垄断性质明显，没有其他公司可以进行正面竞争，比如微软 公司和用户对线上问题忍耐度相对较高，应用形态相对单纯，试错成本相对较低，比如之前的头条 行业已过高速增长期但存量竞争激烈，产品基本处于维护阶段，不需要投入太多的开发和测试资源，比如腾讯的某些产品 从这里开始就是翻译了，原文地址在：https://medium.com/@iamfaisalkhatri/guide-to-mobile-testing-d0dd2d9b59f1
+所以大部分情况下，移动端的测试以及质量提升是需要专职测试人员进行负责和统筹的，所以不必焦虑。相反，了解一些基本的移动端测试知识是一件较为必要的事情。
+质量是关键
+我们需要检查所有内容以及所有可能的排列和组合，以免出现任何bug。由于移动设备也存储了最终用户的个人数据，因此有必要对安全性和数据完整性进行检查。
+测试应用程序的性能同样重要，因为如今人们对应用程序的速度更感兴趣。如果功能能用，但应用响应时间过长，可能无法吸引用户。因此，应用程序的性能测试也是需要考虑的重要因素。
+谈到测试移动应用程序，我认为我们应该首先弄清楚测试策略，因为它可以帮助我们分解测试阶段并进行高质量的测试，并帮助我们避免漏测一些重要内容。
+定义测试策略 首先我们需要弄清楚移动应用的类型
+原生应用：离线可以直接用安装包进行安装，一般情况下可以在应用商店下载 移动web应用：比如h5应用，基本是用html+css+js进行开发的，可能长得跟原生应用很像，但基本上不是一回事 混合应用：既有原生也有移动web的应用，一般情况下对开发人员比较友好，毕竟web应用比原生应用开发要容易一点点 我们以混合应用为例在说明一下如何定义我们的测试策略，在进入细节之前，我们先来了解一下测试类型的相关知识。
+测试类型 理想情况下，虑到混合应用程序，我认为应该考虑以下测试类型
+功能测试。 性能测试 安全测试 可用性测试 UI/UX 测试 何时以及如何开始测试 由于我们处于当今软件世界虔诚地遵循敏捷的时代，因此最好尽早开始测试。
+测试应该在软件开发生命周期的每个阶段进行，而不仅仅是在功能完全开发时进行。
+话虽如此，请始终确保开发人员正在编写单元测试。还应涵盖集成和服务层测试。只写测试没有帮助，代码覆盖率报告应该显示单元测试覆盖率至少大于 80%，如果有可能的话，可以逐渐增加到 100%。有一条流水线可以帮助我们轻松监控生命周期并在每个阶段采取纠正措施，这很好。因此，除非构建是绿色的，否则继续进行测试并尽快进行所需的修复是不好的。
+测试计划 有一个测试计划是很好的，因为它会更容易检查所有的测试活动，所以我们不会遗漏任何东西，顺利地执行测试并提供高质量的输出。
+第一个也是最重要的情况是用户是否能够使用 PlayStore/App Store 成功安装应用程序。
+接下来，是检查安装成功后应用程序是否正确打开。
+以下是我们在测试移动应用程序时需要注意的所有测试活动的一般列表：
+搞清楚在预期发布应用程序的地区广泛使用的移动操作系统平台。 根据从第 1 步得出的结果 — 检查哪些都是该地区流行的移动设备，并相应地列出所有流行的设备。 从第 2 步生成的列表中，取出前 5 个设备并考虑将它们用于测试目的。此外，请确保您采用大屏幕和小屏幕尺寸的组合，以便更好的去覆盖ui/ux的检查项。 考虑操作系统版本也很重要，例如，对于之前在上述步骤中考虑的地区和操作系统，iOS 版本 14 和 15 是该地区流行的版本。因此，在这种情况下，请确保您在 iOS 版本 14 和 15 上进行测试。大多数时候漏掉的另一件重要的事情是最低版本支持。因此，如果您的应用程序支持 iOS 版本 12 作为最低版本，请确保在大小屏幕设备上对 iOS 版本12进行一轮充分的回归测试。根据我的经验，大约 1-2% 的一些讨厌的 bug 来自这里。 从自动化的角度来看，如果您可以在选定的设备上并行运行测试并根据上述步骤中设置的标准选择一些最新的设备，那就太好了。因此，从回归的角度来看，最好所有的端到端测试都可以用自动化方式运行，并在出现任何问题时自动告警。 由于某些原因，无法将某些测试用例作为自动化的一部分进行覆盖，因为我们都知道并非所有内容都可以实现自动化，那么可以在手动探索性测试活动中进行覆盖。 `</description>
+    </item>
+    
+    <item>
+      <title>简陋的全自动化测试实践</title>
+      <link>https://zh.ethanhan.cc/posts/%E7%AE%80%E9%99%8B%E7%9A%84%E5%85%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5-a162aad16338433d92697f4ffcb009ca/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E7%AE%80%E9%99%8B%E7%9A%84%E5%85%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5-a162aad16338433d92697f4ffcb009ca/</guid>
+      <description>最近在搜广推项目里做了一些小小的基于数据驱动的测试尝试。
+因为项目的特殊性，大部分的测试场景其实相对类似，大体可以分为下面几步
+收集数据，整合成1个类似宽表的东西。比如在美团上给外卖投放一个关键字广告，那么投放之前需要收集这个商家的门店信息，比如门店名，经纬度；菜品信息，这个商家有哪些菜品，名字分别是什么；品牌信息，这个商家属于哪个品牌，品牌有哪些特殊属性；这些信息其实都分别在不同的业务表里，开发那边有离线数据流去打宽表，但是对于测试来说，如果不使用自动化的方式的话则需要用sql去查询，遇到有分表的情况则比较麻烦； 构造数据。还是外卖投关键字广告的例子，因为召回的规则和其他一些业务规则，我们投的关键字最好有相关性，比如商家的店名叫做“永久炸鸡”，那么投“炸鸡”这个关键字可能会比较好。所以通过上一步构造好的数据，从里面自动筛选出一些相关数据并进行构造也是必要的； 执行业务并进行断言。以搜索为例，收集数据阶段我们收集了很多的门店信息和菜品信息，那么使用门店名和菜品名进行搜索的话是需要有结果出来的，由于排序规则是算法团队去实现和测试的，所以我这边只需要数据可以搜出来就好，至于排序是什么样子，测试用例里面是不需要去关注的。 综合考虑了一下，我有一个大胆的想法。
+上面这些步骤是不是都可以完全由自动化来实现？
+使用爬虫进行数据收集 测试环境和体验环境我是有数据库权限的，所以可以通过sql来进行数据查询，逻辑其实很简单，从现有的数据里查一些拥有有效菜品的有效商家就好了，所以问题就简化成了使用脚本去连接数据库，然后进行一系列的连表查询就好了。不过因为菜品进行了分表，所以需要一些额外的逻辑去处理一下，不过总的来说还是不难的。
+一切都很顺利，直到业务上线了以后，我发现我需要在线上去收集这些数据。因为安全策略的缘故，开发和测试都是没有线上数据库的访问权限的，因此我在非生产环境里通用的自动化脚本就成了一堆废纸。
+后来有一天，我发现项目的本地测试人员都是在业务后台的各个功能模块里做数据的查询和准备，我突然有了使用爬虫去爬取数据的想法。
+原理其实很简单，模拟业务后台的请求，通过后端暴露的api进行查询，最后想办法把数据组织好存储下来就行了。
+后来用代码简单的实现了一下，效果其实还是不错的，而且完全不需要去顾虑分库分表问题，因为管理后台的api把这些都实现好了。这也让我开阔了一些思路，其实爬虫除了爬外部数据之外，还可以爬内部其他团队的数据，只要业务有管理后台，一切都好说。
+使用redis进行数据存储 爬虫拉到数据之后，就需要对数据进行一些处理和存储。得益于业务api的杰出工作，之前查sql时候需要进行的数据处理现在就变得特别简单，因为业务逻辑都帮我都处理好了，下一步只需要把数据保存起来就好了。
+因为数据需要反复使用和在多个场景下使用，所以存储对于我来说是必须的，但对于另一些场景，存储中间数据可能不是必选项。
+因为对redis相对比较熟悉，所以我这里用redis实现了一些类似索引的东西。
+用set去存储一些实体的主键，比如门店id和菜品id之类； 用string去存储详细信息，比如门店名，菜品的详细信息等；其中门店菜品之类的就直接用的python dict序列化成json string，查询时候通过门店的id就可以直接拿到json string，然后重新反序列化成python字典就好了 使用后端api进行数据创建 对于搜索来说组装好数据基本就可以测了，不过对于广告来说还需要进行广告的创建。这里我是直接调用api做创建，效率高而且不用去页面点。
+使用pytest进行自动化测试 最后就是用例编写了，这里我直接用pytest实现了一些用例，贴一个具体例子。
+@pytest.fixture def data(): r = get_redis() k = r.srandmember(KEY_FOR_TEST) return json.loads(r.get(k)) def test_recall_by_full_store_name_success(data): sname = data[&amp;#39;store_name&amp;#39;] res = query_ads(sname, data[&amp;#39;longitude&amp;#39;], data[&amp;#39;latitude&amp;#39;]) assert &amp;#39;ids&amp;#39; in res, f&amp;#34;{sname} not recall&amp;#34; assert len(res[&amp;#39;ids&amp;#39;]) &amp;gt;= 1 # recall 1 record 这里用fixture来进行测试数据的获取，我准备了一批测试数据，每次随机返回1条，然后通过redis去拿具体数据，比如门店的经纬度信息和门店名。在用例里我判断了可以通过门店名进行召回，至于召回的数据排序是否正确，因为排序规则不属于我的测试范围，所以直接判断可以召回大于1条的数据就好了。
+总结 目前看来这套框架在进行数据驱动的业务测试里还是效率很高的。而且由于爬虫突破了环境的限制，我还可以复用数据构造流程来进行很多的线上问题的排查工作。比如预先爬取线上当天的所有广告信息以及相关的门店菜品等基础信息，一旦线上用户反馈广告无法召回，直接调用调试工具进行重现和调试，问题复现和定位的速度加快了很多。
+最关键的一点是，我实现了项目开始阶段那个有点大胆的想法：整体测试过程完全的自动化。尽管简陋，但是高效，测试开发比1:11，无裁员之乱耳，无加班之之劳形。</description>
+    </item>
+    
+    <item>
+      <title>纠正两个常见的错误观念。端到端测试自动化是 简单而容易 还是 复杂而不可能</title>
+      <link>https://zh.ethanhan.cc/posts/correct-two-common-misconceptions/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/correct-two-common-misconceptions/</guid>
+      <description>当前市场上各种端到端的测试工具层出不穷，工具市场很繁荣，但真正成功的项目实践却很少见。今天看到了一篇很有意思的文章，我愿称作者为典型的selenium原教旨主义者， 他的一些观点尽管看上去非常的old school，不过总的来说是很有道理的，这里简单的分享一下他的观点。
+他的这篇文章叫做Correct two Common Misconceptions: End-to-End Test Automation is “Simple and Easy” or “Complex and Impossible”，翻译过来就是纠正两个常见的错误观念。端到端测试自动化是 &amp;ldquo;简单而容易 &amp;ldquo;还是 &amp;ldquo;复杂而不可能&amp;rdquo;, 原文的地址是https://zhiminzhan.medium.com/correct-two-common-misconceptions-end-to-end-test-automation-is-simple-and-easy-or-complex-and-ad559ade982a。
+一切都开始于这样的一个观点:
+事实：大多数测试自动化的尝试都失败了
+&amp;ldquo;根据我在这个领域17年的经验，我同意图片中描述的主要概念，即大多数测试自动化的努力往往是失败的。&amp;rdquo; - 作者
+端到端测试自动化是简单还是复杂？ 答案取决于你问谁。在过去的30年里，测试自动化供应商，如惠普，一直在推销 &amp;ldquo;记录/回放 &amp;ldquo;和 &amp;ldquo;对象识别工具 &amp;ldquo;的概念。尽管这些方法已经被证明是无效的，但一些供应商仍然坚持使用这些方法。
+在一个典型的软件团队中，众多的软件工程师和经理可能认为 &amp;ldquo;测试自动化 &amp;ldquo;是一个简单的任务，尽管没有人见过测试自动化的成功实施（也就是说，团队完全依靠手工测试）。作为证据，许多招聘广告要求申请人有 &amp;ldquo;创建测试自动化框架 &amp;ldquo;的经验，这似乎很荒谬。
+所以，端到端的测试自动化可能并不像许多人想象的那样简单和容易。
+&amp;ldquo;根据我的经验，优秀的开发人员不一定能成为优秀的测试人员，但优秀的测试人员（同时具有很强的设计能力）可以成为优秀的开发人员。这是一种心态和一种激情。&amp;hellip;他们是黄金&amp;rdquo;。
+谷歌副总裁帕特里克-科普兰，在一次采访中（2010年） &amp;ldquo;95%的时间，95%的测试工程师会写出糟糕的GUI自动化，只是因为它是一件非常难做的事情。
+这篇来自微软测试大师Alan Page的采访（2015年） &amp;ldquo;测试比开发更难。如果你想有好的测试，你需要把你最好的人放在测试中&amp;rdquo;。
+Gerald Weinberg，在一个播客中（2018年）。 考虑到事实和上述知名专家的引言，似乎完成端到端的测试自动化是一个无法克服的挑战。
+我的答案是 &amp;ldquo;它可以很简单，但往往是人为的错误使它变得不必要的困难。&amp;rdquo;
+许多人做出了明显的错误的决定 我见过错误的决定，往往不止一个，在失败的测试自动化尝试中。
+😱 使用编译语言，如Java/C#，作为脚本语言。 我们称之为 &amp;ldquo;测试脚本&amp;rdquo;，是有很好的理由的！请看这篇文章，&amp;ldquo;自动化测试脚本应采用脚本语言的语法，自然！&amp;rdquo;
+😱 使用Gherkin，例如Cucumber/SpecFlow，作为测试语法。 这大大增加了维护的工作量，但几乎没有任何价值。查看《为什么小黄瓜（Cucumber，SpecFlow&amp;hellip;）在UI测试自动化中总是失败？ 😱 使用JavaScript作为端到端测试自动化的语言。
+JavaScript是一种复杂的语言（主要用于前端开发），不适合测试自动化（如恼人的await，node_modules，&amp;hellip;）。我遇到的每个JS测试员都是假的，没有例外。 毫不奇怪，假的测试人员在几年的时间里循环使用PhantomJS -&amp;gt; WebDriverIO -&amp;gt; Protractor -&amp;gt; TestCafe -&amp;gt; Pupetteer -&amp;gt; Cypress -&amp;gt; Playwright，结果都一样：失败。 请看 &amp;ldquo;为什么JavaScript不适合用于真正的网络测试自动化？&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>线上发现了bug该如何处理</title>
+      <link>https://zh.ethanhan.cc/posts/%E7%BA%BF%E4%B8%8A%E5%8F%91%E7%8E%B0%E4%BA%86bug%E8%AF%A5%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86-a46c9c440cae42b2a451f68ba374806e/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E7%BA%BF%E4%B8%8A%E5%8F%91%E7%8E%B0%E4%BA%86bug%E8%AF%A5%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86-a46c9c440cae42b2a451f68ba374806e/</guid>
+      <description>今天在国外论坛看到了个很有意思的发帖，有人提问：线上发现了bug该如何处理。
+我知道大家已经问过很多次类似的问题了，不过工作还是很让我失望。我在生产环境上漏掉了1个很明显的bug没测出来，我想知道你们是怎么处理这种情况的。我的项目经理发现了这个bug。
+大家的回答其实很暖心的。下面是一些高赞回答。
+这就意味着你们在单元测试，集成测试和功能测试以及自动化测试的阶段就已经漏掉了这个问题，希望你们有做这些。其实开发跟你们的感受一下，我就是个开发，我一直为我写的bug感到抱歉，我认为责任应该由整个team承担。
+事情都发生了，先承认错误。确定是否真的有测试遗漏，并在未来的发布中加入这个用例。
+好的devops team需要有零责备文化（https://www.releaseteam.com/the-importance-of-a-zero-blame-culture-in-devops/），好的软件质量交付需要团队的努力。
+这就是QA当下生存现状。如果你能忍受压力持续进步，那么你会成为一个好的QA的。
+你并没有搞砸，是流程的锅。扔给你点资料去学习吧https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680。
+总的看来大家的观点还是开明的，比较包容，不过事实上大家的看法是一回事，但最后处理问题的方式又是另外一回事了。假如发生了一个很严重的线上事故，还好有别人背锅，你是安全的，这时候你心里肯定是同情和理解，觉得qa其实有点无辜，是流程的锅，觉得需要整个团队努力一下以便改进交付质量，但是如果你是直接或相关责任人，处罚落到了你头上，你大概率就不会这么宽容的看问题了。
+我的观点是发现线上问题不可怕，能不能迅速发现问题和迅速修复问题才是关键，而这两点光靠qa负重前行是无法得到根本上的改善的。</description>
+    </item>
+    
+    <item>
+      <title>给测试开发工程师的5条建议</title>
+      <link>https://zh.ethanhan.cc/posts/%E7%BB%99%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%845%E6%9D%A1%E5%BB%BA%E8%AE%AE-03b2282108504a29b8b40f3b9c88c369/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E7%BB%99%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%845%E6%9D%A1%E5%BB%BA%E8%AE%AE-03b2282108504a29b8b40f3b9c88c369/</guid>
+      <description>近些年可以看出测试开发工程师是热度比较高的测试职位，除了涵盖了之前自动化测试工程师的职能外，测开同学的开发能力进一步提升，可以做到开发一些测试平台和测试框架的工作，并在推广自动化测试方面也有一定的kpi要求，能力越大责任越大，正好看到了国外有同行写的给自动化测试工程师的几条建议，觉得还是有一定道理的，所以在这里简单的分享一下，希望对大家所有裨益。
+质量心态 作为测试开发工程师，我们可能专注于学习测试工具和测试框架，提升代码能力，日复一日，循环往复。学习是没问题的，不管你是测试开发还是功能测试同学，持续学习应该是整个职业生涯里必不可少的一部分。话虽如此，不过对于测试同学来说，全方位的质量心态还是很有必要的。
+那么质量心态是什么呢？作为测试开发同学，我们应该关注项目/产品质量的方方面面，而不是仅仅满足于将验收标准或者是手工用例转化成自动化脚本。
+相反，我们应该站在质量控制的层面去从用户的角度带入思考，如果我们的脚本不能为用户带来价值，那么这些脚本其实就没有价值。
+举一个例子，我们在提交一个表单的时候，比如注册用户以后，我们的ui自动化用例是不是需要去查数据库，看看新的用户记录已经被持久化到了用户表里？我的答案是：在开发时间有限的前提下不需要去连数据库查询，因为用户是不会连数据库直接看数据的，我们应该从用户可以感知到的方面进行断言。连数据库查询的事情可以交给其他类型的自动化用例，比如单元测试用例去实现。
+获取其他测试领域的知识 相比于成为某种工具或者编程语言的专家，测试开发工程师可能更有必要成为一名通才，我们最核心的观念应该是帮助团队满足用户的需求和期望。
+因此除了功能测试和自动化测试之外，我们是需要学习其他领域的知识，比如性能测试，可用性测试，可测试性，安全测试，移动端测试，可视化测试和数据测试。
+技术已经发展了很多年，我们几乎每天都有许多领域和新技能需要学习。让我们探索一些可以帮助你提升自动化工程师职业生涯的领域：
+探索性测试
+老生常谈的话题了，探索性测试可以叫做老司机测试，但探索性测试并不是随心所以，而是需要精心计划和设计一些测试用例。我们可以通过探索性测试来开阔用例设计的思路，从而改进我们的e2e（也就是ui）测试用例。《Explore It!: Reduce Risk and Increase Confidence with Exploratory Testing》阅读这本书可能是一个不错的开始，不过我好像并没找到中文版本，有点可惜了。
+数据测试
+机器学习和人工智能每天都在使用数据，但数据的有效性还是要验证的。我的建议是开始学习数据模型的性能，这有助于我们弄清楚一些 ML预测错误的具体场景。
+可视化测试
+其实就是ui测试了，ui是产品和用户打交道的最终途径，很多情况下也是唯一途径，生产环境中的视觉错误会危及我们的声誉并影响我们的品牌，所以ui的测试是非常必要的，也是需要我们去花精力学习的。
+可访问性测试
+正如您可能知道的那样，许多国家/地区的法律法规要求让每个人都可以访问应用程序，并且创建一种必须适合所有人的软件应用程序文化。比如产品对盲人用户的可访问性就是一个很好的例子。我们可以从https://www.w3.org/WAI/WCAG21/quickref/开始进行学习。
+安全测试
+就法律处罚和品牌声誉而言，安全漏洞往往代价高昂。我们应该在CI 的pipeline中增加安全扫描的环境。我的建议是开始阅读OWASP和学习一些安全测试工具。
+混沌测试
+混沌测试/混沌工程测试是在影响客户之前发现漏洞和进行中断。简而言之，我们希望系统是可以在受控的环境中进行错误恢复的。如果你想学习混沌测试，那么《Chaos Engineering: System Resiliency in Practice》这本书将是一个不错的开始。
+获得正确的帮助 获得他人的支持可以加速学习周期并显着改善您的职业生涯。但是，首先得找一个你信任的导师，他已经掌握了你想学习的技能，这些技能可以是技术技能或软技能。
+我的建议是你问问自己：“我公司或我的人脉网中谁会注意到我的变化并为我提供诚实的反馈？” 有时候找导师可能很困难，我们希望有最好的老师来指导我们。如果你在你的社交网络中找不到导师，你可以要求你的上级提供高质量的指导。
+“如果你想快点走，就一个人走。想走远一点，就一起走”
+自动化不仅仅是执行测试脚本 这个很好理解，自动化的目的是什么？大家可能有自己的答案，但答案一定不会是执行用例并使其通过。
+其实我总结自动化的目标是帮助团队从质量和效率的维度满足用户的预期。
+质量很好理解，我们不希望用户用到全是bug的产品；效率也不难想象，我们希望用户可以尽快的用到产品。
+分享也是学习的一种途径 正如你可能知道的那样，教导他人可以提高你自己的学习能力。记得之前看到过一个学习的方法就是先自己学一遍，然后把自己学到的东西讲给别人去听，如果别人能弄明白，那么你自己就学会了。
+另外积极的分享可以提高沟通技巧，增强信心，提高领导能力。
+我的建议是强迫自己去做，把教学日期放在你的日历上，或者同意主持几个月的培训课程。有了这些目标，你学习将更加专注和实用，我们在质量保障上可以不立flag，但是在分享学习上flag可以适当的立起来。
+最后 知识被认为是人类历史上最宝贵的财富。如果你打算在自动化工程师的职业生涯中有所提高，持续学习之旅就不会出错。
+正如圣雄甘地所说：“活得像明天就要死一样。活到老，学到老”。</description>
+    </item>
+    
+    <item>
+      <title>聊聊ui自动化用例的尺度</title>
+      <link>https://zh.ethanhan.cc/posts/%E8%81%8A%E8%81%8Aui%E8%87%AA%E5%8A%A8%E5%8C%96%E7%94%A8%E4%BE%8B%E7%9A%84%E5%B0%BA%E5%BA%A6-9b12d1c348be471f887e0ffdf84ce917/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E8%81%8A%E8%81%8Aui%E8%87%AA%E5%8A%A8%E5%8C%96%E7%94%A8%E4%BE%8B%E7%9A%84%E5%B0%BA%E5%BA%A6-9b12d1c348be471f887e0ffdf84ce917/</guid>
+      <description>自动化用例的尺度到底怎么拿捏，每个测试团队或者每个人都有自己的想法和方法论，今天看到一篇文章以处理弹框为例比较详细的讨论了这个问题，觉得跟我的思路很接近，这里拿出来分享一下。原文地址：https://responsibleautomation.wordpress.com/2023/01/31/should-test-automation-just-handle-it/
+在文章里作者列举了几个场景
+有时我们收到这个弹出窗口，所以我们检查一下它是否在那里。如果有，我们就点击 &amp;ldquo;取消&amp;rdquo;，然后继续。 有时我们得到一个网页，上面写着 &amp;ldquo;系统不可用&amp;rdquo;，所以我们就点击F5，然后继续，因为这只发生在QA环境中。 有时，应用程序让我们在支付过程中二次登录。 碰到这些情况，自动化脚本应该如何处理？
+从技术上讲我们始终是可以用代码处理这些情况的，不过核心的问题是，遇到这些突发情况，我们是要断言用例成功与否，还是写代码去pass这些细枝末节？有时候这类问题确实很困扰。
+作者把这些问题分为两类
+对业务没影响的，可以容忍的问题 不可容忍的问题 可容忍的问题 作者举了个例子，他们的ios app在进入的时候会弹框，要求用户授权定位和通知权限。遇到这种情况，脚本是直接点掉还是返回错误呢？作者表示他们也不能做决定，最后通过跟客户讨论，客户认为这种问题可以忽略，所以他们最终的策略是点掉，继续后面的流程，这就是可容忍问题的例子。
+不可容忍的问题 还是上面那个app，一些情况下用户没有配置签名会弹出提示框，要求提供签名后继续，这种问题直接影响到了业务流程，就是不可容忍的问题，在这种情况下进行断言会比较好，因为没有签名后面的业务流程都走不通了，应该当做一个异常用例来进行专门的测试。
+总结 作者给的例子都是弹框的，确实很少见到有人专门写东西来讨论弹窗的处理，简而言之一些弹框跟业务无关，那么就直接点掉或者不让它弹。比如之前我在写wordpress用例的时候，打开编辑器后总会出现全屏的用户引导教程，页面上所有文本框都没办法进行输入，我这时候认为新手教程不影响业务的核心流程，所以用了一些js代码直接让引导教程没办法弹出来。另一方面，如果出现的弹框是与业务强相关，那么弹与不弹就是两个用例，分别进行测试就好。
+另外除了弹框，还有一些处理也可以分类来探讨。比如测试环境下超时时间调长一点，加载不出来就刷新一下，这种问题再测试环境是可以容忍的，不影响主业务和流程。</description>
+    </item>
+    
+    <item>
+      <title>自动化测试的9大规则</title>
+      <link>https://zh.ethanhan.cc/posts/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%9A%849%E5%A4%A7%E8%A7%84%E5%88%99-786ac3129813420a89802597b7e7e3fc/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%9A%849%E5%A4%A7%E8%A7%84%E5%88%99-786ac3129813420a89802597b7e7e3fc/</guid>
+      <description>看到了一篇不错的关于自动化测试文章，简单翻译了一下。
+在我的软件测试生涯中，我听到了许多说法，如 &amp;ldquo;我们不需要团队中的测试人员！&amp;ldquo;到 &amp;ldquo;我们需要用100%的覆盖率来自动化一切！&amp;quot;。每当我听到这些时，我都会摇头。我打赌你知道为什么。这两个极端都是错误的，因为我认为每个软件开发团队都应该有一个测试人员在其中。当然，100%的测试自动化覆盖率也是不可能的，也是没有效率和要求的。
+在这篇文章中，我将分享我在测试自动化方面学到的经验，这些经验是我在软件测试行业工作了13年以上的艰苦历程中总结出来的。我将分享我在过去几年中对测试自动化和要避免的陷阱的详细看法。我将分享我在测试自动化方面的注意事项，以帮助你不犯同样的错误。
+应该去做的事情 雇用合适的人 雇用具有软件工程技能的人是必须的。没有正确的技能，你的测试自动化会失败。因此，需要在招聘过程中投入大量时间，以确定适合你的需求的人。我建议你写下你想通过新员工实现的目标。一旦目标明确，就从中引申出具体的技能。
+现在是时候写一份朗朗上口、不太长的职位描述，并说明所需的核心技能。不要在长长的技能清单中过度使用技术术语和要求。这可能会对潜在的雇员产生负面的影响。
+在面试过程中与人交谈时，技术能力是必须的。你可以在编码挑战或临时进行的代码审查中验证它们。然而，不要只看技术能力。检查是否适合团队或公司，以及在与人合作、沟通和解决问题时的正确心态也非常重要。
+一旦你雇用了合适的人从事你的自动化工作，相信他们会做正确的事情。给他们尽可能多的上下文，让他们与公司的其他角色一起，如开发人员、设计师和产品人员。在最好的情况下，每个开发团队都有一个测试工程师加入。
+在寻找正确的测试自动化工具方面花点时间 在公司拥有正确的测试自动化人员是一个很大的优势。下一个挑战是找到并选择正确的测试自动化工具。而这需要时间。在选择工具之前，与所有参与方坐下来，定义测试自动化的目标。在这个过程中，尽量提出尽可能多的关于工具、自身环境和将要建立的产品的问题。在这些问题的帮助下，你将创建一个长长的选择标准列表，以帮助你找到适合你需要的测试自动化工具。
+该列表可以有以下标准。
+该工具是否支持不同的编程语言？ 该工具是否能够针对不同的操作系统进行自动化？ 该工具是否支持CI/CD？ 该工具是否提供报告功能？ 该工具是否有很好的文档，是否提供支持或有一个伟大的社区或干爹？ 该工具是否满足预算要求？ 配置该工具的复杂程度如何？ 该工具是否提供灵活的测试执行能力，例如在不同的操作系统或环境下？ 上面的列表只包含了一些可能的问题，以找到合适的工具。因此，需要投入足够的时间来找到适合你需求和环境的工具。也可能是你需要一个以上的自动化工具用于你的技术架构中的不同层，或者是除了测试自动化工具之外，还需要一个测试自动化管理平台。那么你应该分别对每个工具进行选择。
+轻装上阵 一旦你确定了适合你的需求的自动化工具，现在是在你的团队或公司内进行配置和实施的时候了。在最初的几天或几周内，试着学习所有关于这个工具和它的功能。一旦你和你的团队熟悉了它，就开始进行第一个自动化方案的工作。但开始时一定要简单! 看看那些容易自动化的产品功能，并帮助团队专注于质量的其他部分。当这个测试是强大的并提供可靠的结果时，就可以进入下一个自动化阶段。开始在更复杂的情况下工作，看看结果。我们也建议在产品的某些部分进行测试，这些部分每天或每周都不会改变。通常一个产品的核心功能是自动化的完美起点。
+让开发人员参与到自动化过程中来 编写测试自动化代码并不容易。**它的复杂性与编写生产代码的复杂性相同，这一点永远不应该被低估。**通常一个软件开发团队有3-5个软件开发人员和至少1个软件测试工程师。这个比例是可以的。然而，测试工程师很难赶上所有对产品进行的代码修改。他/她不仅需要手动测试软件，而且还需要编写复杂的自动化。这一切对团队中的一个人来说是不可能做到的。因此，软件开发人员也必须负责编写测试自动化代码。不仅在单元测试层面，其他层次的自动化测试也可以涉猎。
+每个团队都应该坐在一起讨论自动化过程。每个人都必须清楚，产品的质量是每个人的责任。这种心态要求团队中的每个人都支持自动化。如果不是这样，你的自动化过程很可能会失败。
+在ci/cd上投资时间 与工具选择的时间投资类似。一个软件开发团队必须在cicd的配置上投入足够的时间。pipeline的配置方式必须支持开发团队的需求。例如，在每次提交时运行，在拉代码时运行或在夜间执行整个测试套件。
+同样重要的是，定义哪一层的哪些测试应该在什么时候被自动化。在最好的情况下，团队正在制定一个cicd策略。一旦pipeline策略被实施，重要的是结果对团队中的每个人都是透明的，甚至更好的是对公司中的每个人都是透明的，例如用一个dashboard。
+cicd工作和投入的时间不应该被低估。根据项目或产品的规模，这可能是一个人甚至整个团队的全职工作。
+不应该做的事情 不要因为一个工具被追捧就选择它 我的不做清单的第一点是，当选择一个新的测试自动化工具时，不要因为它在软件开发或测试社区中被炒作而盲目地选择一个工具。如果你真的很幸运，这个工具可能对你有用，但在大多数情况下，你会用它失败。正如我在前面提到的，选择一个工具需要时间。如果没有在选择过程中的这种投资，从长远来看，你可能会损失更多的钱，因为在产品开发过程中的某个时刻，你会发现这个工具不支持某个特殊功能，或者不能按照你需要的方式进行扩展。
+在选择工具时，最好检查一下目前什么工具被炒得很热，为什么？也许这种追捧有一个合理的理由，你可能会从中受益。跟上新的工具，并与社区保持联系，获得最新的消息，这总是好的。
+不要试图将一切都自动化 我在前面已经提到了这一点。每当你的团队或公司里有人告诉你要把所有事情都自动化的时候，你就装聋作哑好了。这个人很可能是一个从未从事过软件开发的人，或者对测试自动化毫无概念。我见过一些没有经验的人，他们是自动化的新手，试图把所有的东西都自动化，但他们很快就发现，这是不可能的。当你看到有这种观点的人时，和他们谈谈，并解释其消极的一面。
+你应该做的是看一下你的产品和代码架构，并确定你的应用程序的关键部分。然后花时间为这些部分创建一个自动化战略。
+有了明确的重点和策略，少量的自动化方案可以对产品的整体质量产生更大的影响。
+不要太早实现自动化 在产品开发团队中开始使用自动化时，一个典型的错误是开始的太早了。如果团队正在开发一个全新的功能或产品，真的很有可能功能会改变。在这种情况下，开始实施自动化是没有意义的。投入的时间可能会被浪费掉。相反，团队应该从基础开始。例如，建立CI/CD pipeline，考虑功能所需的数据结构。从中得出一个测试数据策略，也许准备测试数据生成的脚本。
+一旦功能越来越成熟，就慢慢开始自动化。我建议与产品所有者保持密切的关系，以了解即将到来的产品功能和变化。使用这些信息来创建你的自动化策略。
+永远不要用自动化来取代人工测试 最后但并非最不重要的是，不要用自动化来取代人工测试！人工测试是自动化的重要组成部分。在产品的开发过程中，手工测试是如此强大的一部分，它永远不应该被机器取代。为什么呢？嗯，自动化测试将由机器/计算机执行。机器所做的正是测试自动化代码中的内容，仅此而已。这并不坏，我们都知道这是有用的信息，但软件同学进行手工测试时，会发现更多的问题。首先，测试人员的行为就像一个用户。使用产品的用户会使用它，例如用鼠标、键盘或用手指在使用产品时使用他/她的所有感官。在大多数情况下，手工测试会发现没有人想到会发生的问题。
+因此，测试自动化是人工测试的重要补充。
+总结 正如你在这篇文章中所看到的，一个人在从事测试自动化时可能会犯很多错误。在雇佣自动化专家、寻找合适的工具和寻找合适的时机开始自动化时，有许多话题需要记住。
+如果你有一个明确的目标和重点，知道你想通过测试自动化实现什么，并遵循本文中要做的内容，摒弃不要做的事情，那么你将在你的产品团队或公司的测试自动化方面取得成功。</description>
+    </item>
+    
+    <item>
+      <title>自动化测试覆盖率要到多少才算足够</title>
+      <link>https://zh.ethanhan.cc/posts/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E8%A6%86%E7%9B%96%E7%8E%87%E8%A6%81%E5%88%B0%E5%A4%9A%E5%B0%91%E6%89%8D%E7%AE%97%E8%B6%B3%E5%A4%9F-e0acb067e9b34128811e253a1723ed54/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E8%A6%86%E7%9B%96%E7%8E%87%E8%A6%81%E5%88%B0%E5%A4%9A%E5%B0%91%E6%89%8D%E7%AE%97%E8%B6%B3%E5%A4%9F-e0acb067e9b34128811e253a1723ed54/</guid>
+      <description>本文非原创，翻译自https://qahiccupps.blogspot.com/2021/09/693-ok.html
+“我们的测试用例中有多少是自动化的？”
+这个问题有很多内容，特别是当它是监控测试状态的指标的时候。这也不是我第一次被问到。根据我的经验，当有人提出这个问题时，可能是因为（a）他们听说过它，（b）测试用例的数量是可数的，并且（c）他们的任务是提供一个管理层可以接受的数字，并且每月向大量不会看它的人发邮件做 ppt，然后阐述自动化“测试”的价值。
+如果这听起来很愤世嫉俗……好吧，我想是的。
+但是，并不意味着我对了解您的需求并试图帮助你获得可以你需求的东西不感兴趣。
+我们能谈谈你的追求吗？为什么？
+我们可以？太好了！
+我会开始。我对这个问题的一些考量是：
+自动化测试覆盖率似乎被认为是我们测试的一种衡量标准 这样的数字不会说明做过的测试的价值 测试用例的定义没有实际意义 &amp;hellip;而且，不管它们是什么，测试用例只是我们测试的一部分 有一个隐含的假设，即自动化程度越高越好 &amp;hellip;但自动化有其自身的风险 &amp;hellip;而且，无论自动化意味着什么，自动化测试用例只是我们测试自动化的一部分 如果我看看我们的测试方式，以及我们可能称之为测试用例的内容，我现在可以想到三种方式来回答您的问题：
+从我认为问题的意图来看，我们没有测试用例。我们所有正在进行的测试都是探索性测试，虽然我们可能会用自动化的方式记录测试结果，测试完成以后我们把现存的用例转换成自动化是没有意义的，我们标记为得分为 0%。 出于练习的目的，我准备将回归测试用例集中的每个断言描述为一个测试用例。因为它们将是我们唯一的测试用例，而且它们都是自动化的。得分100%！ 好的，我们在测试用例管理系统中有一些项目。这些是历史的发布验证记录，（大多数）测试团队以外的人在我们发布之前会进行这些检查。我更喜欢将它们视为检查点，但我很现实，并且知道我的一些同事只是想遵循步骤。相对于“自动化测试用例”的数量，它们很少，但如果我们将它们包括在我们的计算中，我们会将分数降低到 99%。 这些答案对我们中的任何一个来说似乎都不是很令人满意，是吗？
+对我来说，这种指标充其量只涵盖了我们所做工作的一小部分，其背后的假设非常值得怀疑。对您而言，该指标的重要性不及某个合理的数字，该数字可以在ppt中用来量化测试的最终效果。对此我也有一些想法：
+对我来说，测试是知识性的工作，因此很难用简单的数字来衡量 测试不是独立于其他产品开发活动而存在的 如果没有创建测试用例等人工产出物的话我们也可以完成良好的测试 没有经过对话交流和正当理由而强加的指标可能会受到怀疑 强加的指标可能会有被造假的风险 从产出物（bug列表，用例设计）开始是本末倒置 &amp;hellip; 最好先问你想测量的指标是什么以及为什么 那么，例如，是否希望衡量客户对产品的满意度？是为了衡量测试的贡献吗？是否要查看时间花在了企业想要停止的活动上？是寻找瓶颈吗？或者是其他东西？如果我们同意使用某种指标，我们如何向测试人员保证他们没有受到不公正的评价，并且他们不应该为了使数字看更好而修饰或者歪曲他们的工作实践？
+我们需要的不仅仅是花言巧语。想象一下，你被告知你的表现将根据你发送的电子邮件数量来衡量，你会如何反应？你会在讥讽它的同时但还是发送更多的电子邮件吗？您会发送电子邮件而不是进行丁丁或者是企业微信的沟通吗？您会关心对您、他人和企业的潜在不利影响吗？别人怎么能说服你采取不同的行为？最后，您是否真的希望以良好的意图研究合理的指标并根据结果采取行动？如果是这样，那么我将尽我所能帮助获得一些合理的东西，有明确的警告，公平的，透明的，承认其收集涉及的混乱，可以有效地从数据中得出我们有，这在商定的误差范围内，这反映了我们正在做的工作。如果没有，那么我会问你什么样的数字会更好的反映出实际的工作效果？我会简单地告诉你：让我们说 69.3%，好吗？
+作者使用的英文没有那么通俗，加上翻译能力有限，所以最后可能需要简单的提炼一下文章的观点
+自动化测试的覆盖率应该不能作为汇报测试效果的指标 测试的目的不是为了产出好看的数据或者指标 不合理的指标会造成不合理的结果而忽略了测试工作的实质 </description>
+    </item>
+    
+    <item>
+      <title>软件测试中7个令人震惊的真相</title>
+      <link>https://zh.ethanhan.cc/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E4%B8%AD7%E4%B8%AA%E4%BB%A4%E4%BA%BA%E9%9C%87%E6%83%8A%E7%9A%84%E7%9C%9F%E7%9B%B8-7dd7b38224bf4c239e4bf5cbb8f348b6/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E4%B8%AD7%E4%B8%AA%E4%BB%A4%E4%BA%BA%E9%9C%87%E6%83%8A%E7%9A%84%E7%9C%9F%E7%9B%B8-7dd7b38224bf4c239e4bf5cbb8f348b6/</guid>
+      <description>这是最近看到的一篇比较有意思的文章，原文在这里：https://medium.com/geekculture/seven-unspoken-truths-about-software-tests-4bcf0f720a04，简单的加工翻译了一下，其中（）里的内容是我为了帮助大家理解夹带的私货，希望这篇文章会对大家有所启示。
+1，当你是一个项目的的测试负责人的时候，你有没有过质问过项目成员为什么没测试出某个具体的bug，或者因为某人没有测出bug而直接责备他？
+2，当你提升了测试覆盖率的时候你有没有发现产品的bug数量其实没有发生变化？
+3，你有没有在发布之前花费了大量的时间去进行测试却最终发现一无所获，而发布之后bug却不期而至？
+4，开发可以测试他们自己的代码吗？
+5，bug真的是发现的越晚修复成本就越高吗？
+6，你有没有过以不按套路出牌的方式来进行软件的测试，并称之为“探索性测试”？
+7，你是否需要通过QA活动来提升产品质量？
+真相1：测试并不能找出所有的bug 很不幸这是真的，没有任何一种测试方式可以保证找出所有的bug。
+一些测试活动跟直接上手点点点相比确实效率要低一些，所以我们可以不用那么关注测试的类型，相反我们要做的是选择合适的测试类型并综合使用，从而以最少的工作量打到较好的效果。（比如ui的自动化测试如果要做到非常复杂那么将花费相当大的开发和维护成本，但没有ui的自动化，每轮测试都靠人肉点来点去也不现实，所以比较合适的做法是一些稳定的核心路径可以用ui自动化去实现，平衡投入产出比，用较少的工作量达到效率最大化）
+当有人抱怨为什么测试没有发现某些问题的时候麻烦提醒他们：测试确实没有办法保证一定会发现某些特定的缺陷。
+我们会经常复盘测试的漏测情况，很不幸，这是落后的想法，这就像是在魔术揭秘了之后再马后炮的说其实这个戏法很简单，很容易被识破一样。事后做漏测复盘并不是一个有效的分析手段。
+永远不要责备测试工程师，他们并没有写出bug，相反，他们一直在努力找出开发过程中引入的缺陷。没有什么是完美的，测试同学在接受现实的同时也需要记住千万别立flag，因为测试不可能发现所有的bug。
+真相2：测试覆盖率与测试的效果几乎没有相关性 是的，你没有看错。我们已经有足够的科学证据表明，增加单元测试覆盖率不一定会提高我们测试套件发现bug的效率！也许是时候关注与测试相关的内容而不是正在测试的代码量了。（这里作者的原话是We already have enough scientific evidence to say that increasing unit test coverage may not necessarily increase your test suite effectiveness in finding defects!直译过来就是单元覆盖率的提升并不会提升测试套件发现缺陷的效率，说实话，我觉得单元测试覆盖率跟测试中发现bug的效率本来就没有什么关系，覆盖率代表的是代码被测试的程度，而发现bug的效率指的是时间和产出的关系，发现bug的效率高并不代表着产品的质量就好，反之亦然。不过看下文引用资料时的描述，我们可以看到作者的举证基本上都透露了一个信息，那就是单元测试覆盖率与bug的数量之前没有太多的关联，换句话说就是并不是单元测试覆盖率越高，产品的质量就越好，因为产品的质量好一般意味着可被观察到的bug相对少，而bug又跟单元测试覆盖率无关。这里为了严谨，作者的引用我就不做翻译了。）
+*A. Mockus, N. Nagappan, and T.T. Dinh-Trong, “Test Coverage and Post-verification Defects: A Multiple Case Study,” Proc. 3rd Int’l Symp. Empirical Software Eng. and Measurement (ESEM 09), 2009, pp. 291–301.*The correlation between coverage and defects was none or very weak.</description>
+    </item>
+    
+    <item>
+      <title>震惊：selenium竟然不是自动化测试工具</title>
+      <link>https://zh.ethanhan.cc/posts/%E9%9C%87%E6%83%8Aselenium%E7%AB%9F%E7%84%B6%E4%B8%8D%E6%98%AF%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7-30f03d4d165f45b8b4c84e4ca80e1e6f/</link>
+      <pubDate>Fri, 07 Apr 2023 14:39:24 +0800</pubDate>
+      
+      <guid>https://zh.ethanhan.cc/posts/%E9%9C%87%E6%83%8Aselenium%E7%AB%9F%E7%84%B6%E4%B8%8D%E6%98%AF%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7-30f03d4d165f45b8b4c84e4ca80e1e6f/</guid>
+      <description>前几天看到有老外发微博说selenium不是自动化测试工具，在震惊之余我陷入了沉思，这种说法其实是有道理的，原来这个工具用了这么多年，这个隐藏的秘密我竟然一直没有发现。
+很久很久之前，我在各种国外的测试论坛发现大家都在讨论一种新的工具：selenium，先入为主，由于在测试论坛最先产生的大范围讨论和关注，我一直把selenium当作是根正苗红的测试工具，这么多年来一直没有对这个观点产生过一点点的怀疑，哪怕selenium其实很多时候被人用作爬虫，很多时候被别有用心的人拿来做自动化的工具以获取不法收入，哪怕很多时候被用来做一些效率提升的工具，我都没有过一丝丝的动摇，在我心里，selenium就是最硬核的浏览器自动化测试工具之一。
+直到最近几天不经意间看到有人说(以下内容来自机翻)
+测试工具供应商能否请停止将他们的工具与 Selenium 进行比较！ 我厌倦了这个！ Selenium webdriver 是一种自动化工具，而不是用于测试！ 当然，与非专业的测试工具相比，你开发的专门用于测试的测试工具看起来当然是很不错的了。拜托，歇歇吧。
+看到上面的这条言论我才突然间意识到，selenium webdriver一直在不停的迭代，尽管速度很慢，但webdriver的各个版本里似乎总缺少点什么。于是有人总在搜索selenium的时候加上关键字pytest或者junit，于是我总是喜欢在面试的时候问你们用selenium的时候用的是拿个测试框架，于是专门有人写文章描述如何在断言里使用expected_conditions。这些证据都非常肯定的证明了selenium其实并不是专门为自动化测试设计的工具，selenium的核心是自动化工具，测试只是其应用的一部分场景而已，selenium明显格局更大，路走的更宽，真正掩耳盗铃的是我，我才是那个永远不能被叫醒的装睡的人。
+渐渐的我意识到，怪不得我之前在公开课里演示selenium的应用时总是喜欢用selenium做爬虫的例子，怪不得我之前跟一些同学留的练习里，selenium扮演的角色也只是做效率提升的工作，比如每天签到之类，其实大部分时间我使用selenium只是把它当作是自动化的工具，测试真的只是我使用selenium的一个特别的场景，在这个场景里，一些工作变得很难，比如断言；一些情况我需要考虑的更多，比如各种环境和配置问题；一些问题变得很棘手，比如用例的修改速度往往赶不上页面重构的速度等等；我写selenium最有成就感，最得心应手，写着写着有点像读爽文的场景往往是
+对爬取速度没有要求的爬虫 君子能不动手就不动手的场景，比如每天签到领金币 这些场景往往跟测试无关，与兴趣有关。
+很久之前写的从知乎爬内容的selenium脚本，那时候firefox driver还是webdriver的自带驱动。
+&amp;#34;&amp;#34;&amp;#34; 从zhihu.com获取每日最热和每月最热 &amp;#34;&amp;#34;&amp;#34; from selenium import webdriver from datetime import date import sys reload(sys) sys.setdefaultencoding(&amp;#34;utf-8&amp;#34;) class Zhihu: def __init__(self): self.daily_url = &amp;#39;https://www.zhihu.com/explore#daily-hot&amp;#39; self.monthly_url = &amp;#39;https://www.zhihu.com/explore#monthly-hot&amp;#39; def __enter__(self): self.dr = webdriver.Firefox() return self def __exit__(self, p1, p2, p3): self.dr.quit() def get_daily_hots(self): result = [] hots_urls = self.get_daily_hots_urls() for url in hots_urls: result.append(self.get_answer(url)) return result def get_answer(self, url): self.</description>
+    </item>
+    
+  </channel>
+</rss>
