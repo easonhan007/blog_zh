@@ -4,7 +4,9 @@ date: 2023-09-11T14:58:16+08:00
 draft: false
 ---
 
-最近看到一篇关于测试金字塔的讨论，觉得非常有道理，原文在这里: https://www.smashingmagazine.com/2023/09/long-live-test-pyramid/。顺便翻译一下，希望对大家有所帮助。
+最近看到一篇关于测试金字塔的讨论，觉得非常有道理，原文在这里: https://www.smashingmagazine.com/2023/09/long-live-test-pyramid/
+
+顺便翻译一下，希望对大家有所帮助。
 
 我亲爱的同事Jan Philip Pietrczyk曾经对开发者在编写功能代码方面的责任发表过评论：
 
