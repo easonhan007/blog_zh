@@ -1,7 +1,7 @@
 ---
 title: "爱尔兰签证合集"
 date: 2023-09-09T13:21:49+08:00
-draft: false
+draft: true
 ---
 
 ### 工签
