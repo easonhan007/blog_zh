@@ -30,3 +30,8 @@ draft: true
 
 ### 论坛
 
+- [Canada Immigration Forum](https://www.canadavisa.com/canada-immigration-discussion-board/)加拿大签证/移民英文论坛
+- [寄托天下](https://www.gter.net/) 偏向留学申请
+- [一亩三分地](https://www.1point3acres.com/bbs/) 偏向北美和tech相关
+- [Women Overseas](https://womenoverseas.com/login) 她乡 （只接受女性注册）
+- [加国无忧](https://www.51.ca/)加拿大华人网上家园
