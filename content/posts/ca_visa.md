@@ -137,8 +137,8 @@ draft: true
 - [I'm Canada 纯英文](https://www.youtube.com/c/ImCanada)
 
 ### reddit
-- r/iwanttorun
-- r/iwantout
-- r/DoubanGroupFiveland
-- r/immigration
-- r/expats
+- [r/iwanttorun](https://www.reddit.com/r/iwanttorun/)中文
+- [r/iwantout](https://www.reddit.com/r/IWantOut/)纯英文
+- [r/DoubanGroupFiveland](https://www.reddit.com/r/DoubanGroupFiveland/)中文
+- [r/immigration](https://www.reddit.com/r/immigration/)纯英文
+- [r/expats](https://www.reddit.com/r/expats/)纯英文
