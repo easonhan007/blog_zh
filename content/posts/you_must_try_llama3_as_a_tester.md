@@ -1,7 +1,7 @@
 ---
 title: "破防了，我用本地运行的ai写代码，感觉它比我厉害多了"
 date: 2024-04-25T22:14:17+08:00
-draft: true
+draft: false
 ---
 
 事情是这样的，前几天 facebook 发布了最新的[llama3 模型](https://ai.meta.com/blog/meta-llama-3/)，我第一时间就用[ollama](https://ollama.com/library/llama3)下载运行了一下，8b 模型的 size 很小，只有 4.6G 的样子，在我 16g 显存的台式机上，速度相当快，快到有点恍惚，现在的本地模型这么强了吗？
