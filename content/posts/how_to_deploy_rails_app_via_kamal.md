@@ -19,7 +19,7 @@ EDITOR="code --wait" bin/rails credentials:edit
 
 用`docker build . -t xxxx` 去测试一下。
 
-📝注意run的时候需要提供RAILS_MASTER_KEY这个环境变量。
+📝 注意 run 的时候需要提供 RAILS_MASTER_KEY 这个环境变量。
 
 ```
 docker run  --rm -p 12306:3000 -v ./storage:/rails/storage -e RAILS_MASTER_KEY=xxxx --name oled oled
@@ -157,6 +157,11 @@ kamal traefik logs | grep error
 ```
 
 一般来说没有严重的报错就可以了。
+
+### cloudflare 配置注意
+
+如果用 cf 的话，注意要把 SSL/TLS 配置里 mode 改成 FULL。
+![cf配置](https://img.ethanhan.cc/file/34dc2c2a85f06be0d829d.png)
 
 ### 总结
 
