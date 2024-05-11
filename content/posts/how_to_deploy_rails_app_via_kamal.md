@@ -19,6 +19,12 @@ EDITOR="code --wait" bin/rails credentials:edit
 
 用`docker build . -t xxxx` 去测试一下。
 
+📝注意run的时候需要提供RAILS_MASTER_KEY这个环境变量。
+
+```
+docker run  --rm -p 12306:3000 -v ./storage:/rails/storage -e RAILS_MASTER_KEY=xxxx --name oled oled
+```
+
 ### 安装 kamal
 
 感觉不需要用 bundle 装，直接全局装最省事。
