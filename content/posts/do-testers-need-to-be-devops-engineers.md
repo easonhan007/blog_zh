@@ -60,7 +60,7 @@ draft: false
 
 最近看到了一篇文章对测试人员要不要成为 devops 人员进行了讨论，这里顺便放上来，供大家参考。
 
-原文地址: https://visible-quality.blogspot.com/2024/09/do-testers-need-to-be-devops-engineers.html?utm_campaign=Software%2BTesting%2BWeekly&utm_medium=web&utm_source=Software_Testing_Weekly_236
+原文地址: https://visible-quality.blogspot.com/2024/09/do-testers-need-to-be-devops-engineers.html
 
 在我职业生涯的某个阶段，我逐渐专注于理解测试环境。这一切始于观察子系统之间的关联，以及识别哪些数据可以兼容。在保险行业，进行有效测试没有其他选择，尤其是当时一个新的 IBM 大型机测试环境的搭建就耗费了 100 万和一年的时间（我也经历过）。我已经不太记得那时用的货币是芬兰马克还是欧元了，只记得那种对项目的巨大责任感，因为我需要确保这个耗资百万的项目能够顺利进行。那段经历让我从此更加重视测试环境，不仅对工作站、服务器和版本有了更清晰的分类，处理这些事情也变成了日常工作的一部分。
 
