@@ -60,7 +60,7 @@ python -m playwright install chromium
 
 这个爬虫跟大语言模型没有半毛钱关系。
 
-大概的过程就是访问https://book.douban.com/top250这个页面以及后面的9个分页，把每一页的25本图书都爬下来。
+大概的过程就是访问`https://book.douban.com/top250`这个页面以及后面的 9 个分页，把每一页的 25 本图书都爬下来。
 
 拿官方的例子随手改了改，代码如下。
 
