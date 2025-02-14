@@ -87,6 +87,8 @@ print(f"Report generated at: {report_path}")
 
 测试报告如下所示。
 
+![](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*oPuZeWK0U_zYcvwZyr0soQ.png)
+
 ## 支持的测试 agent
 
 下面是所有支持的测试角色列表。
