@@ -2,254 +2,506 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zh.ethanhan.cc/</loc>
-    <lastmod>2023-04-28T07:49:02+08:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-06-19T10:11:09+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/</loc>
-    <lastmod>2023-04-28T07:49:02+08:00</lastmod>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-06-19T10:11:09+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/weekly_report_20250530/</loc>
+    <lastmod>2025-05-30T10:14:42+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/weekly_report_20250509/</loc>
+    <lastmod>2025-05-09T10:35:02+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ai_helps_automation_weekly_report_20250418/</loc>
+    <lastmod>2025-04-18T11:29:32+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/heading_to_labours_day_weekly_report_20250411/</loc>
+    <lastmod>2025-04-11T15:30:47+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/top-3-useless-quality-metrics-and-what-to-measure-instead/</loc>
+    <lastmod>2025-03-09T11:08:20+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ai-for-qa-hype-vs-reality/</loc>
+    <lastmod>2025-03-09T10:27:41+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ai_for_testing_2025/</loc>
+    <lastmod>2025-02-21T09:58:08+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/playwright_150/</loc>
+    <lastmod>2025-02-14T09:28:18+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/cotestpilot/</loc>
+    <lastmod>2025-01-24T09:59:18+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/a_good_selenium_based_project/</loc>
+    <lastmod>2024-12-27T10:32:38+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/hard_to_get_a_job/</loc>
+    <lastmod>2024-12-13T09:27:25+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/laid-off-as-a-tester-what-now/</loc>
+    <lastmod>2024-11-29T09:33:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/chekhovs-gun-principle-for-testing/</loc>
+    <lastmod>2024-11-22T09:18:36+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ai_for_testing/</loc>
+    <lastmod>2024-11-15T07:45:59+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/is-there-growth-in-testing/</loc>
+    <lastmod>2024-11-08T09:28:58+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/heisenbugs-handling-software-defects-you-can-t-reproduce/</loc>
+    <lastmod>2024-11-08T09:06:26+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/new_ai_trend_for_testing/</loc>
+    <lastmod>2024-10-31T21:13:31+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/simple_try_out_crawl4ai/</loc>
+    <lastmod>2024-10-18T09:17:10+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/review_ai_testing_tools/</loc>
+    <lastmod>2024-10-11T09:09:11+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/you_do_not_need_postman/</loc>
+    <lastmod>2024-09-13T10:01:47+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/do-testers-need-to-be-devops-engineers/</loc>
+    <lastmod>2024-09-13T09:19:04+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/harnessing-the-capabilities-of-selenium-4/</loc>
+    <lastmod>2024-08-13T07:26:11+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/best-ci-tools-2024/</loc>
+    <lastmod>2024-08-13T07:26:11+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/incident-metrics-that-matter/</loc>
+    <lastmod>2024-08-13T07:26:11+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/considering-generative-ai-in-testing/</loc>
+    <lastmod>2024-08-13T07:26:11+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/a-great-way-to-test-cli/</loc>
+    <lastmod>2024-08-03T15:31:06+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/wiki_great_content/</loc>
+    <lastmod>2024-07-25T22:04:47+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/how_to_install_playwright_in_cn_windows_2024/</loc>
+    <lastmod>2024-07-23T14:18:41+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/i-finished-the-playwright-site/</loc>
+    <lastmod>2024-07-18T20:46:43+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/i-created-a-playwright-tutorial-site/</loc>
+    <lastmod>2024-07-12T09:25:42+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/how-can-i-possibly-test-all-the-stuff-every-iteration/</loc>
+    <lastmod>2024-07-05T10:37:51+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/best_automation_tool_to_learn_in_2024/</loc>
+    <lastmod>2024-06-28T09:55:11+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/3_questions_before_testing/</loc>
+    <lastmod>2024-06-21T09:49:18+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/gatling_support_js/</loc>
+    <lastmod>2024-05-31T08:27:51+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/rpa_is_the_future/</loc>
+    <lastmod>2024-05-24T09:55:48+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/use_gpt_4o_make_a_study_plan/</loc>
+    <lastmod>2024-05-17T10:18:20+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/how_to_use_activestorage_with_cloudflare_r2/</loc>
+    <lastmod>2024-05-14T11:14:44+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/pre_commit/</loc>
+    <lastmod>2024-05-10T09:44:59+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/you_must_try_llama3_as_a_tester/</loc>
+    <lastmod>2024-04-26T09:11:52+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/how_to_deploy_rails_app_via_kamal/</loc>
+    <lastmod>2024-05-11T21:34:10+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/train_your_own_tts_model/</loc>
+    <lastmod>2024-03-16T20:00:19+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/playwright_comparison_test/</loc>
+    <lastmod>2024-03-16T18:23:02+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/does-ai-make-programer-unemployed/</loc>
+    <lastmod>2024-03-15T10:51:38+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/what-i-wish-i-knew-about-software-testing-and-growth/</loc>
+    <lastmod>2024-03-10T13:57:59+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/qa_performance_is_not_well/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/selenium_manager_basic/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/creating-a-text-generation-model-for-test-automation/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/circuit-breaker-test/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ai_more_testers/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/is_selenium_dead/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/how_whatsup_test_softwear/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/a_good_test_wiki/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/how_ms_does_quality_assurance/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/achieve_speed_and_quality/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/the_worst_testsuit/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/gemini_potential_in_automation_test/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/ai_analyse_test_report/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/what_does_a_qa_leader_go/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/what-is-vector-db/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/is_micro_service_wrong/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/limitations_of_api_only_test/</loc>
+    <lastmod>2024-03-08T12:15:01+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/why_cloud_is_less_popular/</loc>
+    <lastmod>2023-11-03T07:55:44+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/sustainable_testing/</loc>
+    <lastmod>2023-11-03T07:55:44+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/gpt4_and_playwright/</loc>
+    <lastmod>2023-10-20T07:39:11+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/fb-auto-fix-bug/</loc>
+    <lastmod>2023-10-20T07:38:03+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/look-for-a-new-job-to-increase-your-salary-as-a-tester/</loc>
+    <lastmod>2023-10-20T07:38:03+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/the-importance-of-testing-in-a-reliable-staging-environment/</loc>
+    <lastmod>2023-10-02T20:10:50+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/long-live-the-test-pyramid/</loc>
+    <lastmod>2023-10-02T20:10:50+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/selenium-grid-quick-setup/</loc>
+    <lastmod>2023-09-08T08:36:51+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/tdd-with-ai/</loc>
+    <lastmod>2023-09-08T08:36:51+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/unit-test-best-practice/</loc>
+    <lastmod>2023-09-08T08:36:51+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/anyone_moved_from_qa_to_dev/</loc>
+    <lastmod>2023-08-18T08:02:54+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/selenium-411-released/</loc>
+    <lastmod>2023-08-11T08:27:09+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/how_to_learn_python_in_2023/</loc>
+    <lastmod>2023-08-11T08:27:09+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/code_coverage_is_a_useless_management_metric/</loc>
+    <lastmod>2023-08-11T08:27:09+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/why_postman_is_getting_worse/</loc>
+    <lastmod>2023-08-11T08:27:09+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/retry_patterns/</loc>
+    <lastmod>2023-07-14T08:34:28+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/python_automation_scripts_you_should_know/</loc>
+    <lastmod>2023-07-14T08:34:28+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/how_should_we_view_ai_as_a_tester/</loc>
+    <lastmod>2023-06-30T07:56:55+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/write_cli_tool_to_increase_efficiency/</loc>
+    <lastmod>2023-06-30T07:56:55+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/qa%E8%A6%81%E5%83%8F%E6%B6%88%E9%98%B2%E9%98%9F%E4%B8%80%E6%A0%B7/</loc>
+    <lastmod>2023-05-19T07:24:48+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/%E5%9C%A8%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E5%92%8C%E6%B5%8B%E8%AF%95%E4%B8%AD%E4%B8%BA%E5%A4%B1%E8%B4%A5%E8%80%8C%E8%AE%BE%E8%AE%A1/</loc>
+    <lastmod>2023-05-19T07:24:48+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8E%A2%E7%B4%A2%E6%B5%8B%E8%AF%95%E5%92%8C%E6%95%8F%E6%8D%B7%E9%A1%B9%E7%9B%AE%E5%85%AB%E5%AD%97%E4%B8%8D%E5%90%88/</loc>
+    <lastmod>2023-05-19T07:24:48+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/%E7%BB%99%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E7%9A%847%E6%9D%A1%E5%BB%BA%E8%AE%AE/</loc>
+    <lastmod>2023-06-30T07:56:55+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/selenium_manager%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
+    <loc>http://localhost:1313/posts/selenium_manager%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/selenium_4.9.0_%E5%8F%91%E5%B8%83/</loc>
+    <loc>http://localhost:1313/posts/selenium_4.9.0_%E5%8F%91%E5%B8%83/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E4%BB%8Ecode_review%E4%B8%AD%E8%8E%B7%E5%BE%97%E6%9C%80%E5%A4%A7%E7%9A%84%E6%94%B6%E7%9B%8A/</loc>
+    <loc>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E4%BB%8Ecode_review%E4%B8%AD%E8%8E%B7%E5%BE%97%E6%9C%80%E5%A4%A7%E7%9A%84%E6%94%B6%E7%9B%8A/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E7%B4%A2%E5%BC%95%E6%9E%84%E9%80%A0%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2-%E8%AE%A9chatgpt%E6%88%90%E4%B8%BAselenium%E9%97%AE%E7%AD%94%E5%8A%A9%E6%89%8B/</loc>
+    <loc>http://localhost:1313/posts/%E7%B4%A2%E5%BC%95%E6%9E%84%E9%80%A0%E4%B8%8E%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2-%E8%AE%A9chatgpt%E6%88%90%E4%B8%BAselenium%E9%97%AE%E7%AD%94%E5%8A%A9%E6%89%8B/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E7%BD%91%E7%BB%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%9A%84%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A6%82%E4%BD%95%E6%8E%A8%E5%8A%A8%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F%E4%BF%9D%E8%AF%81%E7%9A%84%E6%9C%AA%E6%9D%A5/</loc>
+    <loc>http://localhost:1313/posts/%E7%BD%91%E7%BB%9C%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%9A%84%E6%99%BA%E8%83%BD%E9%9D%A9%E5%91%BD%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A6%82%E4%BD%95%E6%8E%A8%E5%8A%A8%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F%E4%BF%9D%E8%AF%81%E7%9A%84%E6%9C%AA%E6%9D%A5/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/10%E5%88%86%E9%92%9F%E7%8E%A9%E8%BD%ACplaywright-10e47fb70fad48639b94e6a7faf04015/</loc>
+    <loc>http://localhost:1313/posts/10%E5%88%86%E9%92%9F%E7%8E%A9%E8%BD%ACplaywright-10e47fb70fad48639b94e6a7faf04015/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/10%E5%A4%A7%E6%B5%81%E8%A1%8C%E7%9A%84%E5%85%B3%E4%BA%8E%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E8%AF%AF%E8%A7%A3-5845cdc7123947f1a8714ae52151193f/</loc>
+    <loc>http://localhost:1313/posts/10%E5%A4%A7%E6%B5%81%E8%A1%8C%E7%9A%84%E5%85%B3%E4%BA%8E%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E8%AF%AF%E8%A7%A3-5845cdc7123947f1a8714ae52151193f/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/2022-%E5%B9%B4%E5%80%BC%E5%BE%97%E6%B5%8B%E8%AF%95%E5%90%8C%E5%AD%A6%E5%85%B3%E6%B3%A8%E7%9A%84%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF-9c9522ac00a646e284b8eaf013585743/</loc>
+    <loc>http://localhost:1313/posts/2022-%E5%B9%B4%E5%80%BC%E5%BE%97%E6%B5%8B%E8%AF%95%E5%90%8C%E5%AD%A6%E5%85%B3%E6%B3%A8%E7%9A%84%E6%8A%80%E6%9C%AF%E8%B6%8B%E5%8A%BF-9c9522ac00a646e284b8eaf013585743/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/2023%E5%B9%B4%E4%BD%A0%E8%BF%98%E8%83%BD%E7%9C%8B%E5%88%B0%E5%B8%8C%E6%9C%9B%E4%B9%88-90a4807a4c914eedb1197aeff9e37514/</loc>
+    <loc>http://localhost:1313/posts/2023%E5%B9%B4%E4%BD%A0%E8%BF%98%E8%83%BD%E7%9C%8B%E5%88%B0%E5%B8%8C%E6%9C%9B%E4%B9%88-90a4807a4c914eedb1197aeff9e37514/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/7%E4%B8%AA%E6%8F%90%E5%8D%87%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87%E7%9A%84%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B72023%E7%89%88-0f4883209ce64c3283101df4dd0bc96b/</loc>
+    <loc>http://localhost:1313/posts/7%E4%B8%AA%E6%8F%90%E5%8D%87%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87%E7%9A%84%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B72023%E7%89%88-0f4883209ce64c3283101df4dd0bc96b/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/chatgpt_write_testcase/</loc>
+    <loc>http://localhost:1313/posts/chatgpt_write_testcase/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/chrome%E4%B8%8A%E6%9B%B4%E5%A5%BD%E7%9A%84%E5%BD%95%E5%88%B6%E5%9B%9E%E6%94%BE%E5%B7%A5%E5%85%B7jesteer%E4%BB%8B%E7%BB%8D%E5%8F%8A%E8%AF%95%E7%94%A8-673d8b0476fe4f0da2acc7c871ba6ae7/</loc>
+    <loc>http://localhost:1313/posts/chrome%E4%B8%8A%E6%9B%B4%E5%A5%BD%E7%9A%84%E5%BD%95%E5%88%B6%E5%9B%9E%E6%94%BE%E5%B7%A5%E5%85%B7jesteer%E4%BB%8B%E7%BB%8D%E5%8F%8A%E8%AF%95%E7%94%A8-673d8b0476fe4f0da2acc7c871ba6ae7/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/grpc%E7%AE%80%E4%BB%8B-82e57cd2e8434314addbe47d6725a434/</loc>
+    <loc>http://localhost:1313/posts/grpc%E7%AE%80%E4%BB%8B-82e57cd2e8434314addbe47d6725a434/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/leetcode%E6%9C%80%E6%9C%89%E5%90%8D%E7%9A%84%E7%AE%80%E5%8D%95%E7%AE%97%E6%B3%95%E9%A2%98two-sum-d9c51dffdd8d48c4a5adf47196b9757e/</loc>
+    <loc>http://localhost:1313/posts/leetcode%E6%9C%80%E6%9C%89%E5%90%8D%E7%9A%84%E7%AE%80%E5%8D%95%E7%AE%97%E6%B3%95%E9%A2%98two-sum-d9c51dffdd8d48c4a5adf47196b9757e/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/playwright-%E5%A4%A7%E6%88%98cypress-11b717732e2e4ceebd0b58c3fd83cc16/</loc>
+    <loc>http://localhost:1313/posts/playwright-%E5%A4%A7%E6%88%98cypress-11b717732e2e4ceebd0b58c3fd83cc16/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/playwright%E4%BC%9A%E6%88%90%E4%B8%BA%E4%B8%8B%E4%B8%80%E4%B8%AAselenium%E5%90%97-b17dbf0f72044cd9bbdc0ea07cc75e31/</loc>
+    <loc>http://localhost:1313/posts/playwright%E4%BC%9A%E6%88%90%E4%B8%BA%E4%B8%8B%E4%B8%80%E4%B8%AAselenium%E5%90%97-b17dbf0f72044cd9bbdc0ea07cc75e31/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/python-requests%E7%9A%84%E6%9B%BF%E4%BB%A3%E8%80%85httpx%E5%88%9D%E4%BD%93%E9%AA%8C-7a3a0bd407c34823b3443ad870dbef5c/</loc>
+    <loc>http://localhost:1313/posts/python-requests%E7%9A%84%E6%9B%BF%E4%BB%A3%E8%80%85httpx%E5%88%9D%E4%BD%93%E9%AA%8C-7a3a0bd407c34823b3443ad870dbef5c/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/python-web%E6%A1%86%E6%9E%B6bottle-%E5%88%9D%E4%BD%93%E9%AA%8C-deaa68ef1d1b4aecafcf31f21393a2f7/</loc>
+    <loc>http://localhost:1313/posts/python-web%E6%A1%86%E6%9E%B6bottle-%E5%88%9D%E4%BD%93%E9%AA%8C-deaa68ef1d1b4aecafcf31f21393a2f7/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/selenium-4-0%E6%96%B0%E7%89%B9%E6%80%A7%E5%8F%8A%E6%96%B0%E6%97%A7api%E5%AF%B9%E6%AF%94-2805e5a829b74964afe8f263d7bb64ef/</loc>
+    <loc>http://localhost:1313/posts/selenium-4-0%E6%96%B0%E7%89%B9%E6%80%A7%E5%8F%8A%E6%96%B0%E6%97%A7api%E5%AF%B9%E6%AF%94-2805e5a829b74964afe8f263d7bb64ef/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/selenium-4-8%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83-87e18b79a2314a47b0ba8551e3573392/</loc>
+    <loc>http://localhost:1313/posts/selenium-4-8%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83-87e18b79a2314a47b0ba8551e3573392/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/string%E7%AE%97%E6%B3%95%E4%B9%8B%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8A%A0%E6%B3%95-a9c3e1b342344161b60060ff87619ea5/</loc>
+    <loc>http://localhost:1313/posts/string%E7%AE%97%E6%B3%95%E4%B9%8B%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8A%A0%E6%B3%95-a9c3e1b342344161b60060ff87619ea5/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/xswl%E4%B8%80%E4%BA%9B%E5%85%B3%E4%BA%8E%E6%8F%90bug%E7%9A%84%E6%A2%97%E5%9B%BE-9a37b1736d0f4f018a62c3e4a67dbbec/</loc>
+    <loc>http://localhost:1313/posts/xswl%E4%B8%80%E4%BA%9B%E5%85%B3%E4%BA%8E%E6%8F%90bug%E7%9A%84%E6%A2%97%E5%9B%BE-9a37b1736d0f4f018a62c3e4a67dbbec/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E4%B8%8D%E5%81%9A%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%9A%846%E5%A4%A7%E5%80%9F%E5%8F%A3-0a0c298766af4bcc8f2c295a00c787df/</loc>
+    <loc>http://localhost:1313/posts/%E4%B8%8D%E5%81%9A%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%9A%846%E5%A4%A7%E5%80%9F%E5%8F%A3-0a0c298766af4bcc8f2c295a00c787df/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E4%B8%8D%E8%A6%81%E5%86%8D%E4%BD%BF%E7%94%A8%E4%BA%86mock%E4%BA%86-37a5812f0419469e8352e536c4621172/</loc>
+    <loc>http://localhost:1313/posts/%E4%B8%8D%E8%A6%81%E5%86%8D%E4%BD%BF%E7%94%A8%E4%BA%86mock%E4%BA%86-37a5812f0419469e8352e536c4621172/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E4%B8%8D%E8%A6%81%E5%AE%B3%E6%80%95%E5%9C%A8%E5%91%A8%E4%BA%94%E9%83%A8%E7%BD%B2-b4ecfd9929554a10a34bbc7ae5496a9c/</loc>
+    <loc>http://localhost:1313/posts/%E4%B8%8D%E8%A6%81%E5%AE%B3%E6%80%95%E5%9C%A8%E5%91%A8%E4%BA%94%E9%83%A8%E7%BD%B2-b4ecfd9929554a10a34bbc7ae5496a9c/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E4%B8%A4%E5%91%A8%E5%86%85%E5%BD%95%E5%AE%8Cselenium%E6%95%99%E7%A8%8B%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C-5e235bfb8896413ea51a8daf48502e84/</loc>
+    <loc>http://localhost:1313/posts/%E4%B8%A4%E5%91%A8%E5%86%85%E5%BD%95%E5%AE%8Cselenium%E6%95%99%E7%A8%8B%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C-5e235bfb8896413ea51a8daf48502e84/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E4%BA%94%E6%AC%BE%E6%9C%80%E5%80%BC%E5%BE%97%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%BA%94%E7%94%A8-ec7a76e3ce004c3fbae198fe1c07aa7c/</loc>
+    <loc>http://localhost:1313/posts/%E4%BA%94%E6%AC%BE%E6%9C%80%E5%80%BC%E5%BE%97%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%BA%94%E7%94%A8-ec7a76e3ce004c3fbae198fe1c07aa7c/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E4%BA%B2%E5%8E%86%E8%A3%81%E5%91%98%E7%AB%9E%E8%B5%9B-0f886799147a44d1b20a0bbeee9fd5d1/</loc>
+    <loc>http://localhost:1313/posts/%E4%BA%B2%E5%8E%86%E8%A3%81%E5%91%98%E7%AB%9E%E8%B5%9B-0f886799147a44d1b20a0bbeee9fd5d1/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E4%BB%8E%E5%90%B4%E4%BA%A6%E5%87%A1%E4%BA%8B%E4%BB%B6%E5%AD%A6%E4%B9%A0%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95-f4fcfd1919004bae89ca78e6f0949ed6/</loc>
+    <loc>http://localhost:1313/posts/%E4%BB%8E%E5%90%B4%E4%BA%A6%E5%87%A1%E4%BA%8B%E4%BB%B6%E5%AD%A6%E4%B9%A0%E5%AE%89%E5%85%A8%E6%B5%8B%E8%AF%95-f4fcfd1919004bae89ca78e6f0949ed6/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E4%BC%98%E7%A7%80%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%845c%E7%89%B9%E8%B4%A8-c8fba335b5ce468bb3296ec56944af2f/</loc>
+    <loc>http://localhost:1313/posts/%E4%BC%98%E7%A7%80%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%845c%E7%89%B9%E8%B4%A8-c8fba335b5ce468bb3296ec56944af2f/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%81%87%E5%A6%82%E6%88%91%E8%A2%AB%E8%A3%81%E5%91%98%E4%BA%86-152a39be777344269c983e948760bee3/</loc>
+    <loc>http://localhost:1313/posts/%E5%81%87%E5%A6%82%E6%88%91%E8%A2%AB%E8%A3%81%E5%91%98%E4%BA%86-152a39be777344269c983e948760bee3/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%81%87%E5%A6%82%E6%9C%89%E4%B8%80%E5%A4%A9%E6%88%91%E8%BA%BA%E5%B9%B3%E4%BA%86-9fea410527774d839af9554f4d87e5fe/</loc>
+    <loc>http://localhost:1313/posts/%E5%81%87%E5%A6%82%E6%9C%89%E4%B8%80%E5%A4%A9%E6%88%91%E8%BA%BA%E5%B9%B3%E4%BA%86-9fea410527774d839af9554f4d87e5fe/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%81%9A%E4%B8%80%E4%B8%AA%E6%B2%A1%E6%9C%89%E6%84%9F%E6%83%85%E7%9A%84%E7%94%A8%E4%BE%8B%E7%94%9F%E6%88%90%E6%9C%BA%E5%99%A8-a8b3883ef23449509d3f784ce62cc9ff/</loc>
+    <loc>http://localhost:1313/posts/%E5%81%9A%E4%B8%80%E4%B8%AA%E6%B2%A1%E6%9C%89%E6%84%9F%E6%83%85%E7%9A%84%E7%94%A8%E4%BE%8B%E7%94%9F%E6%88%90%E6%9C%BA%E5%99%A8-a8b3883ef23449509d3f784ce62cc9ff/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%85%88%E6%94%B6%E8%97%8F-%E6%B5%8B%E8%AF%95%E5%90%8C%E5%AD%A6%E7%9A%84%E6%88%90%E9%95%BF%E4%B9%8B%E9%81%93from-github-47ddeb01df294765bd908d165758d602/</loc>
+    <loc>http://localhost:1313/posts/%E5%85%88%E6%94%B6%E8%97%8F-%E6%B5%8B%E8%AF%95%E5%90%8C%E5%AD%A6%E7%9A%84%E6%88%90%E9%95%BF%E4%B9%8B%E9%81%93from-github-47ddeb01df294765bd908d165758d602/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AF%A5%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1-dc486bcdbe0746d988f477636b84de79/</loc>
+    <loc>http://localhost:1313/posts/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AF%A5%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1-dc486bcdbe0746d988f477636b84de79/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%9C%A82023%E4%BD%BF%E7%94%A8playwright%E8%BF%9B%E8%A1%8C%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95-9f1543e84f6649909fd00300f3de83a4/</loc>
+    <loc>http://localhost:1313/posts/%E5%9C%A82023%E4%BD%BF%E7%94%A8playwright%E8%BF%9B%E8%A1%8C%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95-9f1543e84f6649909fd00300f3de83a4/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%9C%A8selenium%E4%B8%AD%E4%BD%BF%E7%94%A8ajaxelementlocatorfactory%E6%9D%A5%E4%BC%98%E5%8C%96po%E6%A8%A1%E5%BC%8F-ce6e6b02085c4323b2e36dccaccc8f41/</loc>
+    <loc>http://localhost:1313/posts/%E5%9C%A8selenium%E4%B8%AD%E4%BD%BF%E7%94%A8ajaxelementlocatorfactory%E6%9D%A5%E4%BC%98%E5%8C%96po%E6%A8%A1%E5%BC%8F-ce6e6b02085c4323b2e36dccaccc8f41/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%9F%BA%E4%BA%8Ek8s%E7%9A%84%E6%B5%8B%E8%AF%95%E6%89%A7%E8%A1%8C%E5%B7%A5%E5%85%B7testkube-2fe7d0f536e1491bbd5eeb2fdedcf5f1/</loc>
+    <loc>http://localhost:1313/posts/%E5%9F%BA%E4%BA%8Ek8s%E7%9A%84%E6%B5%8B%E8%AF%95%E6%89%A7%E8%A1%8C%E5%B7%A5%E5%85%B7testkube-2fe7d0f536e1491bbd5eeb2fdedcf5f1/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%A4%A7%E5%8E%82%E7%9A%84%E6%B5%8B%E8%AF%95%E7%BB%8F%E7%90%86%E4%BB%AC%E9%83%BD%E5%9C%A8%E5%B9%B2%E4%BB%80%E4%B9%88%E5%91%A2-9b0e53172eec44b6b9516784e1d2d53d/</loc>
+    <loc>http://localhost:1313/posts/%E5%A4%A7%E5%8E%82%E7%9A%84%E6%B5%8B%E8%AF%95%E7%BB%8F%E7%90%86%E4%BB%AC%E9%83%BD%E5%9C%A8%E5%B9%B2%E4%BB%80%E4%B9%88%E5%91%A2-9b0e53172eec44b6b9516784e1d2d53d/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E4%BC%98%E5%8C%96selenium-webdriver%E7%9A%84%E6%89%A7%E8%A1%8C%E9%80%9F%E5%BA%A6-c4641f738ca24347bf25f316e0199bbd/</loc>
+    <loc>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E4%BC%98%E5%8C%96selenium-webdriver%E7%9A%84%E6%89%A7%E8%A1%8C%E9%80%9F%E5%BA%A6-c4641f738ca24347bf25f316e0199bbd/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E5%8A%A0%E9%80%9F%E6%89%A7%E8%A1%8C%E9%9B%86%E6%88%90%E6%B5%8B%E8%AF%95-645011fe06e54b3c89eb28fc6ca2a6d0/</loc>
+    <loc>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E5%8A%A0%E9%80%9F%E6%89%A7%E8%A1%8C%E9%9B%86%E6%88%90%E6%B5%8B%E8%AF%95-645011fe06e54b3c89eb28fc6ca2a6d0/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%86%85%E5%AD%98%E7%BC%93%E5%AD%98-c7ae4d48e73f491282c975897d821e50/</loc>
+    <loc>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84%E5%86%85%E5%AD%98%E7%BC%93%E5%AD%98-c7ae4d48e73f491282c975897d821e50/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E7%94%A8%E6%8C%87%E6%A0%87%E5%8E%BB%E5%BA%A6%E9%87%8Fbug%E6%9C%AC%E8%BA%AB%E7%9A%84%E8%B4%A8%E9%87%8F%E6%83%85%E5%86%B5-d71f493c58f8466b88a10806cdbc3ae4/</loc>
+    <loc>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E7%94%A8%E6%8C%87%E6%A0%87%E5%8E%BB%E5%BA%A6%E9%87%8Fbug%E6%9C%AC%E8%BA%AB%E7%9A%84%E8%B4%A8%E9%87%8F%E6%83%85%E5%86%B5-d71f493c58f8466b88a10806cdbc3ae4/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%A6%82%E4%BD%95%E7%BC%96%E5%86%99%E6%B5%8B%E8%AF%95%E8%AE%A1%E5%88%92-fb24f300af014335945a795002909ca8/</loc>
+    <loc>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E7%BC%96%E5%86%99%E6%B5%8B%E8%AF%95%E8%AE%A1%E5%88%92-fb24f300af014335945a795002909ca8/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%B7%A5%E7%A8%8B%E5%BA%A6%E9%87%8F%E7%9A%845%E4%B8%AA%E7%B1%BB%E5%88%AB-7d10c5580b6a47c78265f63114e4efdd/</loc>
+    <loc>http://localhost:1313/posts/%E5%B7%A5%E7%A8%8B%E5%BA%A6%E9%87%8F%E7%9A%845%E4%B8%AA%E7%B1%BB%E5%88%AB-7d10c5580b6a47c78265f63114e4efdd/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%B8%B8%E7%94%A8%E7%9A%84adb%E5%91%BD%E4%BB%A4-3818512e5e2a40fb8aededff3994128e/</loc>
+    <loc>http://localhost:1313/posts/%E5%B8%B8%E7%94%A8%E7%9A%84adb%E5%91%BD%E4%BB%A4-3818512e5e2a40fb8aededff3994128e/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%BA%A6%E9%87%8F%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%95%88%E6%9E%9C%E7%9A%8410%E4%B8%AA%E6%8C%87%E6%A0%87-5fe520b7d0b141c1852e079a5aaa7202/</loc>
+    <loc>http://localhost:1313/posts/%E5%BA%A6%E9%87%8F%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%95%88%E6%9E%9C%E7%9A%8410%E4%B8%AA%E6%8C%87%E6%A0%87-5fe520b7d0b141c1852e079a5aaa7202/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E5%BA%94%E8%AF%A5%E8%BF%9B%E8%A1%8C%E6%80%9D%E8%B7%AF%E8%BD%AC%E5%8F%98%E4%BB%A5%E6%8F%90%E5%8D%87%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F-a19a6990c7bb43429a8215f9ff4ac262/</loc>
+    <loc>http://localhost:1313/posts/%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E5%BA%94%E8%AF%A5%E8%BF%9B%E8%A1%8C%E6%80%9D%E8%B7%AF%E8%BD%AC%E5%8F%98%E4%BB%A5%E6%8F%90%E5%8D%87%E8%BD%AF%E4%BB%B6%E8%B4%A8%E9%87%8F-a19a6990c7bb43429a8215f9ff4ac262/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%BC%BA%E8%A1%8C%E4%B8%BA%E6%96%B0%E9%A1%B9%E7%9B%AE%E5%86%99ui%E8%87%AA%E5%8A%A8%E5%8C%96%E7%94%A8%E4%BE%8B%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C-98ad086dc03c4469827a0e1a02f7657f/</loc>
+    <loc>http://localhost:1313/posts/%E5%BC%BA%E8%A1%8C%E4%B8%BA%E6%96%B0%E9%A1%B9%E7%9B%AE%E5%86%99ui%E8%87%AA%E5%8A%A8%E5%8C%96%E7%94%A8%E4%BE%8B%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C-98ad086dc03c4469827a0e1a02f7657f/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E5%BC%BA%E8%A1%8C%E4%B8%BA%E6%96%B0%E9%A1%B9%E7%9B%AE%E5%86%99%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C-c5e43bb1f307421db462a9066a3990e4/</loc>
+    <loc>http://localhost:1313/posts/%E5%BC%BA%E8%A1%8C%E4%B8%BA%E6%96%B0%E9%A1%B9%E7%9B%AE%E5%86%99%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E6%98%AF%E4%B8%80%E7%A7%8D%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C-c5e43bb1f307421db462a9066a3990e4/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/good_news_for_ui_automation/</loc>
+    <loc>http://localhost:1313/posts/good_news_for_ui_automation/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%83%85%E6%84%9F%E9%A9%B1%E5%8A%A8%E6%B5%8B%E8%AF%95-8f579ac3b79748d09c886ce94d19154a/</loc>
+    <loc>http://localhost:1313/posts/%E6%83%85%E6%84%9F%E9%A9%B1%E5%8A%A8%E6%B5%8B%E8%AF%95-8f579ac3b79748d09c886ce94d19154a/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%83%A8%E9%81%AD%E6%89%93%E8%84%B8%E5%AD%97%E8%8A%82%E6%9F%90%E9%83%A8%E9%97%A8%E7%AB%9F%E7%84%B6%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E6%B5%8B%E8%AF%95-7d8df3dda38744d4aa3b27c20513ddca/</loc>
+    <loc>http://localhost:1313/posts/%E6%83%A8%E9%81%AD%E6%89%93%E8%84%B8%E5%AD%97%E8%8A%82%E6%9F%90%E9%83%A8%E9%97%A8%E7%AB%9F%E7%84%B6%E6%9C%89%E8%BF%99%E4%B9%88%E5%A4%9A%E6%B5%8B%E8%AF%95-7d8df3dda38744d4aa3b27c20513ddca/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E7%86%9F%E6%82%89%E4%B8%80%E4%B8%AA%E6%96%B0%E9%A1%B9%E7%9B%AE%E7%9A%84-3316d95788c24961939d75ab1772869e/</loc>
+    <loc>http://localhost:1313/posts/%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E7%86%9F%E6%82%89%E4%B8%80%E4%B8%AA%E6%96%B0%E9%A1%B9%E7%9B%AE%E7%9A%84-3316d95788c24961939d75ab1772869e/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0xss%E6%94%BB%E5%87%BB-f057ab07002f4a5e8eef98541b490af5/</loc>
+    <loc>http://localhost:1313/posts/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0xss%E6%94%BB%E5%87%BB-f057ab07002f4a5e8eef98541b490af5/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E8%BF%9B%E9%98%B6%E5%9C%A8%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%A1%86%E6%9E%B6%E4%B8%AD%E4%BD%BF%E7%94%A8json-schema-20fd23ad35e845238bf979572632fd60/</loc>
+    <loc>http://localhost:1313/posts/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E8%BF%9B%E9%98%B6%E5%9C%A8%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%A1%86%E6%9E%B6%E4%B8%AD%E4%BD%BF%E7%94%A8json-schema-20fd23ad35e845238bf979572632fd60/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%8E%A8%E8%8D%90docker%E5%A4%87%E5%BF%98%E5%BD%95-349dffabed5944459e2d0a09085ab6b0/</loc>
+    <loc>http://localhost:1313/posts/%E6%8E%A8%E8%8D%90docker%E5%A4%87%E5%BF%98%E5%BD%95-349dffabed5944459e2d0a09085ab6b0/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%94%BE%E5%BC%83postman%E4%B8%80%E4%B8%AA%E6%9C%884k-star%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7hoppscotch%E8%AF%84%E6%B5%8B-9addc18c7a464236b992a309019b69c2/</loc>
+    <loc>http://localhost:1313/posts/%E6%94%BE%E5%BC%83postman%E4%B8%80%E4%B8%AA%E6%9C%884k-star%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7hoppscotch%E8%AF%84%E6%B5%8B-9addc18c7a464236b992a309019b69c2/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84bug-bb296541ea594be395e1b5d1e2260dd7/</loc>
+    <loc>http://localhost:1313/posts/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84bug-bb296541ea594be395e1b5d1e2260dd7/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%AF%8F%E4%B8%AA%E7%A6%BB%E8%B0%B1%E7%9A%84bug%E8%83%8C%E5%90%8E%E6%80%BB%E6%9C%89%E4%B8%80%E4%B8%AA%E7%B2%BE%E5%BD%A9%E7%BB%9D%E4%BC%A6%E7%9A%84%E5%B9%95%E5%90%8E%E6%95%85%E4%BA%8B-02dda34703e24d5b859777523a45c340/</loc>
+    <loc>http://localhost:1313/posts/%E6%AF%8F%E4%B8%AA%E7%A6%BB%E8%B0%B1%E7%9A%84bug%E8%83%8C%E5%90%8E%E6%80%BB%E6%9C%89%E4%B8%80%E4%B8%AA%E7%B2%BE%E5%BD%A9%E7%BB%9D%E4%BC%A6%E7%9A%84%E5%B9%95%E5%90%8E%E6%95%85%E4%BA%8B-02dda34703e24d5b859777523a45c340/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%B2%A1%E6%9C%89qa%E5%B0%B1%E6%B2%A1%E6%9C%89bug-963e025993844064b6e66b7c0aa3c12b/</loc>
+    <loc>http://localhost:1313/posts/%E6%B2%A1%E6%9C%89qa%E5%B0%B1%E6%B2%A1%E6%9C%89bug-963e025993844064b6e66b7c0aa3c12b/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E4%B8%8D%E5%8F%AF%E4%B8%8D%E7%9F%A5%E7%9A%847%E4%B8%AA%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B0%8F%E6%8A%80%E5%B7%A7-3655f764c6234f79b91d8231a57ee9b6/</loc>
+    <loc>http://localhost:1313/posts/%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E4%B8%8D%E5%8F%AF%E4%B8%8D%E7%9F%A5%E7%9A%847%E4%B8%AA%E6%B5%8F%E8%A7%88%E5%99%A8%E5%B0%8F%E6%8A%80%E5%B7%A7-3655f764c6234f79b91d8231a57ee9b6/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E5%BF%85%E4%BC%9A%E7%9A%84docker%E7%A7%98%E7%B1%8D-8bb6149b7970479ab1914f127ce319f8/</loc>
+    <loc>http://localhost:1313/posts/%E6%B5%8B%E8%AF%95%E4%BA%BA%E5%91%98%E5%BF%85%E4%BC%9A%E7%9A%84docker%E7%A7%98%E7%B1%8D-8bb6149b7970479ab1914f127ce319f8/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E4%BD%8E%E4%B8%8B%E8%AE%BA%E6%88%96%E7%8E%B0%E4%BB%A3%E6%B5%8B%E8%AF%95%E8%A1%8C%E4%B8%9A%E6%89%80%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98-2cd3ec3f043b49cc8600518891cbf3a1/</loc>
+    <loc>http://localhost:1313/posts/%E6%B5%8B%E8%AF%95%E4%BD%8E%E4%B8%8B%E8%AE%BA%E6%88%96%E7%8E%B0%E4%BB%A3%E6%B5%8B%E8%AF%95%E8%A1%8C%E4%B8%9A%E6%89%80%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98-2cd3ec3f043b49cc8600518891cbf3a1/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E5%90%8C%E5%AD%A6%E6%89%BE%E5%B7%A5%E4%BD%9C%E8%A6%81%E4%B8%8D%E8%A6%81%E5%88%B7%E9%A2%98-45c8075f234c4187bcb199b953bdba68/</loc>
+    <loc>http://localhost:1313/posts/%E6%B5%8B%E8%AF%95%E5%90%8C%E5%AD%A6%E6%89%BE%E5%B7%A5%E4%BD%9C%E8%A6%81%E4%B8%8D%E8%A6%81%E5%88%B7%E9%A2%98-45c8075f234c4187bcb199b953bdba68/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%A6%82%E4%BD%95%E8%B7%9F%E5%BC%80%E5%8F%91%E6%B2%9F%E9%80%9A-c5103bc7f4f942a9a06bf5940f32b747/</loc>
+    <loc>http://localhost:1313/posts/%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%A6%82%E4%BD%95%E8%B7%9F%E5%BC%80%E5%8F%91%E6%B2%9F%E9%80%9A-c5103bc7f4f942a9a06bf5940f32b747/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E5%B9%B6%E4%B8%8D%E8%83%BD%E6%94%B9%E8%BF%9B%E4%BA%A7%E5%93%81%E8%B4%A8%E9%87%8F-0f605927158a4f8caef1e732d6aceee9/</loc>
+    <loc>http://localhost:1313/posts/%E6%B5%8B%E8%AF%95%E5%B9%B6%E4%B8%8D%E8%83%BD%E6%94%B9%E8%BF%9B%E4%BA%A7%E5%93%81%E8%B4%A8%E9%87%8F-0f605927158a4f8caef1e732d6aceee9/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E6%B5%8B%E8%AF%95%E6%98%AF%E6%95%B4%E4%B8%AA%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E7%9A%84%E7%93%B6%E9%A2%88%E5%90%97-a8bf91f0fbad43cc975e7612a99b08a9/</loc>
+    <loc>http://localhost:1313/posts/%E6%B5%8B%E8%AF%95%E6%98%AF%E6%95%B4%E4%B8%AA%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E7%9A%84%E7%93%B6%E9%A2%88%E5%90%97-a8bf91f0fbad43cc975e7612a99b08a9/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E7%94%A8python%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7-943e6a6de3444b308f7a9b986ca30c25/</loc>
+    <loc>http://localhost:1313/posts/%E7%94%A8python%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E7%9A%84%E7%89%88%E6%9C%AC%E5%8F%B7%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7-943e6a6de3444b308f7a9b986ca30c25/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E7%94%A8wiremock%E8%87%AA%E5%BB%BAmock%E6%9C%8D%E5%8A%A1-f9e2c255d6de47ac9d165a43e45855f2/</loc>
+    <loc>http://localhost:1313/posts/%E7%94%A8wiremock%E8%87%AA%E5%BB%BAmock%E6%9C%8D%E5%8A%A1-f9e2c255d6de47ac9d165a43e45855f2/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E7%A7%BB%E5%8A%A8%E6%B5%8B%E8%AF%95%E6%8C%87%E5%8D%97-31ddadb1681b4287803ef98d6ca78960/</loc>
+    <loc>http://localhost:1313/posts/%E7%A7%BB%E5%8A%A8%E6%B5%8B%E8%AF%95%E6%8C%87%E5%8D%97-31ddadb1681b4287803ef98d6ca78960/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E7%AE%80%E9%99%8B%E7%9A%84%E5%85%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5-a162aad16338433d92697f4ffcb009ca/</loc>
+    <loc>http://localhost:1313/posts/%E7%AE%80%E9%99%8B%E7%9A%84%E5%85%A8%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5-a162aad16338433d92697f4ffcb009ca/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/correct-two-common-misconceptions/</loc>
+    <loc>http://localhost:1313/posts/correct-two-common-misconceptions/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E7%BA%BF%E4%B8%8A%E5%8F%91%E7%8E%B0%E4%BA%86bug%E8%AF%A5%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86-a46c9c440cae42b2a451f68ba374806e/</loc>
+    <loc>http://localhost:1313/posts/%E7%BA%BF%E4%B8%8A%E5%8F%91%E7%8E%B0%E4%BA%86bug%E8%AF%A5%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86-a46c9c440cae42b2a451f68ba374806e/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E7%BB%99%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%845%E6%9D%A1%E5%BB%BA%E8%AE%AE-03b2282108504a29b8b40f3b9c88c369/</loc>
+    <loc>http://localhost:1313/posts/%E7%BB%99%E6%B5%8B%E8%AF%95%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%845%E6%9D%A1%E5%BB%BA%E8%AE%AE-03b2282108504a29b8b40f3b9c88c369/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E8%81%8A%E8%81%8Aui%E8%87%AA%E5%8A%A8%E5%8C%96%E7%94%A8%E4%BE%8B%E7%9A%84%E5%B0%BA%E5%BA%A6-9b12d1c348be471f887e0ffdf84ce917/</loc>
+    <loc>http://localhost:1313/posts/%E8%81%8A%E8%81%8Aui%E8%87%AA%E5%8A%A8%E5%8C%96%E7%94%A8%E4%BE%8B%E7%9A%84%E5%B0%BA%E5%BA%A6-9b12d1c348be471f887e0ffdf84ce917/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%9A%849%E5%A4%A7%E8%A7%84%E5%88%99-786ac3129813420a89802597b7e7e3fc/</loc>
+    <loc>http://localhost:1313/posts/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%9A%849%E5%A4%A7%E8%A7%84%E5%88%99-786ac3129813420a89802597b7e7e3fc/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E8%A6%86%E7%9B%96%E7%8E%87%E8%A6%81%E5%88%B0%E5%A4%9A%E5%B0%91%E6%89%8D%E7%AE%97%E8%B6%B3%E5%A4%9F-e0acb067e9b34128811e253a1723ed54/</loc>
+    <loc>http://localhost:1313/posts/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E8%A6%86%E7%9B%96%E7%8E%87%E8%A6%81%E5%88%B0%E5%A4%9A%E5%B0%91%E6%89%8D%E7%AE%97%E8%B6%B3%E5%A4%9F-e0acb067e9b34128811e253a1723ed54/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E4%B8%AD7%E4%B8%AA%E4%BB%A4%E4%BA%BA%E9%9C%87%E6%83%8A%E7%9A%84%E7%9C%9F%E7%9B%B8-7dd7b38224bf4c239e4bf5cbb8f348b6/</loc>
+    <loc>http://localhost:1313/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E4%B8%AD7%E4%B8%AA%E4%BB%A4%E4%BA%BA%E9%9C%87%E6%83%8A%E7%9A%84%E7%9C%9F%E7%9B%B8-7dd7b38224bf4c239e4bf5cbb8f348b6/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/posts/%E9%9C%87%E6%83%8Aselenium%E7%AB%9F%E7%84%B6%E4%B8%8D%E6%98%AF%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7-30f03d4d165f45b8b4c84e4ca80e1e6f/</loc>
+    <loc>http://localhost:1313/posts/%E9%9C%87%E6%83%8Aselenium%E7%AB%9F%E7%84%B6%E4%B8%8D%E6%98%AF%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7-30f03d4d165f45b8b4c84e4ca80e1e6f/</loc>
     <lastmod>2023-04-28T07:49:02+08:00</lastmod>
   </url><url>
-    <loc>https://zh.ethanhan.cc/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://zh.ethanhan.cc/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
